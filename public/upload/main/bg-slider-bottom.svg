@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="altlık.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 3804.4048 509.99568"
+   height="509.99567mm"
+   width="3804.4048mm">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1275"
+       inkscape:collect="always">
+      <stop
+         id="stop1271"
+         offset="0"
+         style="stop-color:#00234a;stop-opacity:1;" />
+      <stop
+         id="stop1273"
+         offset="1"
+         style="stop-color:#00234a;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1640"
+       id="linearGradient1642"
+       x1="3967.3611"
+       y1="1.9317797"
+       x2="3967.3611"
+       y2="370.83655"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0456675,0,0,1.021314,-180.53769,-22.699322)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1640">
+      <stop
+         style="stop-color:#b2d4f5;stop-opacity:1;"
+         offset="0"
+         id="stop1636" />
+      <stop
+         style="stop-color:#b2d4f5;stop-opacity:0;"
+         offset="1"
+         id="stop1638" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1672"
+       x="-0.0059906468"
+       width="1.0119812"
+       y="-0.077562988"
+       height="1.155126">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="9.7763815"
+         id="feGaussianBlur1674" />
+    </filter>
+    <filter
+       height="3.7345102"
+       y="-1.3672551"
+       width="1.0562352"
+       x="-0.028117606"
+       id="filter1238"
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur1240"
+         stdDeviation="46.843372"
+         inkscape:collect="always" />
+    </filter>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="648.26929"
+       x2="259.65903"
+       y1="545.61719"
+       x1="259.65903"
+       id="linearGradient1277"
+       xlink:href="#linearGradient1275"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="1051"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="-489.16495"
+     inkscape:cx="11421.452"
+     inkscape:zoom="0.028284271"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(1721.5299,-1564.1425)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Katman 1">
+    <rect
+       style="opacity:1;fill:url(#linearGradient1642);fill-opacity:1;stroke:none;stroke-width:1.35727;filter:url(#filter1672);stop-color:#000000"
+       id="rect1620"
+       width="3916.6582"
+       height="302.50659"
+       x="1994.9777"
+       y="38.021954"
+       transform="matrix(1,0,0,-0.95002077,-3772.6341,2110.2599)" />
+    <rect
+       transform="matrix(1,0,0,0.99581685,0,1214.5667)"
+       y="543.20905"
+       x="-1777.6565"
+       height="82.226128"
+       width="3998.3521"
+       id="rect1056"
+       style="opacity:0.329193;fill:url(#linearGradient1277);fill-opacity:1;stroke-width:1.3257;filter:url(#filter1238);stop-color:#000000" />
+  </g>
+</svg>

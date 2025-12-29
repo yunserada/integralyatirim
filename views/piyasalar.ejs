@@ -1,0 +1,2856 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+<%- include("layouts/head") %>
+<body> 
+<%- include("layouts/header") %>
+<div class="main middle"> <div class="container-lg pt-4 pt-lg-4 pb-5 liste-piyasalar category"> <div class="px-0"> <div class="col-12 f-08"> <div class="breadcrumb pb-2--"> <a href="" class="breadcrumb-item"> <i class="bi bi-house">
+</i>
+</a> <a href="piyasalar" class="breadcrumb-item">Piyasalar</a> </div> </div> </div> <div class="df"> <div class="sidebar usn h-100 lsn dn db-lg pr-4"> <div class="sidebar-bottom f-12 fw-700 pt-1 pb-3"> <a href="<%= site %>/register" class="right-v-line bg-sdbr tdn df aic jcsb p-3 py-3 ra-1 mt-0 bs2">
+<span>Yatırım Hesabı <br>Açın</span>
+<img src="upload/main/sidebar_woman.png" class="ml-2"/>
+</a> <a href="bize-ulasin" class="right-v-line bg-sdbr tdn df aic jcsb p-3 py-3 ra-1 mt-2 bs2">
+<span>Uzmanlarımıza <br>Danışın</span> <img src="upload/main/sidebar_man.png" class="ml-2"/>
+</a> </div> <div class="sidebar-top bg-sdbr t-f ra-1 p-45"> <ul class="p-0 duzey1 fw-500 f-11"> <li class="on d1"> <a href="hakkimizda/" > Hakkımızda</a>
+</li>
+<div class="sub-side duzey2 fw-400 p-1 pr-1">
+<li class="on d2 fw-300">
+<a href="biz-kimiz"> <i class="bi bi-dot">
+</i> Biz Kimiz</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/duyurular"> <i class="bi bi-dot">
+</i> Duyurular</a>
+</li>
+<li class="on d2 fw-300">
+<a href="banka-hesap-bilgileri"> <i class="bi bi-dot">
+</i> Banka Hesap Bilgileri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sikca-sorulan-sorular"> <i class="bi bi-dot">
+</i> Sıkça Sorulan Sorular</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yasal-uyarilar"> <i class="bi bi-dot">
+</i> Yasal Uyarılar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="https://tspb.org.tr/kamuyu_aydinlatma/bulls-yatirim-menkul-degerler-a-s"> <i class="bi bi-dot">
+</i> Kamuyu Aydınlatma</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ortaklik-yapisi"> <i class="bi bi-dot">
+</i> Ortaklık Yapısı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kurumsal-kisisel-verilerin-korunmasi"> <i class="bi bi-dot">
+</i> KVKK</a>
+</li>
+</div>
+<li class="on d1"> <a href="hizmetler/" > Hizmetler</a>
+</li>
+<div class="sub-side duzey2 fw-400 p-1 pr-1">
+<li class="on d2 fw-300">
+<a href="kurumsal-finansman-hizmetleri"> <i class="bi bi-dot">
+</i> Kurumsal Finansman</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yatirim-danismanligi"> <i class="bi bi-dot">
+</i> Yatırım Danışmanlığı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bireysel-portfoy-yonetimi"> <i class="bi bi-dot">
+</i> Bireysel Portföy Yönetimi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ucretler-ve-masraflar"> <i class="bi bi-dot">
+</i> Ücretler ve Masraflar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/pay-halka-arzlar/"> <i class="bi bi-dot">
+</i> Pay Halka Arzları</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/gayrimenkul-sertifikasi-halk-arzlari/"> <i class="bi bi-dot">
+</i> Gayrimenkul Sertifikası Halk Arzları</a>
+</li>
+<div class="sub-side duzey3 fw-300 py-1 pl-3 pr-1">
+<li class="d3 fw-300">
+<a href="emlak-konut-gayrimenkul-yatirim-ortakligi-a-s-gayrimenkul-sertifikalari"> <i class="fa fa-play">
+</i> Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş. Gayrimenkul Sertifikaları</a>
+</li>
+</div>
+</div>
+<li class="on d1"> <a href="piyasalar/" > Piyasalar</a>
+</li>
+<div class="sub-side duzey2 fw-400 p-1 pr-1">
+<li class="on d2 fw-300">
+<a href="hisse-senetleri"> <i class="bi bi-dot">
+</i> Tüm Hisse Senedi Verileri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="en-cok-artanlar"> <i class="bi bi-dot">
+</i> Hisse Senedi Piyasası En Çok Artanlar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="en-cok-dusenler"> <i class="bi bi-dot">
+</i> Hisse Senedi Piyasası En Çok Azalanlar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="en-cok-islem-gorenler"> <i class="bi bi-dot">
+</i> En Çok İşlem Görenler</a>
+</li>
+</div>
+<li class="on d1"> <a href="arastirma/" > Araştırma</a>
+</li>
+<div class="sub-side duzey2 fw-400 p-1 pr-1">
+<li class="on d2 fw-300">
+<a href="arastirma/makroekonomik-raporlar/"> <i class="bi bi-dot">
+</i> Makroekonomik Raporlar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/kisa-vadeli-oneriler/"> <i class="bi bi-dot">
+</i> Kısa Vadeli Öneriler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/viop-bulten/"> <i class="bi bi-dot">
+</i> VİOP Bülteni</a>
+</li>
+<li class="on d2 fw-300">
+<a href="arastirma/teknik-bulten/"> <i class="bi bi-dot">
+</i> Teknik Bülten</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/pair-trade-ikili-islem/"> <i class="bi bi-dot">
+</i> Pair Trade (İkili İşlem)</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/tum-bultenler/"> <i class="bi bi-dot">
+</i> Tüm Bültenler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/gunluk-bulten/"> <i class="bi bi-dot">
+</i> Günlük Bülten</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/sirket-raporlari/"> <i class="bi bi-dot">
+</i> Şirket Raporları</a>
+</li>
+<li class="on d2 fw-300">
+<a href="/periyodik-raporlar/"> <i class="bi bi-dot">
+</i> Periyodik Raporlar</a>
+</li>
+</div>
+<li class="on d1"> <a href="uyelik-islemleri/" > Üyelik İşlemleri</a>
+</li>
+<div class="sub-side duzey2 fw-400 p-1 pr-1">
+<li class="on d2 fw-300">
+<a href="bize-ulasin"> <i class="bi bi-dot">
+</i> Bize Ulaşın</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sozlesmeler"> <i class="bi bi-dot">
+</i> Sözleşmeler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="<%= site %>/register"> <i class="bi bi-dot">
+</i> Yatırım Hesabı Aç</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bulten-aboneligi"> <i class="bi bi-dot">
+</i> Bülten Aboneliği</a>
+</li>
+</div>
+<li class="on d1"> <a href="hisse-analiz-ekrani/" > Hisse Analiz Ekranı</a>
+</li>
+<div class="sub-side duzey2 fw-400 p-1 pr-1">
+<li class="on d2 fw-300">
+<a href="hisse-analiz/petkm"> <i class="bi bi-dot">
+</i> Petkim Petrokimya Holding A.Ş. PETKM Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/toaso"> <i class="bi bi-dot">
+</i> Tofaş Türk Otomobil Fabrikası A.Ş. TOASO Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/akbnk"> <i class="bi bi-dot">
+</i> Akbank T.A.Ş. AKBNK Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/alark"> <i class="bi bi-dot">
+</i> Alarko Holding A.Ş. ALARK Hisse Analiz - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/astor"> <i class="bi bi-dot">
+</i> Astor Enerji A.Ş. ASTOR Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/asels"> <i class="bi bi-dot">
+</i> Aselsan Elektronik Sanayi Ve Ticaret A.Ş. ASELS Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/bimas"> <i class="bi bi-dot">
+</i> BİM Birleşik Mağazalar A.Ş. BIMAS Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/brsan"> <i class="bi bi-dot">
+</i> Borusan Birleşik Boru Fabrikaları Sanayi Ve Ticare BRSAN Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/ekgyo"> <i class="bi bi-dot">
+</i> Emlak Konut Gayrimenkul Yatırım Ortaklığı Anonim EKGYO Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/enkai"> <i class="bi bi-dot">
+</i> Enka İnşaat Ve Sanayi Anonim Şirketi ENKAI Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/eregl"> <i class="bi bi-dot">
+</i> Ereğli Demir ve Çelik Fabrikaları T.A.Ş. EREGL Hisse Senedi Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/froto"> <i class="bi bi-dot">
+</i> Ford Otomotiv Sanayi A.Ş. FROTO Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/garan"> <i class="bi bi-dot">
+</i> T. Garanti Bankası A.Ş. GARAN Hisse Analizi - Şirket Kartı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hisse-analiz/gubrf"> <i class="bi bi-dot">
+</i> Gübre Fabrikaları T.A.Ş. GUBRF Hisse Analizi - Şirket Kartı</a>
+</li>
+</div>
+<li class="on d1"> <a href="bulls-borsa-gundem/" > Bulls Borsa Gündem</a>
+</li>
+<div class="sub-side duzey2 fw-400 p-1 pr-1">
+<li class="on d2 fw-300">
+<a href="astor-enerjiye-rekabet-kurulundan-339-8-milyon-tl-ceza--997"> <i class="bi bi-dot">
+</i> Astor Enerji´ye Rekabet Kurulu’ndan 339,8 milyon TL ceza</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tcmb-baskani-karahan-faiz-politikasinda-onceligimiz-dezenflasyon-olacak-1"> <i class="bi bi-dot">
+</i> TCMB Başkanı Karahan: &quot;Faiz politikasında önceliğimiz dezenflasyon olacak&quot;</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alves-315-5-milyon-tllik-bir-sozlesme-imzaladigini-acikladi"> <i class="bi bi-dot">
+</i> ALVES, 315,5 milyon TL’lik Bir Sözleşme İmzaladığını Açıkladı!</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gemi-bakim-ve-onarim-sozlesmesi"> <i class="bi bi-dot">
+</i> Özata Denizcilik’ten 3 milyon dolarlık “Gemi Bakım ve Onarım Sözleşmesi”</a>
+</li>
+<li class="on d2 fw-300">
+<a href="natural-gaz-caykurun-dogalgaz-ihalesinde-en-iyi-teklifi-verdi"> <i class="bi bi-dot">
+</i> Natural Gaz, Çaykur´un Doğalgaz İhalesinde En İyi Teklifi Verdi!</a>
+</li>
+<li class="on d2 fw-300">
+<a href="innosa-teknoloji-izmir-buyuksehir-belediyesi-ile-52-9-milyon-tllik-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Innosa Teknoloji, İzmir Büyükşehir Belediyesi ile 52.9 Milyon TL’lik sözleşme imzaladı!</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mia-teknolojinin-bagli-ortagi-tripy-mobility-dynalion-technology-ile-distributorluk-anlasmasi-imzaladi"> <i class="bi bi-dot">
+</i> Mia Teknoloji´nin bağlı ortağı Tripy Mobility, Dynalion Technology ile distribütörlük anlaşması İmzaladı!</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aselsan-36-milyon-euroluk-sozlesme-imzaladi-aselsan-savunma-sanayii-baskanligi-ile-kara-araclarina"> <i class="bi bi-dot">
+</i> Aselsan, 36 milyon euro’luk sözleşme imzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pegasusun-yolcu-sayisi-subat-2025te-5-7-artti"> <i class="bi bi-dot">
+</i> Pegasus’un yolcu sayısı Şubat 2025’te %5,7 arttı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europower-enerji-uludag-edas-ihalesinde-1-oldu--992"> <i class="bi bi-dot">
+</i> Europower Enerji, Uludağ EDAŞ ihalesinde 1. oldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="suwen-hisse-basina-0-2656-tl-temettu-dagitacak"> <i class="bi bi-dot">
+</i> Suwen, hisse başına 0,2656 TL temettü dağıtacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="grainturk-holding-ve-lydia-holding-pastanza-gidayi-kuruyor"> <i class="bi bi-dot">
+</i> Graintürk Holding ve Lydia Holding, Pastanza Gıda´yı kuruyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bimin-sermaye-azaltim-basvurusu-spk-tarafindan-onaylandi"> <i class="bi bi-dot">
+</i> Bim’in sermaye azaltım başvurusu SPK tarafından onaylandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alarko-holdingten-temettu-ve-hisse-geri-alim-karari"> <i class="bi bi-dot">
+</i> Alarko Holding’ten temettü ve hisse geri alım kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="global-yatirim-holdingten-temettu-aciklamasi"> <i class="bi bi-dot">
+</i> Global Yatırım Holding’ten temettü açıklaması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozyasar-tel-ve-bagli-ortakligi-cokyasar-telden-yeni-siparisler"> <i class="bi bi-dot">
+</i> Özyaşar Tel ve bağlı ortaklığı Çokyaşar Tel’den yeni siparişler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tupras-ilk-kez-brezilyadan-ham-petrol-aliyor"> <i class="bi bi-dot">
+</i> Tüpraş, ilk kez Brezilya´dan ham petrol alıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ford-otosandan-buyuk-hedefler-turkiye-pazari-2025te-1-milyonun-uzerinde-olacak--1005"> <i class="bi bi-dot">
+</i> Ford Otosan’dan büyük hedefler: Türkiye pazarı 2025´te 1 milyonun üzerinde olacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="grainturk-holding-ozova-tarimin-halka-arzi-icin-spkya-basvurdu--1006"> <i class="bi bi-dot">
+</i> Graintürk Holding, Özova Tarım’ın halka arzı için SPK’ya başvurdu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1000-yatirim-holding-gosharing-satisi-icin-gorusmelere-basladi--1007"> <i class="bi bi-dot">
+</i> 1000 Yatırım Holding, GoSharing satışı için görüşmelere başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dct-trading-savunma-sanayinde-faaliyet-icin-ilk-adimi-atti--1008"> <i class="bi bi-dot">
+</i> DCT Trading, savunma sanayinde faaliyet için ilk adımı attı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="durukan-sekerleme-almanya-merkezli-firma-ile-1-4-milyon-eurluk-siparis-sozlesmesi-imzaladi--1009"> <i class="bi bi-dot">
+</i> Durukan Şekerleme, Almanya merkezli firma ile 1,4 Milyon EUR’luk sipariş sözleşmesi imzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozata-denizcilikten-gemi-bakim-anlasmasi--1015"> <i class="bi bi-dot">
+</i> Özata Denizcilik’ten gemi bakım anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hitit-bilgisayar-italyan-skyalps-ile-anlasti--1016"> <i class="bi bi-dot">
+</i> Hitit Bilgisayar, İtalyan SkyAlps ile anlaştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="eczacibasi-gensenta-yenibosnadaki-fabrikasini-satiyor--1017"> <i class="bi bi-dot">
+</i> Eczacıbaşı Gensenta, Yenibosna’daki fabrikasını satıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="agesa-hayat-ve-emeklilikten-guclu-prim-artisi--1018"> <i class="bi bi-dot">
+</i> Agesa Hayat ve Emeklilik’ten güçlü prim artışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alarko-surdurulebilirlik-ve-dijital-donusume-odaklaniyor--1021"> <i class="bi bi-dot">
+</i> Alarko, sürdürülebilirlik ve dijital dönüşüme odaklanıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="is-bankasindan-5-milyar-tllik-pay-alim-yetkisi--1022"> <i class="bi bi-dot">
+</i> İş Bankası’ndan 5 Milyar TL’lik pay alım yetkisi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cem-zeytin-yeni-pay-geri-alim-programi-karari-aldi"> <i class="bi bi-dot">
+</i> Cem Zeytin, yeni pay geri alım programı kararı aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dct-trading-savunma-sanayi-alaninda-buyuyor--1025"> <i class="bi bi-dot">
+</i> DCT Trading savunma sanayi alanında büyüyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mavi-giyim-4c24-finansal-sonuclarini-acikladi--1028"> <i class="bi bi-dot">
+</i> Mavi Giyim 4Ç24 finansal sonuçlarını açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cimsa-eskisehirde-14-2-mwp-ges-tesisini-devreye-aldi--1029"> <i class="bi bi-dot">
+</i> Çimsa, Eskişehir’de 14,2 MWp GES Tesisi´ni devreye aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="girisim-elektrik-teias-ihalesinde-1-oldu"> <i class="bi bi-dot">
+</i> Girişim Elektrik, TEİAŞ ihalesinde 1. oldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dct-trading-turkiyede-uretim-karari-aldi-ve-167-2-milyon-tllik-misir-satisi-gerceklestirdi--1031"> <i class="bi bi-dot">
+</i> DCT Trading, Türkiye’de üretim kararı aldı ve 167,2 Milyon TL’lik mısır satışı gerçekleştirdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="borcelikten-530-milyon-dolarlik-tesis-yatirimi--1032"> <i class="bi bi-dot">
+</i> Borçelik’ten 530 Milyon dolarlık tesis yatırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="piyasalardan-guncel-gelismeler"> <i class="bi bi-dot">
+</i> Piyasalardan Güncel Gelişmeler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bulls-gsyodan-200-milyon-tllik-hisse-geri-alim-programi"> <i class="bi bi-dot">
+</i> Bulls GSYO’dan 200 Milyon TL’lik hisse geri alım programı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="piyasadan-one-cikan-sirket-haberleri"> <i class="bi bi-dot">
+</i> Piyasadan öne çıkan şirket haberleri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mia-teknolojiden-135-6-milyon-tllik-yeni-sozlesme"> <i class="bi bi-dot">
+</i> Mia Teknoloji´den 135,6 Milyon TL’lik yeni sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkiye-sigortadan-100-bedelsiz-sermaye-artirimi-karari"> <i class="bi bi-dot">
+</i> Türkiye Sigorta’dan %100 bedelsiz sermaye artırımı kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ic-enterra-ve-goldwindden-ruzgar-enerjisi-icin-stratejik-is-birligi"> <i class="bi bi-dot">
+</i> Ic Enterra ve Goldwind´den rüzgâr enerjisi için stratejik iş birliği</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koza-anadolu-metal-4c24-finansal-sonuclarini-acikladi"> <i class="bi bi-dot">
+</i> Koza Anadolu Metal, 4Ç24 finansal sonuçlarını açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-54-6-milyon-dolarlik-siparis-aldi"> <i class="bi bi-dot">
+</i> Kontrolmatik, 54.6 milyon dolarlık sipariş aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="vestel-elektronik-ve-sharp-is-birligini-genisletiyor"> <i class="bi bi-dot">
+</i> Vestel Elektronik ve Sharp iş birliğini genişletiyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="halk-bankasi-yeni-pay-geri-alim-programi-baslatiyor"> <i class="bi bi-dot">
+</i> Halk Bankası, yeni pay geri alım programı başlatıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="adel-kalemcilik-temettu-dagitim-karari-aldi"> <i class="bi bi-dot">
+</i> Adel Kalemcilik, temettü dağıtım kararı aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kocaer-celik-temettu-dagitim-karari-aldi"> <i class="bi bi-dot">
+</i> Kocaer Çelik, temettü dağıtım kararı aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-botasin-2-97-milyar-tllik-ihalesini-kazandi"> <i class="bi bi-dot">
+</i> Kontrolmatik, BOTAŞ’ın 2,97 Milyar TL’lik İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alfa-solar-enerjiden-400-milyon-dolarlik-yatirim-hamlesi"> <i class="bi bi-dot">
+</i> Alfa Solar Enerji’den 400 milyon dolarlık yatırım hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ic-enterra-ve-goldwindden-ruzgar-enerjisinde-stratejik-is-birligi"> <i class="bi bi-dot">
+</i> Ic Enterra ve Goldwind’den rüzgar enerjisinde stratejik iş birliği</a>
+</li>
+<li class="on d2 fw-300">
+<a href="piyasalarda-one-cikan-sirketler--1069"> <i class="bi bi-dot">
+</i> Piyasalarda öne çıkan şirketler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dunya-bankasindan-turkiye-kalkinma-ve-yatirim-bankasina-500-milyon-dolarlik-kredi--1076"> <i class="bi bi-dot">
+</i> Dünya Bankası’ndan Türkiye Kalkınma ve Yatırım Bankası’na 500 milyon dolarlık kredi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gubre-fabrikalari-4c24-sonuclarini-acikladi-net-kar-100-artti--1077"> <i class="bi bi-dot">
+</i> Gübre Fabrikaları 4Ç24 sonuçlarını açıkladı: Net kâr %100 arttı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="akfen-insaat-romanyadaki-hastane-ihalesine-katilmama-karari-aldi"> <i class="bi bi-dot">
+</i> Akfen İnşaat, Romanya´daki hastane ihalesine katılmama kararı aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="halk-gyo-istanbul-finans-merkezindeki-ofislerini-halkbanka-satti"> <i class="bi bi-dot">
+</i> Halk GYO, İstanbul Finans Merkezi’ndeki ofislerini Halkbank’a sattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="eczacibasi-yatirim-ve-ilactan-temettu-dagitimi--1080"> <i class="bi bi-dot">
+</i> Eczacıbaşı Yatırım ve İlaç´tan temettü dağıtımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="penguen-gidanin-gunes-enerjisi-santrali-faaliyete-gecti--1081"> <i class="bi bi-dot">
+</i> Penguen Gıda’nın Güneş Enerjisi Santrali faaliyete geçti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="havelsan-sili-deniz-kuvvetleri-ile-advent-savas-yonetim-sistemi-icin-anlasti--1082"> <i class="bi bi-dot">
+</i> HAVELSAN, Şili Deniz Kuvvetleri ile ADVENT Savaş Yönetim Sistemi için anlaştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kirac-galvaniz-romanyadaki-gunes-enerjisi-santrali-icin-satis-anlasmasi-yapti--1083"> <i class="bi bi-dot">
+</i> Kıraç Galvaniz, Romanya´daki Güneş Enerjisi Santrali için satış anlaşması yaptı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sektor-ve-sirketlerden-haberler--1089"> <i class="bi bi-dot">
+</i> Sektör ve şirketlerden haberler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="otomotiv-ve-hafif-ticari-arac-ba-hta-pazari-yukseliste"> <i class="bi bi-dot">
+</i> Otomotiv ve Hafif Ticari Araç (BA&amp;HTA) pazarı yükselişte</a>
+</li>
+<li class="on d2 fw-300">
+<a href="abdden-yeni-gumruk-tarifeleri-turkiye-icin-riskler-kadar-firsatlar-da-var--1098"> <i class="bi bi-dot">
+</i> ABD’den yeni gümrük tarifeleri: Türkiye için riskler kadar fırsatlar da var</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koza-altin-maden-rezervini-3-5-artirdi--1099"> <i class="bi bi-dot">
+</i> Koza Altın, maden rezervini %3,5 artırdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sektor-ve-sirket-haberlerinde-bugun-one-cikanlar--1100"> <i class="bi bi-dot">
+</i> Sektör ve şirket haberlerinde bugün öne çıkanlar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="piyasalarda-one-cikan-sektor-ve-sirket-haberleri--1106"> <i class="bi bi-dot">
+</i> Piyasalarda öne çıkan sektör ve şirket haberleri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bugunun-one-cikan-sektor-ve-sirket-haberleri--1110"> <i class="bi bi-dot">
+</i> Bugünün öne çıkan sektör ve şirket haberleri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gunun-one-cikan-sirket-haberleri--1117"> <i class="bi bi-dot">
+</i> Günün öne çıkan şirket haberleri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-hava-yollarindan-yolcu-sayisinda-kademeli-artis--1118"> <i class="bi bi-dot">
+</i> Türk Hava Yolları´ndan yolcu sayısında kademeli artış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-iskiden-2-5-milyar-tllik-dev-ihale--1140"> <i class="bi bi-dot">
+</i> Kontrolmatik | İSKİ’den 2,5 Milyar TL’lik dev ihale</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koc-holding-eyastan-2-87-milyar-tl-nakit-avans-kar-payi"> <i class="bi bi-dot">
+</i> Koç Holding|EYAŞ’tan 2,87 Milyar TL nakit avans kâr payı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="smart-gunesten-21-6-milyon-dolarlik-anahtar-teslim-ges-projesi"> <i class="bi bi-dot">
+</i> Smart Güneş´ten, 21,6 Milyon Dolar’lık anahtar teslim GES Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tav-havalimani-antalya-havalimaninda-kapasite-65-milyona-yukseldi"> <i class="bi bi-dot">
+</i> TAV Havalimanı, Antalya Havalimanı’nda kapasite 65 milyona yükseldi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mart-ayinda-prim-uretimi-19-dustu"> <i class="bi bi-dot">
+</i> Mart ayında prim üretimi %19 düştü</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enerjisa-ihalelerinde-en-avantajli-teklif"> <i class="bi bi-dot">
+</i> Enerjisa ihalelerinde en avantajlı teklif, Alves Kablo´dan</a>
+</li>
+<li class="on d2 fw-300">
+<a href="altinay-savunma-5-4-milyon-euroluk-yeni-anlasmaya-imza-atti"> <i class="bi bi-dot">
+</i> Altınay Savunma, 5,4 Milyon Euro’luk yeni anlaşmaya imza attı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="petkim-icin-olumlu-sinyal-etilen-nafta-makasi-2025in-zirvesinde--1147"> <i class="bi bi-dot">
+</i> Petkim için olumlu sinyal: Etilen-Nafta makası 2025’in zirvesinde</a>
+</li>
+<li class="on d2 fw-300">
+<a href="vbts-kapsaminda-tedbir-suresinin-sona-ermesine-7-gunden-az-kalan-hisseler"> <i class="bi bi-dot">
+</i> VBTS kapsamında tedbir süresinin sona ermesine 7 günden az kalan hisseler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1150--1150"> <i class="bi bi-dot">
+</i> Haftalık Temettü Takvimi (14–20 Nisan 2025)</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bulls-gsyo-basvurusu-onaylandi"> <i class="bi bi-dot">
+</i> Bulls GSYO başvurusu onaylandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pegasus-hava-yollari-1c25-yolcu-verilerini-acikladi"> <i class="bi bi-dot">
+</i> Pegasus Hava Yolları, 1Ç25 yolcu verilerini açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="escar-filoda-beylerbeyi-portfoyden-pay-satisi-icin-basvuru"> <i class="bi bi-dot">
+</i> Escar Filo’da Beylerbeyi Portföy´den pay satışı için başvuru</a>
+</li>
+<li class="on d2 fw-300">
+<a href="coca-cola-icecekten-4-milyon-adet-pay-icin-mkk-basvurusu"> <i class="bi bi-dot">
+</i> Coca-Cola İçecek’ten 4 milyon adet pay için MKK başvurusu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tat-gidadan-ges-yatirimi-icin-29-yillik-arazi-tahsisi"> <i class="bi bi-dot">
+</i> Tat Gıda’dan GES Yatırımı için 29 yıllık arazi tahsisi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-ilaca-tetadif-asisi-icin-saglik-bakanligi-onayi"> <i class="bi bi-dot">
+</i> Turk İlaç’a Tetadif Aşısı için Sağlık Bakanlığı onayı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="smart-gunesten-33-3-milyon-dolarlik-gunes-paneli-satisi"> <i class="bi bi-dot">
+</i> Smart Güneş’ten 33,3 milyon dolarlık güneş paneli satışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="efor-caydan-281-milyon-tllik-komur-satisi-anlasmasi"> <i class="bi bi-dot">
+</i> Efor Çay’dan 281 Milyon TL’lik kömür satışı anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="limak-dogu-cimentodan-temettu-karari"> <i class="bi bi-dot">
+</i> Limak Doğu Çimento’dan temettü kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kirac-galvaniz-karayollari-ihalesini-kazandi--1208"> <i class="bi bi-dot">
+</i> Kıraç Galvaniz, karayolları ihalesini kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="oba-makarnadan-kurumsal-yatirimciya-blok-satis"> <i class="bi bi-dot">
+</i> Oba Makarna’dan kurumsal yatırımcıya blok satış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="makim-makina-savunma-sanayi-icin-yeni-siparis-aldi"> <i class="bi bi-dot">
+</i> Makim Makina, savunma sanayi için yeni sipariş aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="oncosem-79-milyon-tllik-kemoterapi-hizmet-sozlesmesi-imzaladi--1212"> <i class="bi bi-dot">
+</i> Oncosem, 79 Milyon TL’lik &quot;Kemoterapi Hizmet Sözleşmesi&quot; imzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="akbanktan-uluslararasi-piyasalardan-surdurulebilirlik-odakli-sendikasyon-kredisi"> <i class="bi bi-dot">
+</i> Akbank’tan uluslararası piyasalardan sürdürülebilirlik odaklı sendikasyon kredisi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozata-denizcilikten-7-5-milyon-usdlik-gemi-bakim-onarim-sozlesmesi"> <i class="bi bi-dot">
+</i> Özata Denizcilik´ten 7,5 Milyon USD’lik Gemi Bakım-Onarım Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="smartiksten-ibb-ile-23-3-milyon-tllik-crm-gelistirme-sozlesmesi--1218"> <i class="bi bi-dot">
+</i> Smartiks´ten &lt;SMART TI&gt;, İBB ile 23,3 Milyon TL’lik CRM Geliştirme Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mega-polietilen-200-bedelli-sermaye-artirimi-karari-aldi"> <i class="bi bi-dot">
+</i> Mega Polietilen &lt;MEGAP TI&gt;, %200 bedelli sermaye artırımı kararı aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="link-bilgisayarin-yapay-zeka-destekli-yeni-erp-projesine-onay-alindi"> <i class="bi bi-dot">
+</i> Link Bilgisayar´ın, yapay zekâ destekli yeni ERP projesine onay alındı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hiti-bilgisayar-iata-timatic-web-platformunu-gelistirdi"> <i class="bi bi-dot">
+</i> Hiti Bilgisayar, IATA Timatic web platformunu geliştirdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mia-teknolojiden-saglikta-yapay-zeka-adimi--1222"> <i class="bi bi-dot">
+</i> MİA Teknoloji´den sağlıkta yapay zekâ adımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="grainturk-holding-2025-hedeflerini-yukseltti"> <i class="bi bi-dot">
+</i> Graintürk Holding, 2025 hedeflerini yükseltti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="baticimden-yapisal-donusum-tesis-kiraya-veriliyor-yeni-projeler-yolda"> <i class="bi bi-dot">
+</i> Batıçim’den yapısal dönüşüm: Tesis kiraya veriliyor, yeni projeler yolda</a>
+</li>
+<li class="on d2 fw-300">
+<a href="global-portsta-trafik-artisi-suruyor-martta-33luk-buyume"> <i class="bi bi-dot">
+</i> Global Ports’ta trafik artışı sürüyor: Mart’ta %33’lük büyüme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozyasar-telden-2-9-milyon-euroluk-yeni-siparis--1230"> <i class="bi bi-dot">
+</i> Özyaşar Tel’den 2.9 Milyon Euro´luk yeni sipariş</a>
+</li>
+<li class="on d2 fw-300">
+<a href="fonetten-35-milyon-tllik-saglik-bilisim-sozlesmesi"> <i class="bi bi-dot">
+</i> Fonet’ten 35 Milyon TL’lik sağlık bilişim sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-libyada-vinc-tasimaciligi-icin-anlasti"> <i class="bi bi-dot">
+</i> Hareket Proje, Libya’da vinç taşımacılığı için anlaştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1233--1233"> <i class="bi bi-dot">
+</i> GEN İlaç, REVCOVI®’nin Türkiye dağıtım hakkını aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-isuzu-temettu-dagitacak-hisse-basina-1-69-tl"> <i class="bi bi-dot">
+</i> Anadolu Isuzu temettü dağıtacak: Hisse başına 1,69 TL</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tofastan-dev-satin-alma-stellantis-turkiye-operasyonlari-tofas-bunyesinde"> <i class="bi bi-dot">
+</i> Tofaş’tan dev satın alma: Stellantis Türkiye operasyonları Tofaş bünyesinde</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alves-kablodan-enerjisa-ihalesine-rekabetci-teklif"> <i class="bi bi-dot">
+</i> Alves Kablo’dan Enerjisa ihalesine rekabetçi teklif</a>
+</li>
+<li class="on d2 fw-300">
+<a href="beyaz-filo-chery-ile-otomotivde-vites-yukseltiyor"> <i class="bi bi-dot">
+</i> Beyaz Filo, Chery ile otomotivde vites yükseltiyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konuttan-guclu-baslangic-3-ayda-31-5-milyar-tllik-satis--1241"> <i class="bi bi-dot">
+</i> Emlak Konut’tan güçlü başlangıç: 3 ayda 31,5 Milyar TL’lik satış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ayes-celikten-yeni-fabrika-yatirimi--1242"> <i class="bi bi-dot">
+</i> Ayes Çelik’ten yeni fabrika yatırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cw-enerjiden-iki-yeni-bayilik-sozlesmesi"> <i class="bi bi-dot">
+</i> CW Enerji’den iki yeni bayilik sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="e-dataya-3-4-milyon-dolarlik-siparis"> <i class="bi bi-dot">
+</i> E-Data’ya 3,4 Milyon Dolarlık sipariş</a>
+</li>
+<li class="on d2 fw-300">
+<a href="logo-yazilimdan-sirket-birlesmesi-hamlesi"> <i class="bi bi-dot">
+</i> Logo Yazılım’dan şirket birleşmesi hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href=""> <i class="bi bi-dot">
+</i> Bakan Bayraktar: “Dışa bağımlılığı azaltacak yeni enerji arama programı yolda”</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkiye-sigortanin-1c25-sonuclari-beklentileri-asti"> <i class="bi bi-dot">
+</i> Türkiye Sigorta´nın 1Ç25 sonuçları beklentileri aştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sekerbanktan-temettu-dagitim-karari--1250"> <i class="bi bi-dot">
+</i> Şekerbank´tan temettü dağıtım kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mega-polietilen-2-milyon-euro-tutarinda-siparis-aldi"> <i class="bi bi-dot">
+</i> Mega Polietilen, 2 Milyon Euro tutarında sipariş aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-teknoloji-pomegadan-2-9-milyon-dolarlik-siparis-aldi"> <i class="bi bi-dot">
+</i> Kontrolmatik Teknoloji, Pomega’dan 2,9 Milyon Dolarlık sipariş aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kront-teknolojiden-turk-telekom-ile-yazilim-gelistirme-sozlesmesi"> <i class="bi bi-dot">
+</i> Kront Teknoloji´den, Türk Telekom ile yazılım geliştirme sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mia-teknolojiye-1-yillik-kamu-ihalelerinden-men-karari"> <i class="bi bi-dot">
+</i> Mia Teknoloji´ye 1 Yıllık kamu ihalelerinden men kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alarko-carrier-hisseleri-icin-satis-teklifi"> <i class="bi bi-dot">
+</i> Alarko Carrier hisseleri için satış teklifi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-1-milyar-tllik-geri-alim-programi-baslatti--1262"> <i class="bi bi-dot">
+</i> Emlak Konut, 1 Milyar TL’lik geri alım programı başlattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gur-sel-turizm-2025-icin-buyume-beklentilerini-acikladi"> <i class="bi bi-dot">
+</i> Gür-Sel Turizm, 2025 için büyüme beklentilerini açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mackolik-yurt-disi-reklam-anlasmasiyla-gelir-artisi-hedefliyor--1264"> <i class="bi bi-dot">
+</i> Mackolik, yurt dışı reklam anlaşmasıyla gelir artışı hedefliyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="soktas-tekstilin-ortagi-fabula-tekstil-uretimini-durduruyor"> <i class="bi bi-dot">
+</i> Söktaş Tekstil´in ortağı, Fabula Tekstil üretimini durduruyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tav-havalimanlari-1c25-sonuclari-aciklandi-2025-hedefleri-korundu"> <i class="bi bi-dot">
+</i> Tav Havalimanları´nın 1Ç25 sonuçları açıklandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-traktorun-1c25-kari-beklentilerin-altinda-kaldi--1271"> <i class="bi bi-dot">
+</i> Türk Traktör´ün 1Ç25 karı beklentilerin altında kaldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="suudi-arabistanda-2-5-milyon-dolarlik-tasima-sozlesmesi"> <i class="bi bi-dot">
+</i> Suudi Arabistan’da 2,5 Milyon Dolarlık taşıma sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alves-kablodan-15-6-milyon-dolarlik-satis-sozlesmesi"> <i class="bi bi-dot">
+</i> Alves Kablo´dan 15,6 Milyon Dolarlık satış sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ekos-teknoloji-2-45-milyon-dolarlik-ihalede-birinci-oldu"> <i class="bi bi-dot">
+</i> Ekos Teknoloji, 2,45 Milyon Dolarlık ihalede birinci oldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="izmir-demir-celik-liman-isletmeleri-halka-arz-ediliyor"> <i class="bi bi-dot">
+</i> İzmir Demir Çelik Liman İşletmeleri halka arz ediliyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="horoz-lojistik-ges-projesi-icin-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Horoz Lojistik, GES Projesi için sözleşme imzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hun-yenilenebilir-enerji-biyokutle-tesisi-hasari-icin-1-75-milyon-usd-sigorta-odemesi-aldi"> <i class="bi bi-dot">
+</i> Hun Yenilenebilir Enerji, Biyokütle Tesisi hasarı için 1,75 Milyon USD sigorta ödemesi aldı.</a>
+</li>
+<li class="on d2 fw-300">
+<a href="otokar-romanya-savunma-projesi-icin-ortaklik-sozlesmesi-imzaladi--1279"> <i class="bi bi-dot">
+</i> Otokar, Romanya Savunma Projesi için ortaklık sözleşmesi imzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="link-bilgisayar-yazilim-sureclerinde-uluslararasi-standart-belgesi-aldi"> <i class="bi bi-dot">
+</i> Link Bilgisayar, yazılım süreçlerinde uluslararası standart belgesi aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gulermaktan-sirbistan-demiryolu-ihalesinde-348-9-milyon-euroluk-sozlesme"> <i class="bi bi-dot">
+</i> Gülermak´tan, Sırbistan Demiryolu İhalesinde 348,9 Milyon Euro´luk Sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yapi-kredi-bankasindan-1c25te-guclu-net-kar-performansi"> <i class="bi bi-dot">
+</i> Yapı Kredi Bankası´ndan, 1Ç25´te güçlü net kar performansı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="akbanktan-1c25te-beklentilerin-uzerinde-net-kar"> <i class="bi bi-dot">
+</i> Akbank´tan, 1Ç25´te beklentilerin üzerinde net kar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="arcelik-1c25te-beklentilerin-uzerinde-zarar-2025-hedefleri-korundu--1289"> <i class="bi bi-dot">
+</i> Arçelik´ten 1Ç25’te beklentilerin üzerinde zarar. Ancak 2025 hedefleri korundu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-hava-yollari-1c25te-beklentilerin-altinda-zarar-acikladi"> <i class="bi bi-dot">
+</i> Türk Hava Yolları, 1Ç25’te beklentilerin altında zarar açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tofas-1c25-sonuclarini-acikladi"> <i class="bi bi-dot">
+</i> Tofaş, 1Ç25 sonuçlarını açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="garanti-bbvadan-1c25te-guclu-net-kar-performansi"> <i class="bi bi-dot">
+</i> Garanti BBVA´dan, 1Ç25’te güçlü net kar performansı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="otokarin-1c25te-net-zarari-suruyor-favokde-negatif-ancak-iyilesme-var"> <i class="bi bi-dot">
+</i> Otokar´ın, 1Ç25’te net zararı sürüyor, FAVÖK´de negatif ancak iyileşme var</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kuzey-borudan-dsi-ihalesinde-84-9-milyon-tllik-sozlesme-hafif-olumlu"> <i class="bi bi-dot">
+</i> Kuzey Boru´dan, DSİ ihalesinde 84,9 Milyon TL’lik sözleşme (Hafif Olumlu)</a>
+</li>
+<li class="on d2 fw-300">
+<a href="forte-bilgi-teknolojileri-1-43-milyon-dolarlik-guvenlik-sistemi-ihalesi-kazanildi"> <i class="bi bi-dot">
+</i> Forte Bilgi Teknolojileri, 1,43 Milyon Dolarlık güvenlik sistemi ihalesi kazanıldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="link-bilgisayar-agra-fintech-ile-dijital-denetim-is-birligi-yapti"> <i class="bi bi-dot">
+</i> Link Bilgisayar, Agra Fintech ile dijital denetim iş birliği yaptı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1303--1303"> <i class="bi bi-dot">
+</i> Bakan Şimşek’ten Ekonomi ve Dış Politika Mesajları: “Türkiye, Savunma Sanayi İhracatında İlk 10’a Girecek”</a>
+</li>
+<li class="on d2 fw-300">
+<a href="eregli-demir-celik-1c25te-net-kar-ve-operasyonel-performans-beklentilerini-asti"> <i class="bi bi-dot">
+</i> Ereğli Demir Çelik, 1Ç25´te net kâr ve operasyonel performans beklentilerini aştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ford-otosan-1c25te-beklentilere-paralel-kar-acikladi"> <i class="bi bi-dot">
+</i> Ford Otosan, 1Ç25’te beklentilere paralel kâr açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tupras-1c25te-net-kar-beklentilerin-altinda-favok-performansi-ile-sinirli-olumlu-sinyal"> <i class="bi bi-dot">
+</i> Tüpraş , 1Ç25’te net kâr beklentilerin altında, FAVÖK performansı ile sınırlı olumlu sinyal</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aselsan-1c25te-kar-ve-operasyonel-sonuclar-beklentilerin-hafif-altinda-siparis-buyuklugu-rekor-seviyede"> <i class="bi bi-dot">
+</i> Aselsan, 1Ç25’te kâr ve operasyonel sonuçlar beklentilerin hafif altında, sipariş büyüklüğü rekor seviyede</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-projeden-ruzgar-enerji-projesi-icin-1-9-milyon-dolar-degerinde-yeni-sozlesme"> <i class="bi bi-dot">
+</i> Hareket Proje´den, Rüzgâr Enerji Projesi için 1,9 Milyon Dolar değerinde yeni sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+
+<a href="oba-makarna-pay-geri-alim-programi-baslatti"> <i class="bi bi-dot">
+
+</i> Oba Makarna, pay geri alım programı başlattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alves-kablo-bakir-haddahanesiyle-uretim-hamlesini-baslatti"> <i class="bi bi-dot">
+</i> Alves Kablo, bakır haddahanesiyle üretim hamlesini başlattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koc-holding-1c25te-beklentinin-uzerinde-zarar-acikladi"> <i class="bi bi-dot">
+</i> Koç Holding, 1Ç25´te beklentinin üzerinde zarar açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tofas-stellantis-turkiye-hisselerini-resmen-devraldi"> <i class="bi bi-dot">
+</i> Tofaş, Stellantis Türkiye hisselerini resmen devraldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-besiktas-jimnastik-kulubu-ile-isbirligine-gidiyor"> <i class="bi bi-dot">
+</i> Emlak Konut, Beşiktaş Jimnastik Kulübü ile işbirliğine gidiyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alves-kablodan-uretim-hamlesi-ve-savunma-sanayi-anlasmasi"> <i class="bi bi-dot">
+</i> Alves Kablo’dan üretim hamlesi ve savunma sanayi anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="e-data-ikom-bilisimden-3-78-milyon-dolarlik-siparis-aldi"> <i class="bi bi-dot">
+</i> E-Data, İkom Bilişim´den 3,78 Milyon Dolarlık sipariş aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cagdas-camdan-smart-gunese-50-5-milyon-tllik-siparis"> <i class="bi bi-dot">
+</i> Çağdaş Cam’dan Smart Güneş’e 50,5 Milyon TL’lik sipariş</a>
+</li>
+<li class="on d2 fw-300">
+<a href="birlesim-muhendislik-borsa-istanbul-binasi-icin-buyuk-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Birleşim Mühendislik, Borsa İstanbul binası için büyük sözleşme imzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozgorkey-holding-coca-cola-icecek-hisselerinde-satis-gerceklestirdi"> <i class="bi bi-dot">
+</i> Özgörkey Holding, Coca-Cola İçecek hisselerinde satış gerçekleştirdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="goknur-gida-temettu-dagitacak"> <i class="bi bi-dot">
+</i> Göknur Gıda, temettü dağıtacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="thy-nisan-2025te-yolcu-sayisini-artirdi-doluluk-83-2ye-yukseldi"> <i class="bi bi-dot">
+</i> THY Nisan 2025´te Yolcu Sayısını Artırdı, Doluluk %83,2’ye Yükseldi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enerjisa-1c25te-beklentilerin-uzerinde-zarar-acikladi--1339"> <i class="bi bi-dot">
+</i> Enerjisa 1Ç25’te Beklentilerin Üzerinde Zarar Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="galatawind-1c25te-kar-ve-satislarda-dusus-yasadi"> <i class="bi bi-dot">
+</i> Galatawind 1Ç25’te Kar ve Satışlarda Düşüş Yaşadı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ekos-teknoloji-teias-projesi-icin-1-6-milyon-eurluk-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Ekos Teknoloji TEİAŞ Projesi İçin 1,6 Milyon EUR´luk Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="etiler-gidadan-adiyaman-tesisi-icin-70-milyon-tl-yatirim"> <i class="bi bi-dot">
+</i> Etiler Gıda´dan Adıyaman Tesisi İçin 70 Milyon TL Yatırım</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-yurt-disinda-ruzgar-turbini-kurulumu-icin-gorusmelere-basladi"> <i class="bi bi-dot">
+</i> Hareket Proje Yurt Dışında Rüzgar Türbini Kurulumu İçin Görüşmelere Başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kalekim-diyarbakir-tesisini-yeniden-devreye-aliyor"> <i class="bi bi-dot">
+</i> Kalekim, Diyarbakır Tesisini Yeniden Devreye Alıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="datagate-vodafone-ile-dagitim-sozlesmesi-devri-icin-gorusmelere-basladi"> <i class="bi bi-dot">
+</i> Datagate, Vodafone ile Dağıtım Sözleşmesi Devri İçin Görüşmelere Başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="coca-cola-icecekin-1c25-net-kari-beklentilerin-altinda-kaldi"> <i class="bi bi-dot">
+</i> Coca-Cola İçecek´in 1Ç25 Net Kârı Beklentilerin Altında Kaldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="grainturk-holding-1c25te-guclu-net-kar-artisiyla-one-cikti"> <i class="bi bi-dot">
+</i> Graintürk Holding 1Ç25’te Güçlü Net Kâr Artışıyla Öne Çıktı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="migros-1c25te-net-karda-gerileme-yasasa-da-satis-buyumesini-surdurdu"> <i class="bi bi-dot">
+</i> Migros, 1Ç25’te Net Kârda Gerileme Yaşasa da Satış Büyümesini Sürdürdü</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-telekom-1c25te-guclu-kar-ve-operasyonel-performans-sergiledi"> <i class="bi bi-dot">
+</i> Türk Telekom, 1Ç25’te Güçlü Kâr ve Operasyonel Performans Sergiledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-efes-1c25te-net-karda-artis-faaliyet-karliliginda-zayiflik-gosterdi"> <i class="bi bi-dot">
+</i> Anadolu Efes, 1Ç25’te Net Kârda Artış, Faaliyet Kârlılığında Zayıflık Gösterdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cagdas-cam-yurt-disi-siparisiyle-ihracatini-guclendiriyor"> <i class="bi bi-dot">
+</i> Çağdaş Cam, Yurt Dışı Siparişiyle İhracatını Güçlendiriyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkcellin-superonlinei-botas-ihalesini-kazandi-1"> <i class="bi bi-dot">
+</i> Turkcell’in Superonline’ı, BOTAŞ İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ulker-beklentileri-asan-kar-aciklamasina-ragmen-satis-hacminde-gerileme-yasadi--1372"> <i class="bi bi-dot">
+</i> Ülker´in, Beklentileri Aşan Kâr Açıklamasına Rağmen Satış Hacminde Gerileme Yaşadı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkcell-operasyonel-performansla-one-cikti-net-kar-finansal-giderlerle-geriledi--1373"> <i class="bi bi-dot">
+</i> Turkcell, Operasyonel Performansla Öne Çıktı, Net Kâr Finansal Giderlerle Geriledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enka-insaat-guclu-operasyonel-buyumeye-ragmen-karda-dusus-yasadi"> <i class="bi bi-dot">
+</i> Enka İnşaat, Güçlü Operasyonel Büyümeye Rağmen Kârda Düşüş Yaşadı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gubre-fabrikalari-irandaki-ortakligindan-kar-payi-alacak"> <i class="bi bi-dot">
+</i> Gübre Fabrikaları, İran’daki Ortaklığından Kâr Payı Alacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koc-metal-haddehane-yatirimi-icin-cinli-sirketle-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Koç Metal, Haddehane Yatırımı için Çinli Şirketle Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-lojistikten-100-milyon-dolarlik-vinc-ve-barge-yatirimi"> <i class="bi bi-dot">
+</i> Hareket Lojistik’ten 100 Milyon Dolarlık Vinç ve Barge Yatırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="smart-gunes-300-mwlik-panel-uretim-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> Smart Güneş, 300 MW’lık Panel Üretim Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="celebi-hava-hindistan-operasyonlarina-yonelik-riskin-sinirli-oldugunu-belirtti"> <i class="bi bi-dot">
+</i> Çelebi Hava, Hindistan Operasyonlarına Yönelik Riskin Sınırlı Olduğunu Belirtti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3--1385"> <i class="bi bi-dot">
+</i> Doğuş Otomotiv (DOAS TI) – 1Ç25 Finansal Sonuçlar: Net Kârda Sert Düşüş</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3--1388"> <i class="bi bi-dot">
+</i> DMR Unlu Mamulleri (DMRGD TI) – 1Ç25 Finansal Sonuçlar: Güçlü Büyüme ve Kârlılık</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1389"> <i class="bi bi-dot">
+</i> Şok Marketler (SOKM TI) – 1Ç25 Finansal Sonuçlar: Beklentilerin Altında Zarar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1000-yatirimlar-holding-ufuk-yatirim-hisselerini-225-milyon-tlye-satti"> <i class="bi bi-dot">
+</i> 1000 Yatırımlar Holding, Ufuk Yatırım Hisselerini 225 Milyon TL’ye Sattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="vestel-elektronik-1c25-finansal-sonuclarinda-beklentinin-uzerinde-zarar-acikladi"> <i class="bi bi-dot">
+</i> Vestel Elektronik, 1Ç25 Finansal Sonuçlarında Beklentinin Üzerinde Zarar Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3--1395"> <i class="bi bi-dot">
+</i> Link Bilgisayar (LINK TI) – 18,5 Milyon TL’lik AEYS Projesi Onaylandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europower-enerji-ve-girisim-elektrik-teias-ihalesini-kazandi"> <i class="bi bi-dot">
+</i> Europower Enerji ve Girişim Elektrik, TEİAŞ İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="oncosem-kemoterapi-hizmeti-icin-yeni-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Oncosem, Kemoterapi Hizmeti İçin Yeni Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="rubenis-tekstilden-92-milyon-tllik-yeni-satis-anlasmalari"> <i class="bi bi-dot">
+</i> Rubenis Tekstil’den 92 Milyon TL’lik Yeni Satış Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="link-bilgisayardan-gazi-universitesi-ile-yazilim-projesi"> <i class="bi bi-dot">
+</i> Link Bilgisayar’dan Gazi Üniversitesi ile Yazılım Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koray-gyodan-cekyada-dev-proje-140-milyon-eur-hedef-ciro"> <i class="bi bi-dot">
+</i> Koray GYO’dan Çekya’da Dev Proje: 140 Milyon EUR Hedef Ciro</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yatas-gunes-enerjisi-santralini-devreye-aldi"> <i class="bi bi-dot">
+</i> Yataş, Güneş Enerjisi Santralini Devreye Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kirac-galvanizden-tesis-acilisi-duyurusu"> <i class="bi bi-dot">
+</i> Kıraç Galvaniz’den Tesis Açılışı Duyurusu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alarko-enerji-depolama-alaninda-yeni-sirket-kuruyor"> <i class="bi bi-dot">
+</i> Alarko, Enerji Depolama Alanında Yeni Şirket Kuruyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ray-sigorta-prim-uretiminde-guclu-buyume-sagladi"> <i class="bi bi-dot">
+</i> Ray Sigorta, Prim Üretiminde Güçlü Büyüme Sağladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europower-enerji-enerjisa-ihalelerini-kazandi"> <i class="bi bi-dot">
+</i> Europower Enerji, Enerjisa İhalelerini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-katar-lng-projesinde-yer-alacak"> <i class="bi bi-dot">
+</i> Hareket Proje, Katar LNG Projesinde Yer Alacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aselsan-ile-bmc-arasinda-55-7-milyon-dolarlik-anlasma"> <i class="bi bi-dot">
+</i> Aselsan ile BMC Arasında 55,7 Milyon Dolarlık Anlaşma</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-sigortadan-guclu-prim-uretimi"> <i class="bi bi-dot">
+</i> Anadolu Sigorta’dan Güçlü Prim Üretimi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sabanci-holdingden-yenilenebilir-enerjiye-154-4-milyon-dolarlik-katki"> <i class="bi bi-dot">
+</i> Sabancı Holding’den Yenilenebilir Enerjiye 154,4 Milyon Dolarlık Katkı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konuttan-geri-alim-ve-temettu-hamlesi"> <i class="bi bi-dot">
+</i> Emlak Konut’tan Geri Alım ve Temettü Hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pegasustan-guclu-yolcu-artisi-dolulukta-sinirli-geri-cekilme"> <i class="bi bi-dot">
+</i> Pegasus’tan Güçlü Yolcu Artışı, Dolulukta Sınırlı Geri Çekilme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="agesa-prim-uretimini-56-artirdi"> <i class="bi bi-dot">
+</i> Agesa, Prim Üretimini %56 Artırdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ege-gubre-liman-yatirimini-tamamladi"> <i class="bi bi-dot">
+</i> Ege Gübre, Liman Yatırımını Tamamladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="global-yatirim-holding-liman-trafiginde-guclu-artis"> <i class="bi bi-dot">
+</i> Global Yatırım Holding Liman Trafiğinde Güçlü Artış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="garanti-bbva-244-5-milyon-tllik-tahsili-gecikmis-alacagi-devretti"> <i class="bi bi-dot">
+</i> Garanti BBVA, 244,5 Milyon TL’lik Tahsili Gecikmiş Alacağı Devretti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="celebi-hava-servisine-hindistanda-guvenlik-engeli"> <i class="bi bi-dot">
+</i> Çelebi Hava Servisi’ne Hindistan’da Güvenlik Engeli</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dmr-unlu-mamuller-pay-geri-alim-programini-sonlandirdi"> <i class="bi bi-dot">
+</i> DMR Unlu Mamuller, Pay Geri Alım Programını Sonlandırdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konuttan-yeni-proje-icin-yapi-ruhsati"> <i class="bi bi-dot">
+</i> Emlak Konut’tan Yeni Proje İçin Yapı Ruhsatı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-hayat-emeklilikten-guclu-prim-uretimi"> <i class="bi bi-dot">
+</i> Anadolu Hayat Emeklilik’ten Güçlü Prim Üretimi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-ve-one-arasinda-stratejik-pil-anlasmasi"> <i class="bi bi-dot">
+</i> Kontrolmatik ve ONE Arasında Stratejik Pil Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europower-ve-cinli-hopewind-arasinda-isbirligi"> <i class="bi bi-dot">
+</i> Europower ve Çinli HOPEWIND Arasında İşbirliği</a>
+</li>
+<li class="on d2 fw-300">
+<a href="garanti-bbvadan-varlik-yonetimine-kredi-devri"> <i class="bi bi-dot">
+</i> Garanti BBVA’dan Varlık Yönetimine Kredi Devri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sanicadan-93-milyon-tllik-yeni-siparis"> <i class="bi bi-dot">
+</i> Sanica’dan 93 Milyon TL’lik Yeni Sipariş</a>
+</li>
+<li class="on d2 fw-300">
+<a href="celebi-hava-servisinden-hindistanda-hukuki-adim"> <i class="bi bi-dot">
+</i> Çelebi Hava Servisi’nden Hindistan’da Hukuki Adım</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tapdi-oksijenin-ilk-ceyrek-net-kari-geriledi"> <i class="bi bi-dot">
+</i> Tapdi Oksijen’in İlk Çeyrek Net Kârı Geriledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kordsa-microtexin-tamamina-sahip-oluyor"> <i class="bi bi-dot">
+</i> Kordsa, Microtex’in Tamamına Sahip Oluyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alves-kabloda-blok-satis-gerceklesiyor"> <i class="bi bi-dot">
+</i> Alves Kablo’da Blok Satış Gerçekleşiyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="smart-gunesten-40-5-mwelik-ges-panel-tedarik-anlasmasi"> <i class="bi bi-dot">
+</i> Smart Güneş’ten 40.5 MWe’lik GES Panel Tedarik Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="e-data-teknolojiden-iki-yeni-distributorluk-anlasmasi"> <i class="bi bi-dot">
+</i> E-Data Teknoloji´den İki Yeni Distribütörlük Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="thydan-temettu-dagitimi-5-85-tl"> <i class="bi bi-dot">
+</i> THY’dan Temettü Dağıtımı: 5,85 TL</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-ozbekistanda-4-95-milyon-dolarlik-sozlesmeye-imza-atti"> <i class="bi bi-dot">
+</i> Hareket Proje, Özbekistan’da 4,95 Milyon Dolarlık Sözleşmeye İmza Attı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sdt-uzaydan-savunma-sektorunde-yeni-siparis"> <i class="bi bi-dot">
+</i> SDT Uzay’dan Savunma Sektöründe Yeni Sipariş</a>
+</li>
+<li class="on d2 fw-300">
+<a href="eregli-demir-celikten-temettu-karari"> <i class="bi bi-dot">
+</i> Ereğli Demir Çelik’ten Temettü Kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tat-gidanin-ges-yatirimi-devreye-alindi"> <i class="bi bi-dot">
+</i> Tat Gıda’nın GES Yatırımı Devreye Alındı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="eregli-demir-celik-yeni-kok-bataryasini-devreye-aldi"> <i class="bi bi-dot">
+</i> Ereğli Demir Çelik, Yeni Kok Bataryasını Devreye Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ekos-teknoloji-tunustan-3-5-milyon-euroluk-siparis-aldi"> <i class="bi bi-dot">
+</i> Ekos Teknoloji, Tunus’tan 3,5 Milyon Euro’luk Sipariş Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="papilon-savunma-kamu-kurumuna-teslimati-tamamladi"> <i class="bi bi-dot">
+</i> Papilon Savunma, Kamu Kurumuna Teslimatı Tamamladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="atp-yazilimdan-afrika-pazari-icin-yeni-ortaklik-adimi"> <i class="bi bi-dot">
+</i> ATP Yazılım’dan Afrika Pazarı İçin Yeni Ortaklık Adımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="imas-makina-0-85-milyon-dolarlik-yeni-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> İmaş Makina, 0,85 Milyon Dolarlık Yeni Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europen-endustride-pay-kaydilestirme-basvurusu"> <i class="bi bi-dot">
+</i> Europen Endüstri’de Pay Kaydileştirme Başvurusu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="oba-makarnacilikta-10-8-milyon-adet-pay-kaydilestiriliyor"> <i class="bi bi-dot">
+</i> Oba Makarnacılık’ta 10,8 Milyon Adet Pay Kaydileştiriliyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="altinay-savunmadan-yeni-sozlesme-hamlesi"> <i class="bi bi-dot">
+</i> Altınay Savunma’dan Yeni Sözleşme Hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkiye-sigortadan-guclu-prim-artisi"> <i class="bi bi-dot">
+</i> Türkiye Sigorta’dan Güçlü Prim Artışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="katmercilerden-msb-ile-20-milyon-dolarlik-anlasma"> <i class="bi bi-dot">
+</i> Katmerciler’den MSB ile 20 Milyon Dolarlık Anlaşma</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kuyas-yatirimdan-madencilikte-yeni-asama"> <i class="bi bi-dot">
+</i> Kuyaş Yatırım’dan Madencilikte Yeni Aşama</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gulermaktan-yenilenebilir-enerjiye-yatirim"> <i class="bi bi-dot">
+</i> Gülermak’tan Yenilenebilir Enerjiye Yatırım</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kuzey-boru-dsi-ihalesini-kazandi"> <i class="bi bi-dot">
+</i> Kuzey Boru, DSİ İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alves-kablodan-335-milyon-tllik-satis-sozlesmesi"> <i class="bi bi-dot">
+</i> Alves Kablo’dan 335 Milyon TL’lik Satış Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enka-istiraki-cimtastan-527-5-milyon-dolarlik-dev-sozlesme"> <i class="bi bi-dot">
+</i> ENKA İştiraki Çimtaş’tan 527,5 Milyon Dolarlık Dev Sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europower-enerjinin-bagli-ortakligi-teias-ihalesini-kazandi"> <i class="bi bi-dot">
+</i> Europower Enerji’nin Bağlı Ortaklığı TEİAŞ İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kuyas-yatirimdan-maden-sondajlarina-devam-karari"> <i class="bi bi-dot">
+</i> Kuyaş Yatırım’dan Maden Sondajlarına Devam Kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koc-metalurjiden-pay-geri-alim-programi"> <i class="bi bi-dot">
+</i> Koç Metalurji’den Pay Geri Alım Programı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mia-teknolojiden-750-bin-dolar-degerinde-yurt-disi-siparis"> <i class="bi bi-dot">
+</i> Mia Teknoloji’den 750 Bin Dolar Değerinde Yurt Dışı Sipariş</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gur-sel-turizmden-1-3-milyar-tllik-sozlesme-hamlesi"> <i class="bi bi-dot">
+</i> Gür-Sel Turizm’den 1,3 Milyar TL’lik Sözleşme Hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kalekime-rekabet-sorusturmasinda-ceza-yok"> <i class="bi bi-dot">
+</i> Kalekim’e Rekabet Soruşturmasında Ceza Yok</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-kazakistanda-yeni-ortaklik-kuruyor"> <i class="bi bi-dot">
+</i> Hareket Proje, Kazakistan’da Yeni Ortaklık Kuruyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="fitch-eregli-demir-celikin-notunu-teyit-etti"> <i class="bi bi-dot">
+</i> Fitch, Ereğli Demir Çelik’in Notunu Teyit Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="halkbank-dijital-yerine-subeli-katilim-bankasi-kuracak"> <i class="bi bi-dot">
+</i> Halkbank, Dijital Yerine Şubeli Katılım Bankası Kuracak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-eti-maden-ihalesinde-1-oldu"> <i class="bi bi-dot">
+</i> Kontrolmatik, Eti Maden İhalesinde 1. Oldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-suudi-arabistanda-yeni-sirket-kurdu"> <i class="bi bi-dot">
+</i> Emlak Konut, Suudi Arabistan’da Yeni Şirket Kurdu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europower-enerji-teias-ihalesinde-en-avantajli-teklifi-verdi"> <i class="bi bi-dot">
+</i> Europower Enerji, TEİAŞ İhalesinde En Avantajlı Teklifi Verdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sinpas-gyo-altinorandaki-40-bagimsiz-bolumu-satiyor"> <i class="bi bi-dot">
+</i> Sinpaş GYO, Altınoran’daki 40 Bağımsız Bölümü Satıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="thy-ve-thai-airwaysten-stratejik-gelir-paylasim-anlasmasi"> <i class="bi bi-dot">
+</i> THY ve Thai Airways’ten Stratejik Gelir Paylaşım Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gubre-fabrikalari-razi-petrochemical-satis-surecinde-acik-artirma-asamasina-gecti"> <i class="bi bi-dot">
+</i> Gübre Fabrikaları, Razi Petrochemical Satış Sürecinde Açık Artırma Aşamasına Geçti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozyasar-tel-ve-galvanizlemeden-yeni-yurt-disi-siparisler"> <i class="bi bi-dot">
+</i> Özyaşar Tel ve Galvanizleme’den Yeni Yurt Dışı Siparişler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dct-tradingin-satis-gelirlerinde-guclu-buyume"> <i class="bi bi-dot">
+</i> DCT Trading’in Satış Gelirlerinde Güçlü Büyüme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="eczacibasi-holdingten-2-25-milyar-tllik-gayrimenkul-satisi"> <i class="bi bi-dot">
+</i> Eczacıbaşı Holding’ten 2,25 Milyar TL’lik Gayrimenkul Satışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="grainturk-holdingten-ozova-tarim-icin-yatirim-gorusmelerine-baslandi"> <i class="bi bi-dot">
+</i> Grainturk Holding’ten Özova Tarım İçin Yatırım Görüşmelerine Başlandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aksa-akrilik-dowaksanin-tamamina-sahip-oluyor"> <i class="bi bi-dot">
+</i> Aksa Akrilik, DowAksa’nın Tamamına Sahip Oluyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tekfen-holdingin-moskova-davasinda-yeni-gelisme--1534"> <i class="bi bi-dot">
+</i> Tekfen Holding’in Moskova Davasında Yeni Gelişme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mpark-gaziosmanpasa-hastanesini-satin-aliyor"> <i class="bi bi-dot">
+</i> MPARK, Gaziosmanpaşa Hastanesi´ni Satın Alıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="fitch-coca-cola-icecekin-notunu-teyit-etti"> <i class="bi bi-dot">
+</i> Fitch, Coca-Cola İçecek’in Notunu Teyit Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tskb-ve-ebrdden-75-milyon-euroluk-kredi-anlasmasi"> <i class="bi bi-dot">
+</i> TSKB ve EBRD’den 75 Milyon Euro’luk Kredi Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="grainturktan-ozova-tarima-6-5-milyon-dolar-yatirim--1547"> <i class="bi bi-dot">
+</i> Grainturk’tan Özova Tarım’a 6,5 Milyon Dolar Yatırım</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cvk-maden-krom-satisi-icin-trafigura-ile-anlasti"> <i class="bi bi-dot">
+</i> CVK Maden, Krom Satışı İçin Trafigura ile Anlaştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="odine-axian-telecom-ile-3-yillik-anlasma-imzaladi--1549"> <i class="bi bi-dot">
+</i> Odine, Axian Telecom ile 3 Yıllık Anlaşma İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mavi-giyimden-beklentilerin-uzerinde-net-kar-pay-geri-alim-programi-baslatildi--1552"> <i class="bi bi-dot">
+</i> Mavi Giyim´den Beklentilerin Üzerinde Net Kâr, Pay Geri Alım Programı Başlatıldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="efor-caydan-4-7-milyon-dolarlik-petrokok-satisi"> <i class="bi bi-dot">
+</i> Efor Çay’dan 4,7 Milyon Dolarlık Petrokok Satışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="forte-bilgi-milsoftun-tum-hisselerini-satin-aldi"> <i class="bi bi-dot">
+</i> Forte Bilgi, MilSOFT´un Tüm Hisselerini Satın Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tav-havalimanlari-mayis-ayinda-10-2-milyon-yolcuya-hizmet-verdi--1555"> <i class="bi bi-dot">
+</i> TAV Havalimanları Mayıs Ayında 10,2 Milyon Yolcuya Hizmet Verdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="lokman-hekimin-satin-alma-girisimi-olumsuz-sonuclandi"> <i class="bi bi-dot">
+</i> Lokman Hekim’in Satın Alma Girişimi Olumsuz Sonuçlandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-tuborg-antalya-alkollu-ve-alkolsuz-icecek-sirketlerini-satin-aliyor"> <i class="bi bi-dot">
+</i> Türk Tuborg, Antalya Alkollü ve Alkolsüz İçecek Şirketlerini Satın Alıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="borusandan-56-milyon-dolarlik-tek-kampus-yatirimi"> <i class="bi bi-dot">
+</i> Borusan’dan 56 Milyon Dolarlık Tek Kampüs Yatırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-efesin-rusyadaki-satin-almasina-onay-cikmadi"> <i class="bi bi-dot">
+</i> Anadolu Efes’in Rusya’daki Satın Almasına Onay Çıkmadı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="halkbankin-kredi-notunda-gorunum-iyilesti--1590"> <i class="bi bi-dot">
+</i> Halkbank’ın Kredi Notunda Görünüm İyileşti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tukastan-ges-yatirimi-icin-tesvik-basvurusu"> <i class="bi bi-dot">
+</i> Tukaş’tan GES Yatırımı İçin Teşvik Başvurusu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="euro-yatirim-holding-gozunu-saglik-sektorune-dikti"> <i class="bi bi-dot">
+</i> Euro Yatırım Holding, Gözünü Sağlık Sektörüne Dikti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pera-yatirim-barikat-guvenlikte-hisse-alimi-icin-basvurdu"> <i class="bi bi-dot">
+</i> Pera Yatırım, Barikat Güvenlik’te Hisse Alımı İçin Başvurdu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="altinay-savunmadan-479-bin-euroluk-kritik-teknoloji-sozlesmesi--1594"> <i class="bi bi-dot">
+</i> Altınay Savunma’dan 479 Bin Euro’luk Kritik Teknoloji Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ebebek-mothercare-urunlerinin-lisansini-aldi--1595"> <i class="bi bi-dot">
+</i> Ebebek, Mothercare Ürünlerinin Lisansını Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dct-trading-pulse-fintekteki-hissesini-satti"> <i class="bi bi-dot">
+</i> DCT Trading, Pulse Fintek’teki Hissesini Sattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="thy-air-europa-ile-ortaklik-seceneklerini-degerlendiriyor"> <i class="bi bi-dot">
+</i> THY, Air Europa ile Ortaklık Seçeneklerini Değerlendiriyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="is-bankasi-sisecam-hisselerinde-alim-gerceklestirdi"> <i class="bi bi-dot">
+</i> İş Bankası, Şişecam Hisselerinde Alım Gerçekleştirdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sdt-uzay-yurt-icinden-1-41-milyon-dolarlik-siparis-aldi"> <i class="bi bi-dot">
+</i> SDT Uzay, Yurt İçinden 1,41 Milyon Dolarlık Sipariş Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="imas-makina-uc-yeni-bagli-sirket-kurarak-kismi-bolunmeye-gidiyor"> <i class="bi bi-dot">
+</i> İmaş Makina, Üç Yeni Bağlı Şirket Kurarak Kısmi Bölünmeye Gidiyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aselsan-hizli-tren-alt-sistemleri-icin-70-6-milyon-euroluk-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Aselsan, Hızlı Tren Alt Sistemleri İçin 70,6 Milyon Euro’luk Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-gyodan-cesme-dalyanda-10-5-milyar-tllik-proje"> <i class="bi bi-dot">
+</i> Emlak Konut GYO’dan Çeşme Dalyan’da 10,5 Milyar TL’lik Proje</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enka-insaat-irakta-289-milyon-dolarlik-yeni-sozlesmeye-imza-atti"> <i class="bi bi-dot">
+</i> Enka İnşaat, Irak’ta 289 Milyon Dolarlık Yeni Sözleşmeye İmza Attı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bimin-ortaklarindan-bereket-gida-hisse-alimini-surdurdu--1611"> <i class="bi bi-dot">
+</i> BİM’in Ortaklarından Bereket Gıda Hisse Alımını Sürdürdü</a>
+</li>
+<li class="on d2 fw-300">
+<a href="girisim-elektrik-carrefoursa-ile-29-3-mwp-ges-projesi-icin-anlasti"> <i class="bi bi-dot">
+</i> Girişim Elektrik, CarrefourSA ile 29,3 MWp GES Projesi İçin Anlaştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dogan-holding-boyabat-elektrikteki-paylarini-satiyor"> <i class="bi bi-dot">
+</i> Doğan Holding, Boyabat Elektrik’teki Paylarını Satıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="fitch-ulkerin-kredi-notunu-ve-gorunumunu-teyit-etti"> <i class="bi bi-dot">
+</i> Fitch, Ülker’in Kredi Notunu ve Görünümünü Teyit Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="is-bankasi-sisecam-hisselerinde-alim-yapmaya-devam-ediyor"> <i class="bi bi-dot">
+</i> İş Bankası, Şişecam Hisselerinde Alım Yapmaya Devam Ediyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ral-enerji-130-mwlik-iki-ges-projesini-devreye-aldi"> <i class="bi bi-dot">
+</i> Ral Enerji, 130 MW’lık İki GES Projesini Devreye Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="karel-elektronikten-bangladese-askeri-santral-teslimati-anlasmasi"> <i class="bi bi-dot">
+</i> Karel Elektronik’ten Bangladeş’e Askeri Santral Teslimatı Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="panelsandan-kazakistana-4-9-milyon-euroluk-uretim-hatti-yatirimi"> <i class="bi bi-dot">
+</i> Panelsan’dan Kazakistan’a 4,9 Milyon Euro’luk Üretim Hattı Yatırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="is-bankasi-sisecamdaki-payini-52-43e-yukseltti"> <i class="bi bi-dot">
+</i> İş Bankası, Şişecam’daki Payını %52,43’e Yükseltti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="divan-talya-oteli-yatirim-tutari-100-milyon-dolara-yukseltildi"> <i class="bi bi-dot">
+</i> Divan Talya Oteli Yatırım Tutarı 100 Milyon Dolara Yükseltildi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatikten-300-bedelli-sermaye-artirimi-karari"> <i class="bi bi-dot">
+</i> Kontrolmatik’ten %300 Bedelli Sermaye Artırımı Kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yeo-teknolojiden-yurtdisinda-10-7-milyon-dolarlik-trafo-merkezi-anlasmasi"> <i class="bi bi-dot">
+</i> Yeo Teknoloji’den Yurtdışında 10,7 Milyon Dolarlık Trafo Merkezi Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="karel-elektronikten-banglades-savunma-bakanligi-ile-yeni-sozlesme"> <i class="bi bi-dot">
+</i> Karel Elektronik’ten Bangladeş Savunma Bakanlığı ile Yeni Sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="panelsan-kazakistan-yatirimi-icin-uretim-hatti-satin-aliyor"> <i class="bi bi-dot">
+</i> Panelsan, Kazakistan Yatırımı İçin Üretim Hattı Satın Alıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="is-bankasindan-sise-cam-hisselerinde-yeni-alim"> <i class="bi bi-dot">
+</i> İş Bankası’ndan Şişe Cam Hisselerinde Yeni Alım</a>
+</li>
+<li class="on d2 fw-300">
+<a href="marmaris-altinyunustan-talya-oteli-projesine-finansman-guncellemesi"> <i class="bi bi-dot">
+</i> Marmaris Altınyunus’tan Talya Oteli Projesine Finansman Güncellemesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatikten-300-bedelli-sermaye-artirimi-karari-1"> <i class="bi bi-dot">
+</i> Kontrolmatik’ten %300 Bedelli Sermaye Artırımı Kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yeo-teknolojiden-yurt-disi-trafo-projesi"> <i class="bi bi-dot">
+</i> Yeo Teknoloji’den Yurt Dışı Trafo Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="polisan-holdingde-hisse-devri-anlasmasi"> <i class="bi bi-dot">
+</i> Polisan Holding’de Hisse Devri Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="halk-gyodan-izmirde-370-milyon-tllik-satis"> <i class="bi bi-dot">
+</i> Halk GYO’dan İzmir’de 370 Milyon TL’lik Satış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sisecam-el-imalati-uretimini-kirklareline-tasiyor"> <i class="bi bi-dot">
+</i> Şişecam, El İmalatı Üretimini Kırklareli’ne Taşıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="halk-gyo-antalyadaki-tasinmazlarini-654-5-milyon-tlye-satiyor"> <i class="bi bi-dot">
+</i> Halk GYO, Antalya’daki Taşınmazlarını 654,5 Milyon TL’ye Satıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cw-enerjiden-24-milyon-dolarlik-ges-anlasmasi"> <i class="bi bi-dot">
+</i> CW Enerji’den 24 Milyon Dolarlık GES Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="e-data-teknolojiden-yeni-dagitim-anlasmasi"> <i class="bi bi-dot">
+</i> E-Data Teknoloji’den Yeni Dağıtım Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sdt-uzay-savunma-sistemleri-icin-3-yillik-bakim-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> SDT Uzay, Savunma Sistemleri İçin 3 Yıllık Bakım Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cvk-madencilikten-sivasta-ges-projesi"> <i class="bi bi-dot">
+</i> CVK Madencilik’ten Sivas’ta GES Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="link-bilgisayardan-155-milyon-tllik-yeni-sozlesme"> <i class="bi bi-dot">
+</i> Link Bilgisayar’dan 155 Milyon TL’lik Yeni Sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="fitch-yapi-kredinin-kredi-notunu-teyit-etti"> <i class="bi bi-dot">
+</i> Fitch, Yapı Kredi’nin Kredi Notunu Teyit Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tab-gidadan-2-ceyrekte-58-yeni-restoran-acilisi"> <i class="bi bi-dot">
+</i> TAB Gıda´dan 2. Çeyrekte 58 Yeni Restoran Açılışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="limak-dogu-anadolu-cimentodan-kiralama-sozlesmesi"> <i class="bi bi-dot">
+</i> Limak Doğu Anadolu Çimento’dan Kiralama Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="icu-girisim-euroil-enerjiye-ortak-oluyor"> <i class="bi bi-dot">
+</i> ICU Girişim, Euroil Enerji’ye Ortak Oluyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="obase-avrupadaki-danismanlik-sozlesmesini-yeniledi"> <i class="bi bi-dot">
+</i> Obase, Avrupa’daki Danışmanlık Sözleşmesini Yeniledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kizilbuk-gyodan-haziran-ayinda-329-devremulk-satisi"> <i class="bi bi-dot">
+</i> Kızılbük GYO’dan Haziran Ayında 329 Devremülk Satışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kuzey-borudan-balikesire-yeni-uretim-tesisi-yatirimi"> <i class="bi bi-dot">
+</i> Kuzey Boru’dan Balıkesir’e Yeni Üretim Tesisi Yatırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tav-tiflis-havalimani-icin-gurcistan-hukumeti-ile-gorusmelere-basladi"> <i class="bi bi-dot">
+</i> TAV, Tiflis Havalimanı İçin Gürcistan Hükümeti ile Görüşmelere Başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emek-elektrik-teias-ihalesinde-en-uygun-teklifi-verdi"> <i class="bi bi-dot">
+</i> Emek Elektrik, TEİAŞ İhalesinde En Uygun Teklifi Verdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alfa-solar-19-milyon-dolarlik-ges-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> Alfa Solar, 19 Milyon Dolarlık GES Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="odine-wavecrest-ile-uluslararasi-ses-agi-sozlesmesini-uzatti"> <i class="bi bi-dot">
+</i> Odine, Wavecrest ile Uluslararası Ses Ağı Sözleşmesini Uzattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yeo-teknoloji-erzurumdaki-ges-projesi-icin-4-4-milyon-dolarlik-sozlesme-yapti"> <i class="bi bi-dot">
+</i> Yeo Teknoloji, Erzurum’daki GES Projesi İçin 4,4 Milyon Dolarlık Sözleşme Yaptı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pasifik-teknoloji-saglik-bakanligi-projesi-kapsaminda-406-8-milyon-tllik-sozlesme-imzaladi--1701"> <i class="bi bi-dot">
+</i> Pasifik Teknoloji, Sağlık Bakanlığı Projesi Kapsamında 406,8 Milyon TL’lik Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cw-enerji-1-milyar-tl-buyuklugunde-pay-geri-alim-programi-baslatti"> <i class="bi bi-dot">
+</i> CW Enerji 1 Milyar TL Büyüklüğünde Pay Geri Alım Programı Başlattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kuzey-boru-amasya-aydinca-baraji-ihalesini-kazandi"> <i class="bi bi-dot">
+</i> Kuzey Boru, Amasya Aydınca Barajı İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aselsan-savunma-sanayii-baskanligi-ile-71-9-milyon-dolarlik-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Aselsan, Savunma Sanayii Başkanlığı ile 71,9 Milyon Dolarlık Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ekos-teknoloji-ayedas-ile-117-4-milyon-tllik-sozlesme-yapti"> <i class="bi bi-dot">
+</i> Ekos Teknoloji, AYEDAŞ ile 117,4 Milyon TL’lik Sözleşme Yaptı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dogus-otomotivden-luks-motoryat-hamlesi"> <i class="bi bi-dot">
+</i> Doğuş Otomotiv´den Lüks Motoryat Hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gulermaktan-polonyada-11-5-milyar-tllik-dev-proje"> <i class="bi bi-dot">
+</i> Gülermak’tan Polonya’da 11,5 Milyar TL’lik Dev Proje</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ak-sigortada-prim-uretimi-geriledi"> <i class="bi bi-dot">
+</i> Ak Sigorta’da Prim Üretimi Geriledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-telekomdan-kktcye-100-milyon-dolarlik-yatirim-plani"> <i class="bi bi-dot">
+</i> Türk Telekom’dan KKTC’ye 100 Milyon Dolarlık Yatırım Planı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yapi-krediden-kripto-platformu-girisimi"> <i class="bi bi-dot">
+</i> Yapı Kredi´den Kripto Platformu Girişimi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="efor-cay-amazon-turkiyede-satisa-basliyor--1735"> <i class="bi bi-dot">
+</i> Efor Çay Amazon Türkiye’de Satışa Başlıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="orge-enerjiden-elektrikli-arac-sarj-unitesi-atagi"> <i class="bi bi-dot">
+</i> Orge Enerji’den Elektrikli Araç Şarj Ünitesi Atağı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alves-kablodan-2-milyar-tllik-kira-sertifikasi-ihraci-basvurusu"> <i class="bi bi-dot">
+</i> Alves Kablo’dan 2 Milyar TL’lik Kira Sertifikası İhracı Başvurusu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="zorlu-enerji-dorad-energydeki-10-hissesini-satti"> <i class="bi bi-dot">
+</i> Zorlu Enerji, Dorad Energy’deki %10 Hissesini Sattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-telekom-2c25-finansallarini-13-agustosta-aciklayacak"> <i class="bi bi-dot">
+</i> Türk Telekom, 2Ç25 Finansallarını 13 Ağustos’ta Açıklayacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="efor-caydan-ges-yatirimi-adimi"> <i class="bi bi-dot">
+</i> Efor Çay’dan GES Yatırımı Adımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enerya-enerjiden-sondaj-hizmeti-anlasmasi"> <i class="bi bi-dot">
+</i> Enerya Enerji’den Sondaj Hizmeti Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-ukraynada-3-milyon-dolarlik-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Hareket Proje, Ukrayna’da 3 Milyon Dolarlık Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mia-teknolojiden-yapay-zeka-destekli-faturalama-projesi"> <i class="bi bi-dot">
+</i> MIA Teknoloji’den Yapay Zeka Destekli Faturalama Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pegasusta-haziran-yolcu-sayisi-yillik-10-artti"> <i class="bi bi-dot">
+</i> Pegasus’ta Haziran Yolcu Sayısı Yıllık %10 Arttı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="forteden-35-milyon-tllik-sera-projesi"> <i class="bi bi-dot">
+</i> Forte’den 35 Milyon TL’lik Sera Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="visne-madencilik-10-yillik-ruhsat-aldi"> <i class="bi bi-dot">
+</i> Vişne Madencilik 10 Yıllık Ruhsat Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-sigortadan-6a25-doneminde-guclu-prim-uretimi"> <i class="bi bi-dot">
+</i> Anadolu Sigorta’dan 6A25 Döneminde Güçlü Prim Üretimi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mediteradan-30-milyon-tllik-ihale-basarisi"> <i class="bi bi-dot">
+</i> Meditera’dan 30 Milyon TL’lik İhale Başarısı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="imas-makinadan-bati-afrika-acilimi"> <i class="bi bi-dot">
+</i> İmaş Makina’dan Batı Afrika Açılımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkiye-sigortadan-beklentilerin-uzerinde-kar-performansi"> <i class="bi bi-dot">
+</i> Türkiye Sigorta’dan Beklentilerin Üzerinde Kâr Performansı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-enercon-ile-5-milyon-dolarlik-anlasma-imzaladi"> <i class="bi bi-dot">
+</i> Hareket Proje, Enercon ile 5 Milyon Dolarlık Anlaşma İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="altinay-savunmadan-yuksek-oranli-bedelsiz-sermaye-artirimi"> <i class="bi bi-dot">
+</i> Altınay Savunma’dan Yüksek Oranlı Bedelsiz Sermaye Artırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="adeseden-bodrumda-66-milyon-tllik-gayrimenkul-yatirimi"> <i class="bi bi-dot">
+</i> Adese’den Bodrum’da 66 Milyon TL’lik Gayrimenkul Yatırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aselsandan-44-milyon-dolarlik-yapay-zeka-destekli-guvenlik-projesi--1780"> <i class="bi bi-dot">
+</i> Aselsan’dan 44 Milyon Dolarlık Yapay Zekâ Destekli Güvenlik Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="panelsandan-4-28-milyon-dolarlik-ihracat-sozlesmesi"> <i class="bi bi-dot">
+</i> Panelsan’dan 4,28 Milyon Dolarlık İhracat Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="efor-caydan-yeni-pazarlama-sirketi-offor-icecek-kuruldu"> <i class="bi bi-dot">
+</i> Efor Çay’dan Yeni Pazarlama Şirketi: Offor İçecek Kuruldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europap-tezolda-yangin-2-500-ton-geri-donusum-kagidi-hasar-gordu--1788"> <i class="bi bi-dot">
+</i> Europap Tezol’da Yangın: 2.500 Ton Geri Dönüşüm Kağıdı Hasar Gördü</a>
+</li>
+<li class="on d2 fw-300">
+<a href="burcelik-vanadan-470-bin-dolarlik-ihracat-sozlesmesi"> <i class="bi bi-dot">
+</i> Burçelik Vana’dan 470 Bin Dolarlık İhracat Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koza-altin-bebekteki-tasinmazini-satisa-cikariyor"> <i class="bi bi-dot">
+</i> Koza Altın, Bebek’teki Taşınmazını Satışa Çıkarıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="global-yatirim-holdingde-liman-trafigi-artis-gosterdi"> <i class="bi bi-dot">
+</i> Global Yatırım Holding’de Liman Trafiği Artış Gösterdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="safkardan-abye-1-1-milyon-euroluk-klima-siparisi"> <i class="bi bi-dot">
+</i> Safkar’dan AB’ye 1,1 Milyon Euro’luk Klima Siparişi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aselsandan-75-milyon-dolarlik-yeni-ihracat-sozlesmesi"> <i class="bi bi-dot">
+</i> Aselsan’dan 75 Milyon Dolarlık Yeni İhracat Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="agrotech-italyada-12-mwplik-agro-pv-santral-yatirimi-karari-aldi"> <i class="bi bi-dot">
+</i> Agrotech, İtalya’da 12 MWp’lik Agro-PV Santral Yatırımı Kararı Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tofas-2c25te-net-karini-beklentilerin-uzerine-tasidi"> <i class="bi bi-dot">
+</i> Tofaş, 2Ç25’te Net Kârını Beklentilerin Üzerine Taşıdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mpark-2-ceyrekte-beklentilerin-uzerinde-kar-elde-etti"> <i class="bi bi-dot">
+</i> MPARK, 2. Çeyrekte Beklentilerin Üzerinde Kâr Elde Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-traktorden-zayif-net-kar-revize-edilen-2025-beklentileri"> <i class="bi bi-dot">
+</i> Türk Traktör’den Zayıf Net Kâr, Revize Edilen 2025 Beklentileri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cvk-maden-orman-yangini-nedeniyle-faaliyetlerine-ara-verdi"> <i class="bi bi-dot">
+</i> CVK Maden, Orman Yangını Nedeniyle Faaliyetlerine Ara Verdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koleksiyon-mobilyadan-5-yillik-imalat-ve-uygulama-sozlesmesi"> <i class="bi bi-dot">
+</i> Koleksiyon Mobilya’dan 5 Yıllık İmalat ve Uygulama Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="forte-bilgi-iletisimden-6-milyon-dolarlik-savunma-ve-kamu-sozlesmeleri"> <i class="bi bi-dot">
+</i> Forte Bilgi İletişim’den 6 Milyon Dolarlık Savunma ve Kamu Sözleşmeleri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-izmir-projesinde-gelir-payini-ikiye-katladi"> <i class="bi bi-dot">
+</i> Emlak Konut, İzmir Projesinde Gelir Payını İkiye Katladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="meka-global-2-19-milyon-euroluk-yeni-siparis-aldi"> <i class="bi bi-dot">
+</i> Meka Global, 2,19 Milyon Euro’luk Yeni Sipariş Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tav-havalimanlari-2c25te-net-zararla-beklentilerin-gerisinde-kaldi"> <i class="bi bi-dot">
+</i> TAV Havalimanları 2Ç25’te Net Zararla Beklentilerin Gerisinde Kaldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aygaz-2c25te-net-karda-guclu-sicrama-yapti--1826"> <i class="bi bi-dot">
+</i> Aygaz 2Ç25’te Net Kârda Güçlü Sıçrama Yaptı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="akbanktan-beklentinin-altinda-kar-yil-sonu-tahminlerinde-revizyon"> <i class="bi bi-dot">
+</i> Akbank’tan Beklentinin Altında Kâr, Yıl Sonu Tahminlerinde Revizyon</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tupras-2c25te-beklentilerin-uzerinde-net-kar-acikladi"> <i class="bi bi-dot">
+</i> Tüpraş 2Ç25’te Beklentilerin Üzerinde Net Kâr Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="otokar-2c25te-net-karda-surpriz-yapti"> <i class="bi bi-dot">
+</i> Otokar 2Ç25’te Net Kârda Sürpriz Yaptı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="moodys-turk-hava-yollarinin-kredi-notunu-yukseltti"> <i class="bi bi-dot">
+</i> Moody’s, Türk Hava Yolları’nın Kredi Notunu Yükseltti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sanica-isi-bayileriyle-218-milyon-tllik-satis-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> Sanica Isı, Bayileriyle 218 Milyon TL’lik Satış Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bogazici-beton-750-milyon-tllik-sozlesmeye-imza-atti"> <i class="bi bi-dot">
+</i> Boğaziçi Beton, 750 Milyon TL’lik Sözleşmeye İmza Attı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="oncosem-samsun-sehir-hastanesi-ihalesinde-en-avantajli-teklifi-verdi"> <i class="bi bi-dot">
+</i> Oncosem, Samsun Şehir Hastanesi İhalesinde En Avantajlı Teklifi Verdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ford-otosan-2c25te-guclu-satis-artisiyla-beklentilere-paralel-sonuclar-acikladi"> <i class="bi bi-dot">
+</i> Ford Otosan 2Ç25’te Güçlü Satış Artışıyla Beklentilere Paralel Sonuçlar Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="garanti-bbva-2c25te-beklentilerin-uzerinde-28-3-milyar-tl-kar-acikladi"> <i class="bi bi-dot">
+</i> Garanti BBVA 2Ç25’te Beklentilerin Üzerinde 28,3 Milyar TL Kâr Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yapi-kredi-2c25te-11-3-milyar-tl-net-karla-guclu-performans-gosterdi"> <i class="bi bi-dot">
+</i> Yapı Kredi 2Ç25’te 11,3 Milyar TL Net Kârla Güçlü Performans Gösterdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pasifik-eurasia-orta-koridor-anlasmasinda-stratejik-oyuncu--1844"> <i class="bi bi-dot">
+</i> Pasifik Eurasia, Orta Koridor Anlaşmasında Stratejik Oyuncu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dap-gayrimenkul-bodrum-ihalesi-icin-surece-dahil-oldu"> <i class="bi bi-dot">
+</i> DAP Gayrimenkul, Bodrum İhalesi İçin Sürece Dahil Oldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="imas-makinadan-yurt-disi-satis-hamlesi"> <i class="bi bi-dot">
+</i> İmaş Makina’dan Yurt Dışı Satış Hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-suudi-arabistanda-formula-1-projesine-tasimacilik-destegi-verecek"> <i class="bi bi-dot">
+</i> Hareket Proje, Suudi Arabistan’da Formula 1 Projesine Taşımacılık Desteği Verecek</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koc-holding-2c25-sonuclari-net-kar-beklentilerin-uzerinde-gerceklesti"> <i class="bi bi-dot">
+</i> Koç Holding &lt;KCHOL TI&gt; 2Ç25 Sonuçları: Net Kar Beklentilerin Üzerinde Gerçekleşti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-hayat-emeklilik-2c25-finansal-sonuclari-piyasa-beklentilerine-paralel"> <i class="bi bi-dot">
+</i> Anadolu Hayat Emeklilik &lt;ANHYT TI&gt; 2Ç25 Finansal Sonuçları: Piyasa Beklentilerine Paralel</a>
+</li>
+<li class="on d2 fw-300">
+<a href="garanti-bankasi-kredi-notunda-iyilesme-moodys-notlari-artirdi"> <i class="bi bi-dot">
+</i> Garanti Bankası &lt;GARAN TI&gt; Kredi Notunda İyileşme: Moody’s Notları Artırdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ayen-enerji-yamula-baraji-hes-tesisinin-elektrik-uretim-a-s-ye-devri-tamamlandi"> <i class="bi bi-dot">
+</i> Ayen Enerji &lt;AYEN TI&gt; - Yamula Barajı HES Tesisinin Elektrik Üretim A.Ş.´ye Devri Tamamlandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dogusan-boru-sanayi-ve-ticaret-kristal-is-sendikasi-ile-toplu-is-sozlesmesi-sureci-ve-grev-uyarisi"> <i class="bi bi-dot">
+</i> Doğusan Boru Sanayi ve Ticaret &lt;DOGUB TI&gt; - Kristal İş Sendikası ile Toplu İş Sözleşmesi Süreci ve Grev Uyarısı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-gayrimenkul-satis-protokolu-kapsaminda-yeni-arsalar-ve-fonlama"> <i class="bi bi-dot">
+</i> Emlak Konut &lt;EKGYO TI&gt; - Gayrimenkul Satış Protokolü Kapsamında Yeni Arsalar ve Fonlama</a>
+</li>
+<li class="on d2 fw-300">
+<a href="forte-bilgi-iletisim-savunma-sanayii-sirketinden-bilisim-urunleri-siparisi-alindi"> <i class="bi bi-dot">
+</i> Forte Bilgi İletişim &lt;FORTE TI&gt; - Savunma Sanayii Şirketinden Bilişim Ürünleri Siparişi Alındı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-hava-yollari-karlilik-beklentileri-asti-filo-hedefi-yukari-yonlu-revize-edildi"> <i class="bi bi-dot">
+</i> Türk Hava Yolları: Kârlılık Beklentileri Aştı, Filo Hedefi Yukarı Yönlü Revize Edildi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="is-bankasi-guclu-komisyon-gelirleri-ile-beklentilerin-uzerinde-net-kar"> <i class="bi bi-dot">
+</i> İş Bankası: Güçlü Komisyon Gelirleri ile Beklentilerin Üzerinde Net Kâr</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cimsa-karda-sert-gerileme-marjlar-baski-altinda"> <i class="bi bi-dot">
+</i> Çimsa: Kârda Sert Gerileme, Marjlar Baskı Altında</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aselsandan-beklentilerin-uzerinde-karlilik-performansi--1877"> <i class="bi bi-dot">
+</i> ASELSAN’dan Beklentilerin Üzerinde Kârlılık Performansı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="lila-kagittan-karlilikta-guclu-artis"> <i class="bi bi-dot">
+</i> Lila Kağıt’tan Kârlılıkta Güçlü Artış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pegasustan-silikon-vadisinde-yapay-zeka-odakli-yatirim-hamlesi--1879"> <i class="bi bi-dot">
+</i> Pegasus’tan Silikon Vadisi’nde Yapay Zeka Odaklı Yatırım Hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="migrostan-temmuz-ayinda-26-yeni-magaza-acilisi"> <i class="bi bi-dot">
+</i> Migros’tan Temmuz Ayında 26 Yeni Mağaza Açılışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="balsu-gidadan-uluslararasi-ortaklik-adimi"> <i class="bi bi-dot">
+</i> Balsu Gıda’dan Uluslararası Ortaklık Adımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dagi-yatirim-holdingin-unvani-degisti"> <i class="bi bi-dot">
+</i> Dagi Yatırım Holding’in Unvanı Değişti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-projeden-socar-ile-yeni-sozlesme-gorusmesi--1883"> <i class="bi bi-dot">
+</i> Hareket Proje’den SOCAR ile Yeni Sözleşme Görüşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkiye-vakiflar-bankasi-2c25te-beklentilerin-uzerinde-kar-acikladi"> <i class="bi bi-dot">
+</i> Türkiye Vakıflar Bankası 2Ç25’te Beklentilerin Üzerinde Kâr Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aksa-enerji-2c25te-beklentilerin-altinda-kar-elde-etti"> <i class="bi bi-dot">
+</i> Aksa Enerji 2Ç25’te Beklentilerin Altında Kâr Elde Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="galata-wind-enerji-2c25te-beklentilerin-uzerinde-net-kar-acikladi"> <i class="bi bi-dot">
+</i> Galata Wind Enerji 2Ç25’te Beklentilerin Üzerinde Net Kâr Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="oyak-cimento-2c25te-vergi-gelirinin-etkisiyle-beklentilerin-uzerinde-kar-elde-etti"> <i class="bi bi-dot">
+</i> Oyak Çimento 2Ç25’te Vergi Gelirinin Etkisiyle Beklentilerin Üzerinde Kâr Elde Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-hava-yollari-temmuz-2025te-yolcu-sayisini-8-4-artirdi--1903"> <i class="bi bi-dot">
+</i> Türk Hava Yolları Temmuz 2025’te Yolcu Sayısını %8,4 Artırdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="biotrendde-ebrd-hisselerini-doganlar-yatirim-holdinge-devrediyor"> <i class="bi bi-dot">
+</i> Biotrend’de EBRD Hisselerini Doğanlar Yatırım Holding’e Devrediyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alfa-solar-enerji-38-5-milyon-dolar-gunes-paneli-siparisi-aldi"> <i class="bi bi-dot">
+</i> Alfa Solar Enerji, 38,5 Milyon Dolar Tutarında Güneş Paneli Siparişi Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hitit-bilgisayar-hizmetleri-ajet-ile-dagitim-hizmetleri-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> Hitit Bilgisayar Hizmetleri, AJet ile Dağıtım Hizmetleri Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kron-teknoloji-turksat-ile-yetkilendirme-sistemi-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> Kron Teknoloji, Türksat ile Yetkilendirme Sistemi Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="horoz-lojistik-eskisehirde-ges-projesi-icin-cagri-mektubu-aldi"> <i class="bi bi-dot">
+</i> Horoz Lojistik, Eskişehir’de GES Projesi İçin Çağrı Mektubu Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-efes-2-ceyrek-sonuclarinda-beklentilerin-uzerinde-kar-acikladi"> <i class="bi bi-dot">
+</i> Anadolu Efes 2. Çeyrek Sonuçlarında Beklentilerin Üzerinde Kâr Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="migrosun-2-ceyrek-net-kari-beklentilerin-altinda-kaldi"> <i class="bi bi-dot">
+</i> Migros’un 2. Çeyrek Net Kârı Beklentilerin Altında Kaldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pegasus-2-ceyrek-karini-artirdi-2025-beklentilerini-revize-etti--1917"> <i class="bi bi-dot">
+</i> Pegasus 2. Çeyrek Kârını Artırdı, 2025 Beklentilerini Revize Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tab-gida-2-ceyrekte-guclu-satis-performansi-gosterdi"> <i class="bi bi-dot">
+</i> TAB Gıda 2. Çeyrekte Güçlü Satış Performansı Gösterdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hat-san-gemi-yurt-disi-projesini-teslim-etti"> <i class="bi bi-dot">
+</i> Hat-San Gemi Yurt Dışı Projesini Teslim Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enerjisa-2-ceyrek-2025te-beklentilerin-uzerinde-kar-acikladi"> <i class="bi bi-dot">
+</i> Enerjisa 2. Çeyrek 2025’te Beklentilerin Üzerinde Kâr Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="coca-cola-icecekten-2-ceyrekte-5-milyar-tl-kar"> <i class="bi bi-dot">
+</i> Coca-Cola İçecek’ten 2. Çeyrekte 5 Milyar TL Kâr</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koza-altindan-yuksek-kar-performansi"> <i class="bi bi-dot">
+</i> Koza Altın’dan Yüksek Kâr Performansı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-2-ceyrekte-zarara-gecti"> <i class="bi bi-dot">
+</i> Kontrolmatik 2. Çeyrekte Zarara Geçti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="agesa-prim-uretiminde-guclu-artis"> <i class="bi bi-dot">
+</i> Agesa Prim Üretiminde Güçlü Artış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aksigorta-temmuz-ayi-prim-uretimi-aciklandi"> <i class="bi bi-dot">
+</i> Aksigorta Temmuz Ayı Prim Üretimi Açıklandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gen-ilacin-iki-projesi-destek-almaya-hak-kazandi"> <i class="bi bi-dot">
+</i> Gen İlaç’ın İki Projesi Destek Almaya Hak Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="oncosem-115-5-milyon-tllik-ihale-kazandi"> <i class="bi bi-dot">
+</i> Oncosem 115,5 Milyon TL’lik İhale Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bim-2c25-sonuclari-net-kar-beklentilerin-altinda"> <i class="bi bi-dot">
+</i> Bim 2Ç25 Sonuçları: Net Kâr Beklentilerin Altında</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sok-marketler-2c25-sonuclari-beklentinin-aksine-zarar"> <i class="bi bi-dot">
+</i> Şok Marketler, 2Ç25 Sonuçlarında Beklentinin Aksine Zarar Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-grubu-holding-2c25-sonuclari-beklentilerin-altinda-kar"> <i class="bi bi-dot">
+</i> Anadolu Grubu Holding 2Ç25 Sonuçları: Beklentilerin Altında Kâr</a>
+</li>
+<li class="on d2 fw-300">
+<a href="odas-elektrik-can2-termikte-pay-satisi"> <i class="bi bi-dot">
+</i> Odaş Elektrik: Çan2 Termik’te Pay Satışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="esenboga-elektrik-elektrikli-arac-sarj-altyapisi-icin-is-birligi"> <i class="bi bi-dot">
+</i> Esenboğa Elektrik: Elektrikli Araç Şarj Altyapısı İçin İş Birliği</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gediz-ambalaj-tevsi-yatirim-tesvik-onayi"> <i class="bi bi-dot">
+</i> Gediz Ambalaj: Tevsi Yatırım Teşvik Onayı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pc-iletisim-ve-medya-koc-toplulugu-ile-medya-planlama-anlasmasi"> <i class="bi bi-dot">
+</i> PC İletişim ve Medya: Koç Topluluğu ile Medya Planlama Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bosch-fren-sistemleri-yeni-urun-icin-turkiyede-uretim-plani"> <i class="bi bi-dot">
+</i> Bosch Fren Sistemleri: Yeni Ürün İçin Türkiye’de Üretim Planı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="indeks-bilgisayar-huawei-ile-distributorluk-gorusmeleri"> <i class="bi bi-dot">
+</i> İndeks Bilgisayar, Huawei Distribütörlük Görüşmeleri Başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-4"> <i class="bi bi-dot">
+</i> Türk Telekom – 2Ç25’te Kârlılık Beklentilerin Üzerinde</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-5"> <i class="bi bi-dot">
+</i> Turkcell – Güçlü Kârlılık Artışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-6"> <i class="bi bi-dot">
+</i> Sabancı Holding – Beklentilerin Aksine Kâr</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-7"> <i class="bi bi-dot">
+</i> Kalekim – Operasyonel Güçlü Performans</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-8"> <i class="bi bi-dot">
+</i> Graintürk Holding – İhracat Gelirlerinde Patlama</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-9"> <i class="bi bi-dot">
+</i> Adra GYO – İzmir’de Büyük Konut Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-10"> <i class="bi bi-dot">
+</i> Mercan Kimya – Romanya’da GES Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1951--1951"> <i class="bi bi-dot">
+</i> Lila Kağıt – Yatırım Teşvik Belgesi Alındı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ulker-biskuvi-2c25-sonuclari-beklentilerin-uzerinde-net-kar--1965"> <i class="bi bi-dot">
+</i> Ülker Bisküvi &lt;ULKER TI&gt; 2Ç25 Sonuçları: Beklentilerin Üzerinde Net Kâr</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-gyo-2c25-sonuclari-beklentilerin-uzerinde-guclu-performans"> <i class="bi bi-dot">
+</i> Emlak Konut GYO &lt;EKGYO TI&gt; 2Ç25 Sonuçları: Beklentilerin Üzerinde Güçlü Performans</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aksa-akrilik-2c25-sonuclari-beklentilerin-altinda-net-zarar"> <i class="bi bi-dot">
+</i> Aksa Akrilik &lt;AKSA TI&gt; 2Ç25 Sonuçları: Beklentilerin Altında Net Zarar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alarko-holding-2c25-sonuclari-beklentilerin-altinda-net-zarar"> <i class="bi bi-dot">
+</i> Alarko Holding &lt;ALARK TI&gt; 2Ç25 Sonuçları: Beklentilerin Altında Net Zarar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="astor-enerji-2c25-sonuclari-beklentilerin-altinda-kar-guclu-favok-performansi"> <i class="bi bi-dot">
+</i> Astor Enerji &lt;ASTOR TI&gt; 2Ç25 Sonuçları: Beklentilerin Altında Kâr, Güçlü FAVÖK Performansı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pegasus-temmuz-2025-yolcu-trafigi-yillik-11-artis"> <i class="bi bi-dot">
+</i> Pegasus &lt;PGSUS TI&gt; Temmuz 2025 Yolcu Trafiği: Yıllık %11 Artış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dogan-burda-dergi-dijitallesme-hamlesi-wisest-yazilim-ile-birlesme-gorusmeleri"> <i class="bi bi-dot">
+</i> Doğan Burda Dergi &lt;DOBUR TI&gt; Dijitalleşme Hamlesi: Wisest Yazılım ile Birleşme Görüşmeleri</a>
+</li>
+<li class="on d2 fw-300">
+<a href="onur-yuksek-teknoloji-1-4-milyon-dolarlik-haberlesme-sistemi-siparisi-aldi"> <i class="bi bi-dot">
+</i> Onur Yüksek Teknoloji &lt;ONRYT TI&gt; 1,4 Milyon Dolarlık Haberleşme Sistemi Siparişi Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="indeks-bilgisayar-lenovo-turkiye-ile-distributorluk-anlasmasi-imzaladi"> <i class="bi bi-dot">
+</i> İndeks Bilgisayar &lt;INDES TI&gt; Lenovo Türkiye ile Distribütörlük Anlaşması İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1977"> <i class="bi bi-dot">
+</i> Doğuş Otomotiv &lt;DOAS TI&gt; – 2Ç25’te Beklentilerin Üzerinde Net Kâr</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-13"> <i class="bi bi-dot">
+</i> SASA Polyester &lt;SASA TI&gt; – 2Ç25’te 10,3 Milyar TL Net Zarar</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-14"> <i class="bi bi-dot">
+</i> Türk Hava Yolları &lt;THYAO TI&gt; – Air Europa Azınlık Paylarını Devralıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-16"> <i class="bi bi-dot">
+</i> Emlak Konut GYO &lt;EKGYO TI&gt; – Ataşehir’de Karma Proje İçin İş Birliği</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-17"> <i class="bi bi-dot">
+</i> Alarko GYO &lt;ALGYO TI&gt; – %600 Bedelsiz Sermaye Artırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="1983--1983"> <i class="bi bi-dot">
+</i> DMR Unlu Mamuller &lt;DMRGD TI&gt; – %700 Bedelsiz Sermaye Artırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-18"> <i class="bi bi-dot">
+</i> Link Bilgisayar &lt;LINK TI&gt; – Eskişehir Emniyet Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-19"> <i class="bi bi-dot">
+</i> Alarko Holding – Grup Şirketlerinde Kolaylaştırılmış Birleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-21"> <i class="bi bi-dot">
+</i> Tofaş – Stellantis Pazarlama ile Birleşme Kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cagdas-camdan-yeni-cam-siparisi"> <i class="bi bi-dot">
+</i> Çağdaş Cam´dan Yeni Cam Siparişi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="can2-termik-bedelli-sermaye-artirimi-karari"> <i class="bi bi-dot">
+</i> Çan2 Termik: Bedelli Sermaye Artırımı Kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tapdi-oksijen-buca-pera-gayrimenkul-danismanlik-kuruldu"> <i class="bi bi-dot">
+</i> Tapdi Oksijen: Buca Pera Gayrimenkul Danışmanlık Kuruldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kuzey-boru-dsi-ihalesini-kazandi-1"> <i class="bi bi-dot">
+</i> Kuzey Boru: DSİ İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dct-trading-agro-investment-ile-stratejik-is-birligi"> <i class="bi bi-dot">
+</i> DCT Trading: Agro Investment ile Stratejik İş Birliği</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pasifik-teknoloji-titradan-kamikaze-iha-sozlesmesi"> <i class="bi bi-dot">
+</i> Pasifik Teknoloji: Titra’dan Kamikaze İHA Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-tasimaciligi-turkmenistan-santral-projesinde-yeni-sozlesme--2008"> <i class="bi bi-dot">
+</i> Hareket Proje Taşımacılığı: Türkmenistan Santral Projesinde Yeni Sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-25"> <i class="bi bi-dot">
+</i> Papilon Savunma – Afrika’da Kriminal Laboratuvar Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-26"> <i class="bi bi-dot">
+</i> CW Enerji – 37,2 Milyon Dolarlık Güneş Paneli Satışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-27"> <i class="bi bi-dot">
+</i> Kimpur – 4,5 Bin Tonluk Poliüretan Sistem Siparişi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-28"> <i class="bi bi-dot">
+</i> Kalyon Güneş Teknolojileri – Yüksek Performanslı Güneş Hücresi İhracatı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-29"> <i class="bi bi-dot">
+</i> Yeo Teknoloji – CallSmart Enerji’ye EPDK Onayı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-30"> <i class="bi bi-dot">
+</i> Altınkılıç Gıda – Tarım Kredi Marketler ile Satış Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-31"> <i class="bi bi-dot">
+</i> SAY Yenilenebilir Enerji – 1,1 Milyon Euro’luk Rüzgar Türbini Parçası Üretim Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-32"> <i class="bi bi-dot">
+</i> SPK Kararları – Dof Robotik Halka Arzına Onay</a>
+</li>
+<li class="on d2 fw-300">
+<a href="birlesim-muhendislik-2c25-sonuclari"> <i class="bi bi-dot">
+</i> Birleşim Mühendislik &lt;BRLSM TI&gt; 2Ç25 Sonuçları</a>
+</li>
+<li class="on d2 fw-300">
+<a href="skyalp-finansal-teknolojiler-pay-devir-islemi"> <i class="bi bi-dot">
+</i> Skyalp Finansal Teknolojiler &lt;SKYALP TI&gt; Pay Devir İşlemi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozata-denizcilik-gemi-bakim-onarim-sozlesmeleri"> <i class="bi bi-dot">
+</i> Özata Denizcilik &lt;OZATD TI&gt; Gemi Bakım-Onarım Sözleşmesi imzaladı.</a>
+</li>
+<li class="on d2 fw-300">
+<a href="orge-enerji-mandarin-oriental-etiler-projesi-sozlesmesini-guncelledi"> <i class="bi bi-dot">
+</i> Orge Enerji &lt;ORGE TI&gt; Mandarin Oriental Etiler Projesi Sözleşmesini Güncelledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-efes-rusya-operasyonlarinda-unvan-ve-logo-degisikligine-gittigini-duyurdu"> <i class="bi bi-dot">
+</i> Anadolu Efes &lt;AEFES TI&gt; Rusya Operasyonlarında Unvan ve Logo Değişikliğine gittiğini duyurdu.</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mhr-gayrimenkulden-kurtkoy-qflats-projesi-icin-tapu-serhi-ve-paylasim-protokolu"> <i class="bi bi-dot">
+</i> MHR Gayrimenkul’den Kurtköy QFlats Projesi İçin Tapu Şerhi ve Paylaşım Protokolü</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozata-denizcilikten-yeni-faaliyet-alanlari-icin-kismi-bolunme-karari"> <i class="bi bi-dot">
+</i> Ozata Denizcilik’ten Yeni Faaliyet Alanları İçin Kısmi Bölünme Kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ebebekte-agustos-ziyaretci-sayisi-11-4-artti"> <i class="bi bi-dot">
+</i> Ebebek’te Ağustos Ziyaretçi Sayısı %11,4 Arttı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sdt-uzay-ve-savunma-bagli-ortakligi-bkmden-4-milyon-dolarlik-sozlesme"> <i class="bi bi-dot">
+</i> SDT Uzay ve Savunma Bağlı Ortaklığı BKM’den 4 Milyon Dolarlık Sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="horoz-lojistikten-temu-ile-is-birligi"> <i class="bi bi-dot">
+</i> Horoz Lojistik’ten Temu ile İş Birliği</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mia-teknoloji-ortadogu-saglik-teknolojileri-is-birlikleri"> <i class="bi bi-dot">
+</i> Mia Teknoloji &lt;MIATK TI&gt; Ortadoğu’da Sağlık ve Dijital Dönüşüm Projeleri İçin İş Birliği</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ceo-event-medya-teknofestte-koordinasyon-ve-destek-hizmetlerini-ustlenecek"> <i class="bi bi-dot">
+</i> CEO Event Medya Teknofest’te Koordinasyon ve Destek Hizmetlerini Üstlenecek</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mopas-marketcilikten-5-mwlik-yatirim-icin-adim"> <i class="bi bi-dot">
+</i> Mopaş Marketçilik’ten 5 MW’lık Yatırım İçin Adım</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cw-enerji-1-9-milyon-dolarlik-gunes-paneli-satisi-gerceklestirdi"> <i class="bi bi-dot">
+</i> CW Enerji, 1,9 Milyon Dolarlık Güneş Paneli Satışı Gerçekleştirdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-tasimaciligindan-satin-alma-hamlesi"> <i class="bi bi-dot">
+</i> Hareket Proje Taşımacılığı’ndan Satın Alma Hamlesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bulbuloglu-vincten-yurt-disinda-yeni-sozlesme"> <i class="bi bi-dot">
+</i> Bülbüloğlu Vinç’ten Yurt Dışında Yeni Sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="vestel-toshiba-lisans-anlasmasini-uzatti"> <i class="bi bi-dot">
+</i> Vestel, Toshiba Lisans Anlaşmasını Uzattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ebebekte-satis-adetleri-yukseliste"> <i class="bi bi-dot">
+</i> Ebebek’te Satış Adetleri Yükselişte</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-gyodan-damla-kent-projesi-guncellemesi"> <i class="bi bi-dot">
+</i> Emlak Konut GYO’dan Damla Kent Projesi Güncellemesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="selcuk-gida-dunya-holding-oldu"> <i class="bi bi-dot">
+</i> Selçuk Gıda, Dünya Holding Oldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="metemtur-yatirim-blume-metal-kimya-olarak-tescillendi"> <i class="bi bi-dot">
+</i> Metemtur Yatırım, Blume Metal Kimya Olarak Tescillendi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="platform-turizm-nakil-lojistiki-satin-aldi"> <i class="bi bi-dot">
+</i> Platform Turizm, Nakil Lojistik’i Satın Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ekos-teknoloji-baskent-elektrik-ihalesini-kazandi"> <i class="bi bi-dot">
+</i> Ekos Teknoloji, Başkent Elektrik İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tekfen-holdingte-toplu-is-sozlesmesi-anlasmasi"> <i class="bi bi-dot">
+</i> Tekfen Holding’te Toplu İş Sözleşmesi Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bulbuloglu-vincten-yurtdisi-acilim-ve-yeni-sozlesme"> <i class="bi bi-dot">
+</i> Bülbüloğlu Vinç’ten Yurtdışı Açılım ve Yeni Sözleşme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tofas-cok-markali-hafif-ticari-arac-uretimi-icin-buyuk-projeye-imza-atti"> <i class="bi bi-dot">
+</i> Tofaş, Çok Markalı Hafif Ticari Araç Üretimi İçin Büyük Projeye İmza Attı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="thy-agustosta-9-5-milyon-yolcu-tasidi"> <i class="bi bi-dot">
+</i> THY, Ağustos’ta 9,5 Milyon Yolcu Taşıdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ford-otosan-sermaye-tavanini-20-kat-artiriyor"> <i class="bi bi-dot">
+</i> Ford Otosan, Sermaye Tavanını 20 Kat Artırıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mlp-saglik-gaziosmanpasa-hastanesi-devralma-surecini-sonlandirdi"> <i class="bi bi-dot">
+</i> MLP Sağlık, Gaziosmanpaşa Hastanesi Devralma Sürecini Sonlandırdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="akbank-takipteki-kredilerini-287-milyon-tlye-satti"> <i class="bi bi-dot">
+</i> Akbank, Takipteki Kredilerini 287 Milyon TL’ye Sattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ekos-teknoloji-cezayirde-109-8-milyon-tllik-trafo-merkezi-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> Ekos Teknoloji, Cezayir’de 109,8 Milyon TL’lik Trafo Merkezi Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="arsan-tekstilden-leventte-tasinmaz-alimi"> <i class="bi bi-dot">
+</i> Arsan Tekstil’den Levent’te Taşınmaz Alımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ray-sigorta-prim-uretiminde-guclu-artis"> <i class="bi bi-dot">
+</i> Ray Sigorta Prim Üretiminde Güçlü Artış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cw-enerji-mersin-hayvancilik-birlesmesinden-vazgecti"> <i class="bi bi-dot">
+</i> CW Enerji, Mersin Hayvancılık Birleşmesinden Vazgeçti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="baticimin-ced-basvurusu-yenilenecek"> <i class="bi bi-dot">
+</i> Batıçim’in ÇED Başvurusu Yenilenecek</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gesan-elektrik-dubaide-yeni-siparis-aldi"> <i class="bi bi-dot">
+</i> Gesan Elektrik, Dubai’de Yeni Sipariş Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koza-altin-bebekteki-gayrimenkulunu-satisa-cikariyor"> <i class="bi bi-dot">
+</i> Koza Altın, Bebek’teki Gayrimenkulünü Satışa Çıkarıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="girisim-elektrikten-647-4-mn-tllik-ges-sozlesmesi"> <i class="bi bi-dot">
+</i> Girişim Elektrik’ten 647,4 mn TL’lik GES Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cagdas-camdan-yeni-siparis-anlasmasi"> <i class="bi bi-dot">
+</i> Çağdaş Cam’dan Yeni Sipariş Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cekirdek-enflasyondaki-yavaslama-endise-veriyor"> <i class="bi bi-dot">
+</i> Çekirdek Enflasyondaki Yavaşlama Endişe Veriyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bimden-pay-geri-alim-programi"> <i class="bi bi-dot">
+</i> BİM’den Pay Geri Alım Programı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-hayat-emeklilikten-guclu-prim-artisi"> <i class="bi bi-dot">
+</i> Anadolu Hayat Emeklilik’ten Güçlü Prim Artışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="agesa-hayat-ve-emeklilik-prim-uretiminde-yukselis"> <i class="bi bi-dot">
+</i> Agesa Hayat ve Emeklilik Prim Üretiminde Yükseliş</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sabanci-holdingden-kordsa-sermaye-artirimina-katilim"> <i class="bi bi-dot">
+</i> Sabancı Holding’den Kordsa Sermaye Artırımına Katılım</a>
+</li>
+<li class="on d2 fw-300">
+<a href="vakifbanktan-500-mn-usd-murabaha-finansmani"> <i class="bi bi-dot">
+</i> Vakıfbank’tan 500 mn USD Murabaha Finansmanı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hektas-ozbekistanda-ortaklik-gorusmelerine-basladi"> <i class="bi bi-dot">
+</i> Hektaş, Özbekistan’da Ortaklık Görüşmelerine Başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="yeo-teknoloji-savunma-sanayii-cati-ges-projesini-ustlendi"> <i class="bi bi-dot">
+</i> YEO Teknoloji, Savunma Sanayii Çatı GES Projesini Üstlendi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="penta-teknolojiden-netapp-ile-is-ortakligi"> <i class="bi bi-dot">
+</i> Penta Teknoloji’den NetApp ile İş Ortaklığı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ozak-gyonun-kemer-otel-projesinde-yuklenici-belli-oldu"> <i class="bi bi-dot">
+</i> Özak GYO’nun Kemer Otel Projesi’nde Yüklenici Belli Oldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enka-insaattan-irakta-1-milyar-dolari-asan-proje"> <i class="bi bi-dot">
+</i> Enka İnşaat’tan Irak’ta 1 Milyar Doları Aşan Proje</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hareket-proje-tasimaciligi-nordex-ile-res-turbin-anlasmasi-imzaladi"> <i class="bi bi-dot">
+</i> Hareket Proje Taşımacılığı, Nordex ile RES Türbin Anlaşması İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="forte-kamu-ihalesini-118-6-milyon-tl-ile-kazandi"> <i class="bi bi-dot">
+</i> Forte, Kamu İhalesini 118,6 Milyon TL ile Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="vakifbankta-tvf-pay-satisiyla-4-1-milyar-tl-gelir"> <i class="bi bi-dot">
+</i> Vakıfbank’ta TVF Pay Satışıyla 4,1 Milyar TL Gelir</a>
+</li>
+<li class="on d2 fw-300">
+<a href="astor-enerjide-9-81-milyar-tllik-pay-satisi"> <i class="bi bi-dot">
+</i> Astor Enerji’de 9,81 Milyar TL’lik Pay Satışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="global-ports-holdingin-yolcu-sayisi-12-artti"> <i class="bi bi-dot">
+</i> Global Ports Holding’in Yolcu Sayısı %12 Arttı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mlp-saglikta-stratejik-yeniden-yapilanma"> <i class="bi bi-dot">
+</i> MLP Sağlık’ta Stratejik Yeniden Yapılanma</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kizilbuk-gyodan-116-milyon-tllik-satin-alma"> <i class="bi bi-dot">
+</i> Kızılbük GYO’dan 116 Milyon TL’lik Satın Alma</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cw-enerjiden-150-milyon-tllik-ges-sozlesmesi"> <i class="bi bi-dot">
+</i> CW Enerji’den 150 Milyon TL’lik GES Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mavi-giyim-2c25te-beklentilerin-altinda-kar-acikladi"> <i class="bi bi-dot">
+</i> Mavi Giyim 2Ç25’te Beklentilerin Altında Kâr Açıkladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="altinay-savunma-1-4-milyon-euroluk-yeni-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Altınay Savunma 1,4 Milyon Euro’luk Yeni Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kirac-galvaniz-8-milyon-dolarlik-otoyol-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> Kıraç Galvaniz 8 Milyon Dolarlık Otoyol Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="imas-makina-1-2-milyon-dolarlik-un-degirmeni-tesisi-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> İmaş Makina 1,2 Milyon Dolarlık Un Değirmeni Tesisi Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koza-altin-karapinar-projesi-icin-ced-olumlu-karari-aldi"> <i class="bi bi-dot">
+</i> Koza Altın Karapınar Projesi İçin ÇED Olumlu Kararı Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aksa-btb-havacilik-ile-birlesiyor"> <i class="bi bi-dot">
+</i> Aksa BTB Havacılık ile Birleşiyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-teknolojinin-istiraki-connecta-turkiyenin-ilk-leo-uydu-lisansini-aldi"> <i class="bi bi-dot">
+</i> Kontrolmatik Teknoloji’nin İştiraki Connecta, Türkiye’nin İlk LEO Uydu Lisansını Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alfa-solar-enerji-proje-bazli-devlet-destegi-almaya-hak-kazandi"> <i class="bi bi-dot">
+</i> Alfa Solar Enerji Proje Bazlı Devlet Desteği Almaya Hak Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="mia-teknolojiden-5-3-milyon-tl-butceli-staj-ve-burs-platformu-projesi"> <i class="bi bi-dot">
+</i> Mia Teknoloji’den 5,3 Milyon TL Bütçeli Staj ve Burs Platformu Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kiler-holding-ekol-gsyo-halka-arzina-bulls-yatirim-ile-aracilik-edecek"> <i class="bi bi-dot">
+</i> Kiler Holding, Ekol GSYO Halka Arzına Bulls Yatırım ile Aracılık Edecek</a>
+</li>
+<li class="on d2 fw-300">
+<a href="datagate-bilgisayar-vodafone-ile-5-yillik-yeni-is-birligi-anlasmasi-imzaladi"> <i class="bi bi-dot">
+</i> Datagate Bilgisayar, Vodafone ile 5 Yıllık Yeni İş Birliği Anlaşması İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gulermak-agir-sanayinin-305-milyon-tllik-polonya-metro-ihalesi-iptal-edildi"> <i class="bi bi-dot">
+</i> Gülermak Ağır Sanayi’nin 305 Milyon TL’lik Polonya Metro İhalesi İptal Edildi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bim-kar-dagitim-politikasini-guncelledi"> <i class="bi bi-dot">
+</i> BİM, Kâr Dağıtım Politikasını Güncelledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="imas-makina-dogu-afrikada-4-8-milyon-dolarlik-yeni-sozlesmelere-imza-atti"> <i class="bi bi-dot">
+</i> İmaş Makina, Doğu Afrika’da 4,8 Milyon Dolarlık Yeni Sözleşmelere İmza Attı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkiye-sigortanin-prim-uretimi-45-artisla-93-milyar-tlye-ulasti"> <i class="bi bi-dot">
+</i> Türkiye Sigorta’nın Prim Üretimi %45 Artışla 93 Milyar TL’ye Ulaştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="klimasan-manisada-65-milyon-tllik-yeni-yatirima-basliyor"> <i class="bi bi-dot">
+</i> Klimasan, Manisa’da 65 Milyon TL’lik Yeni Yatırıma Başlıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sisecam-tarsusta-200-milyon-euroluk-yeni-yatirimi-devreye-aldi"> <i class="bi bi-dot">
+</i> Şişecam, Tarsus’ta 200 Milyon Euro’luk Yeni Yatırımı Devreye Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-traktor-fabrikalarda-9-gunluk-uretim-arasina-gidecek"> <i class="bi bi-dot">
+</i> Türk Traktör, Fabrikalarda 9 Günlük Üretim Arasına Gidecek</a>
+</li>
+<li class="on d2 fw-300">
+<a href="karsan-turk-traktor-ile-is-birligini-sona-erdirdi"> <i class="bi bi-dot">
+</i> Karsan, Türk Traktör ile İş Birliğini Sona Erdirdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="grainturk-holding-tera-grubu-ile-yatirim-mutabakati-sagladi"> <i class="bi bi-dot">
+</i> Graintürk Holding, Tera Grubu ile Yatırım Mutabakatı Sağladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="smart-gunes-42-8-milyon-dolarlik-depolamali-ges-anlasmasi-imzaladi"> <i class="bi bi-dot">
+</i> Smart Güneş, 42,8 Milyon Dolarlık Depolamalı GES Anlaşması İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="europower-enerjinin-ortakligi-peak-pv-solar-teias-ihalelerini-kazandi"> <i class="bi bi-dot">
+</i> Europower Enerji’nin Ortaklığı Peak PV Solar, TEİAŞ İhalelerini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="fonet-saglik-bilgi-yonetim-sistemi-ihalesinde-en-uygun-teklifi-verdi"> <i class="bi bi-dot">
+</i> Fonet, Sağlık Bilgi Yönetim Sistemi İhalesinde En Uygun Teklifi Verdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="sdt-uzayin-bagli-ortakligi-bkm-bursa-kalip-1-3-milyon-dolarlik-siparis-aldi--2191"> <i class="bi bi-dot">
+</i> SDT Uzay’ın Bağlı Ortaklığı BKM Bursa Kalıp, 1,3 Milyon Dolarlık Sipariş Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="forte-altay-tanki-seri-uretimi-icin-bmc-ile-4-2-milyon-dolarlik-anlasma-imzaladi"> <i class="bi bi-dot">
+</i> Forte, Altay Tankı Seri Üretimi için BMC ile 4,2 Milyon Dolarlık Anlaşma İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-33"> <i class="bi bi-dot">
+</i> Akfen GYO – Kâr Payı Dağıtım Teklifi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-34"> <i class="bi bi-dot">
+</i> Nurol GYO – İzmir Urla’da Ortak Konut Projesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3--2198"> <i class="bi bi-dot">
+</i> Kristal Kola – Kırıkkale PET Hattı Üretime Başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3--2199"> <i class="bi bi-dot">
+</i> Tekfen Holding – Genel Kurul Davasında Mahkeme Ret Kararı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-35"> <i class="bi bi-dot">
+</i> Fonet Teknoloji – Kahramanmaraş SBYS İhalesinde En Uygun Teklif</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-36"> <i class="bi bi-dot">
+</i> Alves Kablo – Balkanlar’da 152,9 Milyon TL’lik Satış Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-37"> <i class="bi bi-dot">
+</i> Turkcell – BTK Yetkilendirme İhalesine Katılacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-38"> <i class="bi bi-dot">
+</i> VBT Yazılım – %300 Bedelli Sermaye Artırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-39"> <i class="bi bi-dot">
+</i> Kartonsan – %400 Bedelli Sermaye Artırımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-40"> <i class="bi bi-dot">
+</i> Mia Teknoloji – TÜBİTAK Destekli Metaverse Projesi Tamamlandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3--2208"> <i class="bi bi-dot">
+</i> Burçelik Vana – 355 Bin Dolarlık İhracat Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-41"> <i class="bi bi-dot">
+</i> Türk Hava Yolları – 225 Yeni Uçak İçin Sipariş ve Görüşmeler</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-42"> <i class="bi bi-dot">
+</i> Margün Enerji – Bedelsiz Sermaye Artırımına SPK Onayı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-43"> <i class="bi bi-dot">
+</i> CW Enerji – Pay Geri Alım Programı İptal Edildi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="2217"> <i class="bi bi-dot">
+</i> Hat-San Gemi – 1,75 Milyon Dolarlık Gemi Onarım Projesi Tamamlandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="2218"> <i class="bi bi-dot">
+</i> Koç Metalurji – Osmaniye’de 83 Milyon TL’lik Arsa Alımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="2219--2219"> <i class="bi bi-dot">
+</i> Sasa Polyester – 650 Milyon Dolarlık Elyaf Tesisi Yatırımı Tamamlandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aygaz-tofas-ve-koc-holding-zincirlikuyudaki-paylarini-devrediyor--2222"> <i class="bi bi-dot">
+</i> Aygaz, Tofaş ve Koç Holding Zincirlikuyu’daki Paylarını Devrediyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bulbuloglu-vincin-bagli-ortakligindan-2-1-milyon-dolarlik-savunma-sanayii-sozlesmesi"> <i class="bi bi-dot">
+</i> Bülbüloğlu Vinç’in Bağlı Ortaklığından 2,1 Milyon Dolarlık Savunma Sanayii Sözleşmesi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koc-metalurji-musta-ges-yatirimi-icin-arsa-satin-aldi"> <i class="bi bi-dot">
+</i> Koç Metalurji, Muş’ta GES Yatırımı İçin Arsa Satın Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-44"> <i class="bi bi-dot">
+</i> Gübre Fabrikaları – Razi Petrochemical Satış Sürecinde Yeni Aşama</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-telekom-221-8-milyon-dolarlik-uzun-vadeli-kredi-sagladi"> <i class="bi bi-dot">
+</i> Türk Telekom 221,8 Milyon Dolarlık Uzun Vadeli Kredi Sağladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="banvite-947-3-milyon-tl-idari-para-cezasi"> <i class="bi bi-dot">
+</i> Banvit’e 947,3 Milyon TL İdari Para Cezası</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aygaz-tofas-ve-koc-holding-zincirlikuyudaki-paylarini-devrediyor--2235"> <i class="bi bi-dot">
+</i> Link Bilgisayar, 123,9 Milyon TL’lik Satış Anlaşması İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bulbuloglu-vincin-bagli-ortakligindan-2-1-milyon-dolarlik-savunma-sanayii-sozlesmesi-1"> <i class="bi bi-dot">
+</i> Katılımevim, Sermayesini %262 Artırıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="petkim-star-rafineri-ile-ust-hakki-bedellerini-yeniden-belirledi"> <i class="bi bi-dot">
+</i> Petkim, STAR Rafineri ile Üst Hakkı Bedellerini Yeniden Belirledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koza-altin-bebekteki-gayrimenkulunu-1-1-milyar-tlye-satiyor"> <i class="bi bi-dot">
+</i> Koza Altın, Bebek’teki Gayrimenkulünü 1,1 Milyar TL’ye Satıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="thy-temesvar-ve-erivana-yeni-sefer-baslatiyor"> <i class="bi bi-dot">
+</i> THY, Temeşvar ve Erivan’a Yeni Sefer Başlatıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="erdemoglu-holding-sasada-1-45-milyar-adet-pay-satisi-baslatti"> <i class="bi bi-dot">
+</i> Erdemoğlu Holding, SASA’da 1,45 Milyar Adet Pay Satışı Başlattı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hitit-bilgisayarda-ortaklardan-3-7-milyon-lot-pay-satisi"> <i class="bi bi-dot">
+</i> Hitit Bilgisayar’da Ortaklardan 3,7 Milyon Lot Pay Satışı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="selcuk-gida-dunya-yatirim-holding-ile-birlesiyor"> <i class="bi bi-dot">
+</i> Selçuk Gıda, Dünya Yatırım Holding ile Birleşiyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="selcuk-gidanin-borsa-kodunda-degisiklik"> <i class="bi bi-dot">
+</i> Selçuk Gıda’nın Borsa Kodunda Değişiklik</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cvk-maden-trafigura-ile-25-milyon-dolarlik-anlasma-imzaladi"> <i class="bi bi-dot">
+</i> CVK Maden, Trafigura ile 25 Milyon Dolarlık Anlaşma İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emek-elektrik-yurt-disindan-623-bin-euroluk-siparis-aldi"> <i class="bi bi-dot">
+</i> Emek Elektrik, Yurt Dışından 623 Bin Euro’luk Sipariş Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="agesanin-prim-uretimi-9-ayda-70-artis-gosterdi"> <i class="bi bi-dot">
+</i> Agesa’nın Prim Üretimi 9 Ayda %70 Artış Gösterdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-sigorta-9-ayda-68-milyar-tl-prim-uretimi-gerceklestirdi"> <i class="bi bi-dot">
+</i> Anadolu Sigorta 9 Ayda 68 Milyar TL Prim Üretimi Gerçekleştirdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aksa-enerjiden-2028e-guclu-buyume-hedefi"> <i class="bi bi-dot">
+</i> Aksa Enerji’den 2028’te Güçlü Büyüme Hedefi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alfa-solar-enerji-turkseker-ile-1-5-milyar-tllik-ges-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> Alfa Solar Enerji, TÜRKŞEKER ile 1,5 Milyar TL’lik GES Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="odine-telin-ile-3-yillik-sozlesme-uzatimi-gerceklestirdi"> <i class="bi bi-dot">
+</i> Odine, Telin ile 3 Yıllık Sözleşme Uzatımı Gerçekleştirdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="safkar-baykardan-1-4-milyon-dolarlik-siparis-aldi"> <i class="bi bi-dot">
+</i> Safkar, Baykar’dan 1,4 Milyon Dolarlık Sipariş Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-ilac-dmo-ihalelerinde-464-milyon-tllik-sozlesme-kazandi"> <i class="bi bi-dot">
+</i> Turk İlaç, DMO İhalelerinde 464 Milyon TL’lik Sözleşme Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="halkbankin-abddeki-dava-surecinde-yeni-gelisme"> <i class="bi bi-dot">
+</i> Halkbank’ın ABD’deki Dava Sürecinde Yeni Gelişme</a>
+</li>
+<li class="on d2 fw-300">
+<a href="erdemoglu-holdingin-sasadaki-payi-70in-uzerine-cikti"> <i class="bi bi-dot">
+</i> Erdemoğlu Holding’in SASA’daki Payı %70’in Üzerine Çıktı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="migros-eylulde-16-yeni-magaza-ve-2-dagitim-merkezi-acti"> <i class="bi bi-dot">
+</i> Migros, Eylül’de 16 Yeni Mağaza ve 2 Dağıtım Merkezi Açtı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="say-yenilenebilir-enerjiden-endonezyaya-1-1-milyon-euroluk-satis"> <i class="bi bi-dot">
+</i> Say Yenilenebilir Enerji’den Endonezya’ya 1,1 Milyon Euro’luk Satış</a>
+</li>
+<li class="on d2 fw-300">
+<a href="enerya-enerjiden-2-milyar-tllik-pay-geri-alim-programi"> <i class="bi bi-dot">
+</i> Enerya Enerji’den 2 Milyar TL’lik Pay Geri Alım Programı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="armada-gidadan-surdurulebilirlik-yatirimi-biyolojik-aritma-tesisi-kurulacak"> <i class="bi bi-dot">
+</i> Armada Gıda’dan Sürdürülebilirlik Yatırımı: Biyolojik Arıtma Tesisi Kurulacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ulker-250-milyon-dolarlik-sendikasyon-kredisini-yeniledi"> <i class="bi bi-dot">
+</i> Ülker, 250 Milyon Dolarlık Sendikasyon Kredisini Yeniledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="agesa-prim-uretimini-9-ayda-70-artirdi"> <i class="bi bi-dot">
+</i> Agesa, Prim Üretimini 9 Ayda %70 Artırdı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="anadolu-sigortanin-9-aylik-prim-uretimi-67-9-milyar-tlye-ulasti"> <i class="bi bi-dot">
+</i> Anadolu Sigorta’nın 9 Aylık Prim Üretimi 67,9 Milyar TL’ye Ulaştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="aksa-enerji-2028e-kadar-favokte-uc-kat-buyume-hedefliyor"> <i class="bi bi-dot">
+</i> Aksa Enerji, 2028’e Kadar FAVÖK’te Üç Kat Büyüme Hedefliyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="alfa-solar-turksekerin-ges-projesinde-yer-alacak"> <i class="bi bi-dot">
+</i> Alfa Solar, TÜRKŞEKER’in GES Projesinde Yer Alacak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="odine-telkom-indonesia-ile-3-yillik-yeni-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Odine, Telkom Indonesia ile 3 Yıllık Yeni Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="safkar-baykardan-1-4-milyon-dolarlik-siparis-aldi-1"> <i class="bi bi-dot">
+</i> Safkar, Baykar’dan 1,4 Milyon Dolarlık Sipariş Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turk-ilac-saglik-market-ihalelerinde-464-milyon-tllik-sozlesme-kazandi-1"> <i class="bi bi-dot">
+</i> Turk İlaç, Sağlık Market İhalelerinde 464 Milyon TL’lik Sözleşme Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="oncosem-ingiltere-nhs-ihalesinde-basarili-tedarikci-oldu--2303"> <i class="bi bi-dot">
+</i> Oncosem, İngiltere NHS İhalesinde Başarılı Tedarikçi Oldu</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cw-enerji-3-milyon-dolarlik-ges-kurulumu-sozlesmesi-imzaladi"> <i class="bi bi-dot">
+</i> CW Enerji, 3 Milyon Dolarlık GES Kurulumu Sözleşmesi İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tera-yatirim-prive-sigortada-payini-artiriyor"> <i class="bi bi-dot">
+</i> Tera Yatırım, Prive Sigorta’da Payını Artırıyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="imas-makina-ortadoguda-yeni-un-degirmeni-tesisi-kuracak"> <i class="bi bi-dot">
+</i> İmaş Makina, Ortadoğu’da Yeni Un Değirmeni Tesisi Kuracak</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kontrolmatik-meksikada-enerji-depolama-sirketi-kuruyor"> <i class="bi bi-dot">
+</i> Kontrolmatik, Meksika’da Enerji Depolama Şirketi Kuruyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="ral-yatirim-holding-pay-geri-alim-programini-tamamladi"> <i class="bi bi-dot">
+</i> Ral Yatırım Holding, Pay Geri Alım Programını Tamamladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="manas-enerji-sermaye-artirim-oranini-revize-etti"> <i class="bi bi-dot">
+</i> Manas Enerji, Sermaye Artırım Oranını Revize Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="global-yatirim-holding-kazablanka-kruvaziyer-limani-ihalesini-kazandi"> <i class="bi bi-dot">
+</i> Global Yatırım Holding, Kazablanka Kruvaziyer Limanı İhalesini Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pegasusun-yolcu-sayisi-eylulde-20-artti"> <i class="bi bi-dot">
+</i> Pegasus’un Yolcu Sayısı Eylül’de %20 Arttı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cimsa-abdde-gri-cimento-uretimine-basladi"> <i class="bi bi-dot">
+</i> Çimsa, ABD’de Gri Çimento Üretimine Başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="emlak-konut-gyo-koycegiz-projesi-ihalesini-iptal-etti"> <i class="bi bi-dot">
+</i> Emlak Konut GYO, Köyceğiz Projesi İhalesini İptal Etti</a>
+</li>
+<li class="on d2 fw-300">
+<a href="fortenin-bagli-ortakligi-milsoft-siber-savunma-ihalesinde-en-iyi-teklifi-verdi"> <i class="bi bi-dot">
+</i> Forte’nin Bağlı Ortaklığı Milsoft, Siber Savunma İhalesinde En İyi Teklifi Verdi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="altinkilic-gida-azerbaycanda-bazar-store-zincirleriyle-anlasti"> <i class="bi bi-dot">
+</i> Altınkılıç Gıda, Azerbaycan’da Bazar Store Zincirleriyle Anlaştı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dct-trading-yunanistanda-gida-tedarik-anlasmasini-yeniledi"> <i class="bi bi-dot">
+</i> DCT Trading, Yunanistan’da Gıda Tedarik Anlaşmasını Yeniledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="turkiye-sigortadan-3c25te-5-milyar-tl-net-kar"> <i class="bi bi-dot">
+</i> Türkiye Sigorta’dan 3Ç25’te 5 Milyar TL Net Kâr</a>
+</li>
+<li class="on d2 fw-300">
+<a href="gulermak-renewables-corshellach-energy-storagei-satin-aldi"> <i class="bi bi-dot">
+</i> Gülermak Renewables, Corshellach Energy Storage’i Satın Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="pasifik-eurasia-ve-arkas-lojistikten-demiryolu-is-birligi-adimi--2336"> <i class="bi bi-dot">
+</i> Pasifik Eurasia ve Arkas Lojistik’ten Demiryolu İş Birliği Adımı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="koc-holdingten-600-milyon-dolarlik-kredi-anlasmasi"> <i class="bi bi-dot">
+</i> Koç Holding’ten 600 Milyon Dolarlık Kredi Anlaşması</a>
+</li>
+<li class="on d2 fw-300">
+<a href="tera-yatirim-teknoloji-holding-ve-ral-yatirim-holdingten-teknoloji-is-birligi-protokolu"> <i class="bi bi-dot">
+</i> Tera Yatırım Teknoloji Holding ve Ral Yatırım Holding’ten Teknoloji İş Birliği Protokolü</a>
+</li>
+<li class="on d2 fw-300">
+<a href="desa-deri-gozen-bioworks-ile-biyo-materyal-ortakligi-icin-gorusmelere-basladi"> <i class="bi bi-dot">
+</i> Desa Deri, Gozen Bioworks ile Biyo-Materyal Ortaklığı İçin Görüşmelere Başladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="soktas-tekstil-ges-yatirimini-tamamladi"> <i class="bi bi-dot">
+</i> Söktaş Tekstil, GES Yatırımını Tamamladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="imas-makina-balkanlar-ve-dubaide-yeni-sirketler-kuruyor"> <i class="bi bi-dot">
+</i> İmaş Makina, Balkanlar ve Dubai’de Yeni Şirketler Kuruyor</a>
+</li>
+<li class="on d2 fw-300">
+<a href="dap-gayrimenkul-gelistirme-proje-satislarini-guncelledi"> <i class="bi bi-dot">
+</i> DAP Gayrimenkul Geliştirme, Proje Satışlarını Güncelledi</a>
+</li>
+<li class="on d2 fw-300">
+<a href="bulbuloglu-vinc-625-bin-euroluk-yeni-sozlesme-imzaladi"> <i class="bi bi-dot">
+</i> Bülbüloğlu Vinç, 625 Bin Euro’luk Yeni Sözleşme İmzaladı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="hat-san-gemi-insa-3-ceyrekte-karinda-sert-dusus-yasadi"> <i class="bi bi-dot">
+</i> Hat-San Gemi İnşa 3. Çeyrekte Kârında Sert Düşüş Yaşadı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="kardemir-5-7-milyon-dolarlik-demiryolu-tekerlek-seti-ihalesi-kazandi"> <i class="bi bi-dot">
+</i> Kardemir, 5,7 Milyon Dolarlık Demiryolu Tekerlek Seti İhalesi Kazandı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="cvk-maden-balikesirde-yeni-altin-sahasi-satin-aldi"> <i class="bi bi-dot">
+</i> CVK Maden, Balıkesir’de Yeni Altın Sahası Satın Aldı</a>
+</li>
+<li class="on d2 fw-300">
+<a href="3-48"> <i class="bi bi-dot">
+</i> Zorlu Enerji’nin Kredi Notu “B+” Seviyesinde Teyit Edildi</a></li><li class="on d2 fw-300"><a href="oncosem-dmo-saglik-market-ihalesini-17-2-milyon-tl-bedelle-kazandi"> <i class="bi bi-dot"></i> Oncosem, DMO Sağlık Market İhalesini 17,2 Milyon TL Bedelle Kazandı</a></li><li class="on d2 fw-300"><a href="3-49"> <i class="bi bi-dot"></i> Yonga Mobilya, Denizli’de 68,4 Bin m² Arazi Satın Aldı</a></li><li class="on d2 fw-300"><a href="tapdi-oksijen-ingilterede-yeni-ofisle-faaliyetlerini-genisletiyor"> <i class="bi bi-dot"></i> Tapdi Oksijen, İngiltere’de Yeni Ofisle Faaliyetlerini Genişletiyor</a></li><li class="on d2 fw-300"><a href="dap-gayrimenkul-bodrum-ortakent-ihalesine-katilacak"> <i class="bi bi-dot"></i> DAP Gayrimenkul, Bodrum Ortakent İhalesine Katılacak</a></li><li class="on d2 fw-300"><a href="can2-termik-euas-ile-dolar-bazli-elektrik-alim-garantili-sozlesme-imzaladi"> <i class="bi bi-dot"></i> Çan2 Termik, EÜAŞ ile Dolar Bazlı Elektrik Alım Garantili Sözleşme İmzaladı</a></li><li class="on d2 fw-300"><a href="3-50"> <i class="bi bi-dot"></i> Arçelik &lt;ARCLK TI&gt; – 3Ç25’te Beklentilerin Üzerinde Zarar Açıkladı. Yıl Sonu Beklentileri ise Aşağı Revize Edildi</a></li><li class="on d2 fw-300"><a href="3-51"> <i class="bi bi-dot"></i> Çelebi Hava Servisi &lt;CLEBI TI&gt; – Kenya’da 40,1 Milyon Dolarlık Stratejik Satın Alım</a></li><li class="on d2 fw-300"><a href="2382"> <i class="bi bi-dot"></i> Anadolu Sigorta &lt;ANSGR TI&gt; – 3Ç25’te Güçlü Kârlılık Performansı</a></li><li class="on d2 fw-300"><a href="3--2383"> <i class="bi bi-dot"></i> Afyon Çimento &lt;AFYON TI&gt; – Beklentilerin Üzerinde Kârlılık, Güçlü Operasyonel Performans</a></li><li class="on d2 fw-300"><a href="2384"> <i class="bi bi-dot"></i> Kıraç Galvaniz Telekominikasyon &lt;TCKRC TI&gt; – Kuzey Marmara Otoyolu Projesi İçin 4,4 Milyon Dolarlık Anlaşma</a></li><li class="on d2 fw-300"><a href="2385--2385"> <i class="bi bi-dot"></i> Girişim Elektrik &lt;GESAN TI&gt; – 30 Milyon Dolarlık GES Projesi Sözleşmesi İmzalandı</a></li><li class="on d2 fw-300"><a href="2386"> <i class="bi bi-dot"></i> ICU Girişim &lt;ICUGS TI&gt; – Batarya Teknolojilerinde Yeni Siparişler</a></li><li class="on d2 fw-300"><a href="2387"> <i class="bi bi-dot"></i> Biotrend Enerji &lt;BIOEN TI&gt; – Ulubey Tesisinde Toplu İş Sözleşmesi İmzalandı</a></li></div><li class="on d1"> <a href="basinda-biz/" > Basında Biz</a></li><div class="sub-side duzey2 fw-400 p-1 pr-1"><li class="on d2 fw-300"><a href="borsada-gong-binbin-icin-caldi-1"> <i class="bi bi-dot"></i> Borsada Gong, BinBin İçin Çaldı</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-holdingden-selcuk-gida-yatirimi"> <i class="bi bi-dot"></i> Bulls Yatırım Holding´den Selçuk Gıda Yatırımı</a></li><li class="on d2 fw-300"><a href="bull-yatirimdan-selcuk-gida-yatirimi"> <i class="bi bi-dot"></i> Bull Yatırım Holding´den Selçuk Gıda Yatırımı</a></li><li class="on d2 fw-300"><a href="bulls-gsyodan-halka-arz-sonrasi-ilk-yatirim"> <i class="bi bi-dot"></i> Bulls GSYO´dan Halka Arz Sonrası İlk Yatırım</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-subelesme-atagi-ile-buyuyecek"> <i class="bi bi-dot"></i> Bulls Yatırım, Şubeleşme Atağı İle Büyüyecek</a></li><li class="on d2 fw-300"><a href="1-iklim-ekonomisi-surdurulebilirlik-finansmani-zirvesi"> <i class="bi bi-dot"></i> 1. İklim Ekonomisi Sürdürülebilirlik Finansmanı Zirvesi</a></li><li class="on d2 fw-300"><a href="cekya-turkiye-dostlugunun-100-yilinda-pragda-ataturk-aniti-acildi"> <i class="bi bi-dot"></i> Çekya-Türkiye Dostluğunun 100. Yılında Prag´da Atatürk Anıtı Açıldı</a></li><li class="on d2 fw-300"><a href="bull-yatirim-yeni-genel-mudurluk-ofisinin-acilisini-yapti"> <i class="bi bi-dot"></i> Bull Yatırım, Yeni Genel Müdürlük Ofisinin Açılışını Yaptı</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-yeni-genel-mudurluk-binasini-istanbul-leventte-hizmete-acti"> <i class="bi bi-dot"></i> Bulls Yatırım, Yeni Genel Müdürlük Ofisi İstanbul Levent´te Hizmete Açıldı.</a></li><li class="on d2 fw-300"><a href="avrupada-ulkemizin-adini-tasiyan-ilk-park--1132"> <i class="bi bi-dot"></i> Avrupa´da Ülkemizin Adını Taşıyan İlk Park</a></li><li class="on d2 fw-300"><a href="kafkanin-sehrinde-turk-parki"> <i class="bi bi-dot"></i> Kafka´nın Şehrinde Türk Parkı</a></li><li class="on d2 fw-300"><a href="prag-buyukelcigimizin-muthis-hamlesi"> <i class="bi bi-dot"></i> Prag Büyükelçiğimizin Müthiş Hamlesi</a></li><li class="on d2 fw-300"><a href="yeni-genel-mudurluk-coskusu"> <i class="bi bi-dot"></i> Yeni Genel Müdürlük Coşkusu</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-antalyada-ofis-acti"> <i class="bi bi-dot"></i> Bulls Yatırım, Antalya´da ofis açtı</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-ve-ted-ankara-kolejliler-guclerini-birlestiriyor"> <i class="bi bi-dot"></i> Bulls Yatırım ve TED Ankara Kolejliler Güçlerini Birleştiriyor</a></li><li class="on d2 fw-300"><a href="gong-binbin-icin-caldi"> <i class="bi bi-dot"></i> Gong, BinBin İçin Çaldı</a></li><li class="on d2 fw-300"><a href="binbinin-halka-arz-buyuklugu-1-6-milyar-tl-oldu"> <i class="bi bi-dot"></i> BinBin´in Halka Arz Büyüklüğü, 1,6 Milyar TL Oldu</a></li><li class="on d2 fw-300"><a href="borsa-istanbulda-gong-binbin-icin-caldi"> <i class="bi bi-dot"></i> Borsa İstanbul´da Gong, BinBin İçin Çaldı</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-bursa-subesi-niluferde-acildi"> <i class="bi bi-dot"></i> Bulls Yatırım, Bursa Şubesi Nilüfer´de Açıldı.</a></li><li class="on d2 fw-300"><a href="toplumsal-fayda-odulleri-ikinci-kez-farkindaligi-artirdi"> <i class="bi bi-dot"></i> Toplumsal Fayda Ödülleri İkinci Kez Farkındalığı Artırdı</a></li><li class="on d2 fw-300"><a href="35-milyon-dolar-civarindaki-yatirim-planimiz-savunma-sanayi-agirlikli"> <i class="bi bi-dot"></i> &quot;35 Milyon Dolar Civarındaki Yatırım Planımız, Savunma Sanayi Ağırlıklı&quot;</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-fethiyede-irtibat-burosu-acti"> <i class="bi bi-dot"></i> Bulls Yatırım, Fethiye´de İrtibat Bürosu Açtı</a></li><li class="on d2 fw-300"><a href="bulls-gsyo-halka-arz-oluyor"> <i class="bi bi-dot"></i> Bulls GSYO, Halka Arz Oluyor</a></li><li class="on d2 fw-300"><a href="bulls-gsyonun-halka-arz-basvurusu-onaylandi--1161"> <i class="bi bi-dot"></i> Bulls GSYO´nun Halka Arz Başvurusu Onaylandı</a></li><li class="on d2 fw-300"><a href="14-17-subatta-talep-toplayacak"> <i class="bi bi-dot"></i> 14-17 Şubat´ta Talep Toplayacak</a></li><li class="on d2 fw-300"><a href="adanada-yeni-sube"> <i class="bi bi-dot"></i> Adana´da Yeni Şube</a></li><li class="on d2 fw-300"><a href="bulls-gsyoya-yurt-ici-bireysel-yatirimcidan-3-5-kat-talep-geldi"> <i class="bi bi-dot"></i> Bulls GSYO´ya, Yurt İçi Bireysel Yatırımcıdan 3.5 Kat Talep Geldi</a></li><li class="on d2 fw-300"><a href="gong-bulls-gsyo-icin-caldi"> <i class="bi bi-dot"></i> Gong, Bulls GSYO İçin Çaldı</a></li><li class="on d2 fw-300"><a href="borsa-istanbulda-gong-bulls-gsyo-icin-caldi--1166"> <i class="bi bi-dot"></i> Borsa İstanbul´da Gong, Bulls GSYO İçin Çaldı</a></li><li class="on d2 fw-300"><a href="spk-iki-sirketin-halka-arzini-onayladi"> <i class="bi bi-dot"></i> SPK, İki Şirketin Halka Arzını Onayladı</a></li><li class="on d2 fw-300"><a href="yatirimci-nasil-ikna-olur"> <i class="bi bi-dot"></i> Yatırımcı Nasıl İkna Olur?</a></li><li class="on d2 fw-300"><a href="halka-arza-yeni-sirket"> <i class="bi bi-dot"></i> Halka Arza Yeni Şirket</a></li><li class="on d2 fw-300"><a href="spkdan-iki-sirkete-halka-arz-izni"> <i class="bi bi-dot"></i> SPK´dan iki şirkete halka arz izni</a></li><li class="on d2 fw-300"><a href="bulls-gsyoda-halka-aciklik-orani-yuzde-27-05-ongoruluyor"> <i class="bi bi-dot"></i> Bulls GSYO´da Halka Açıklık Oranı Yüzde 27,05 Öngörülüyor</a></li><li class="on d2 fw-300"><a href="borsadan-200-sirkete-209-3-milyar-kaynak"> <i class="bi bi-dot"></i> Borsa´dan 200 Şirkete 209,3 Milyar Kaynak</a></li><li class="on d2 fw-300"><a href="bist-en-cok-kazandiranlar"> <i class="bi bi-dot"></i> BIST En Çok Kazandıranlar</a></li><li class="on d2 fw-300"><a href="gong-bulls-gsyo-icin-caldi-1"> <i class="bi bi-dot"></i> Gong, Bulls GSYO İçin Çaldı</a></li><li class="on d2 fw-300"><a href="bulls-gsyo-gong-toreni"> <i class="bi bi-dot"></i> Bulls GSYO, gong töreni</a></li><li class="on d2 fw-300"><a href="borsadan-sirketlere-rekor-kaynak"> <i class="bi bi-dot"></i> Borsadan Şirketlere Rekor Kaynak</a></li><li class="on d2 fw-300"><a href="piyasada-guven-yeniden-tesis-edildi"> <i class="bi bi-dot"></i> &quot;Piyasada Güven Yeniden Tesis Edildi&quot;</a></li><li class="on d2 fw-300"><a href="alinan-onlemlerle-piyasada-guven-yeniden-tesis-edildi"> <i class="bi bi-dot"></i> &quot;Alınan Önlemlerle Piyasada Güven Yeniden Tesis Edildi&quot;</a></li><li class="on d2 fw-300"><a href="sermaye-piyasalarinda-nitelikli-eleman-ihtiyaci"> <i class="bi bi-dot"></i> Sermaye Piyasalarında Nitelikli Eleman İhtiyacı</a></li><li class="on d2 fw-300"><a href="2-ayda-28-5-milyarlik-halka-arz"> <i class="bi bi-dot"></i> 2 ayda 28.5 Milyarlık Halka Arz</a></li><li class="on d2 fw-300"><a href="odaginda-savunma-sanayi-var"> <i class="bi bi-dot"></i> &quot;Odağında Savunma Sanayi Var&quot;</a></li><li class="on d2 fw-300"><a href="sermaye-piyasasinda-uzman-acigi"> <i class="bi bi-dot"></i> Sermaye Piyasasında Uzman Açığı</a></li><li class="on d2 fw-300"><a href="pazar-payi-surukleyici"> <i class="bi bi-dot"></i> Pazar Payı Sürükleyici</a></li><li class="on d2 fw-300"><a href="abdnin-yeni-gumruk-vergileri-turkiye-icin-firsat-olabilir"> <i class="bi bi-dot"></i> &quot;ABD´nin Yeni Gümrük Vergileri, Türkiye İçin Fırsat Olabilir&quot;</a></li><li class="on d2 fw-300"><a href="abdnin-gumruk-vergileri-turkiyenin-firsati-olabilir"> <i class="bi bi-dot"></i> &quot;ABD´nin Gümrük Vergileri, Türkiye´nin Fırsatı Olabilir&quot;</a></li><li class="on d2 fw-300"><a href="yatirimcinin-riskleri-sinirlamasi-buyuk-onem-tasiyor"> <i class="bi bi-dot"></i> &quot;Yatırımcının, Riskleri Sınırlaması Büyük Önem Taşıyor&quot;</a></li><li class="on d2 fw-300"><a href="firtinada-yon-bulmak-isteyenin-riskleri-sinirlamasi-onemli"> <i class="bi bi-dot"></i> &quot;Fırtınada Yön Bulmak İsteyenin, Riskleri Sınırlaması Önemli&quot;</a></li><li class="on d2 fw-300"><a href="gram-altin-2-haftada-260-tl-eridi-trumpin-2-0-donemi-sari-altini-vurdu"> <i class="bi bi-dot"></i> Gram altın 2 Haftada 260 TL Eridi</a></li><li class="on d2 fw-300"><a href="borsalar-olmez-sadece-hastalanir"> <i class="bi bi-dot"></i> &quot;Borsalar Ölmez, Sadece Hastalanır&quot;</a></li><li class="on d2 fw-300"><a href="haber-ismi"> <i class="bi bi-dot"></i> &quot;Piyasadan Kopuk Olmayan Bir TCMB Görüyoruz&quot;</a></li><li class="on d2 fw-300"><a href="tuketici-guveni-dusuyor"> <i class="bi bi-dot"></i> &quot;Tüketici Güveni Düşüyor&quot;</a></li><li class="on d2 fw-300"><a href="bth-tl-fonu-yatirimcisiyla-bulustu"> <i class="bi bi-dot"></i> BTH-TL FON´u Yatırımcısıyla Buluştu</a></li><li class="on d2 fw-300"><a href="bulls-portfoy-bha-tl-fonu-yatirimcisiyla-bulusturdu-yerli-hisse-odakli-yeni-yatirim-araci-devrede"> <i class="bi bi-dot"></i> Bulls Portföy ´BHA-TL Fon´u yatırımcısıyla buluşturdu: Yerli hisse odaklı yeni yatırım aracı devrede</a></li><li class="on d2 fw-300"><a href="1314--1314"> <i class="bi bi-dot"></i> Altın piyasası ne olacak? Uzmanlardan analiz…</a></li><li class="on d2 fw-300"><a href="altin-kuresel-rssklerle-yeniden-yatirim-gundeminde"> <i class="bi bi-dot"></i> Altın, Küresel Risklerle Yeniden Yatırım Gündeminde</a></li><li class="on d2 fw-300"><a href="3--1346"> <i class="bi bi-dot"></i> Bulls Yatırım Yönetim Kurulu Başkan Vekili Murat Barışık: “FED’in faiz indirimlerine devam edeceğini öngörüyoruz”</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-satis-direktoru-evren-cakarer"> <i class="bi bi-dot"></i> Bulls Yatırım Direktörü Evren Çakarer: &quot;Barış sinyalleri ve jeopolitik gelişmeler piyasaları destekliyor&quot;</a></li><li class="on d2 fw-300"><a href="uzmanlardan-altin-icin-kritik-uyarilar-ve-gelecek-tahminleri"> <i class="bi bi-dot"></i> Uzmanlardan altın için kritik uyarılar ve gelecek tahminleri</a></li><li class="on d2 fw-300"><a href="3-1"> <i class="bi bi-dot"></i> Bulls Yatırım Yurtdışı Piyasalar Direktörü Cenk Akyoldaş: “Şahin ama veriye bağlı duruş”</a></li><li class="on d2 fw-300"><a href="istanbul-universitesinde-teori-pratik-hayatin-icinden-finans-bulusmasi--1522"> <i class="bi bi-dot"></i> İstanbul Üniversitesi´nde &quot;TEORİ &amp; PRATİK: Hayatın İçinden Finans&quot; Buluşması</a></li><li class="on d2 fw-300"><a href="enflasyonik-tabloda-piyasalar-iyimser-halk-karamsar"> <i class="bi bi-dot"></i> Enflasyonik tabloda, piyasalar iyimser, halk karamsar</a></li><li class="on d2 fw-300"><a href="sermaye-piyasasinda-kariyer-hedefleyenlere-3-onemli-oneri"> <i class="bi bi-dot"></i> Sermaye piyasasında kariyer hedefleyenlere 3 önemli öneri</a></li><li class="on d2 fw-300"><a href="kurban-bayrami-tatilinde-para-nasil-degerlendirilmeli-fon-seciminde-nelere-dikkat-etmeli"> <i class="bi bi-dot"></i> Kurban Bayramı tatilinde para nasıl değerlendirilmeli? Fon seçiminde nelere dikkat etmeli?</a></li><li class="on d2 fw-300"><a href="yapay-zeka-destekli-voltran-fonu-16-haziranda-yatirimciyla-bulusuyor--1575"> <i class="bi bi-dot"></i> Yapay zeka destekli Voltran Fonu 16 Haziran’da yatırımcıyla buluşuyor!</a></li><li class="on d2 fw-300"><a href="kriptoda-volatilite-yuksek-kalacak--1620"> <i class="bi bi-dot"></i> Kriptoda, Volatilite Yüksek Kalacak</a></li><li class="on d2 fw-300"><a href="yapay-zeka-destekli-voltan-fonu-yatirimcisiyla-bulustu"> <i class="bi bi-dot"></i> Yapay Zeka destekli Voltan Fonu, yatırımcısıyla buluştu</a></li><li class="on d2 fw-300"><a href="piyasa-savasin-golgesinde-normallesme-arayisinda--1622"> <i class="bi bi-dot"></i> &quot;Piyasa, savaşın gölgesinde normalleşme arayışında&quot;</a></li><li class="on d2 fw-300"><a href="para-piyasalari-normallesiyor"> <i class="bi bi-dot"></i> Para Piyasaları Normalleşiyor</a></li><li class="on d2 fw-300"><a href="bulls-gsyo-altinay-savunma-teknolojilerinin-yuzde-1-77sine-ortak-oldu"> <i class="bi bi-dot"></i> Bulls GSYO, Altınay Savunma Teknolojileri’nin yüzde 1.77’sine ortak oldu</a></li><li class="on d2 fw-300"><a href="ayilar-ve-bogalar"> <i class="bi bi-dot"></i> Ayılar ve Boğalar</a></li><li class="on d2 fw-300"><a href="cnbc-e-tv-acilis-oncesi--1626"> <i class="bi bi-dot"></i> Açılış Öncesi</a></li><li class="on d2 fw-300"><a href="gun-sonu--1627"> <i class="bi bi-dot"></i> Gün Sonu</a></li><li class="on d2 fw-300"><a href="bulls-gsyodan-altinay-savunmaya-yatirim"> <i class="bi bi-dot"></i> Bulls GSYO´dan, Altınay Savunma´ya Yatırım</a></li><li class="on d2 fw-300"><a href="bulls-gsyodan-altinay-savunmaya-250-milyon-tllik-yatirim"> <i class="bi bi-dot"></i> Bulls GSYO´dan Altınay Savunma´ya 250 milyon TL´lik yatırım</a></li><li class="on d2 fw-300"><a href="100-bin-tl-maasla-genclere-is-firsati"> <i class="bi bi-dot"></i> 100 Bin TL Maaşla Gençlere İŞ Fırsatı</a></li><li class="on d2 fw-300"><a href="fedin-faiz-indirimine-devam-edecegini-ongoruyoruz"> <i class="bi bi-dot"></i> ´FED´in Faiz İndirimine Devam Edeceğini Öngörüyoruz&quot;</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-genc-iktisatcilari-istanbulda-bulusturdu--1723"> <i class="bi bi-dot"></i> Bulls Yatırım, Genç İktisatçıları İstanbul’da Buluşturdu!</a></li><li class="on d2 fw-300"><a href="1inci-iktisat-ogrenci-sempozyumu-istanbulda-gerceklesti"> <i class="bi bi-dot"></i> 1´inci İktisat Öğrenci Sempozyumu İstanbul´da Gerçekleşti</a></li><li class="on d2 fw-300"><a href="iktisat-ogrenci-sempozyumu-genc-iktisatcilari-istanbulda-bulusturdu"> <i class="bi bi-dot"></i> İktisat Öğrenci Sempozyumu Genç İktisatçıları İstanbul’da Buluşturdu!</a></li><li class="on d2 fw-300"><a href="teknoloji-bizim-icin-statejik-buyume-ekseni-oldu"> <i class="bi bi-dot"></i> Teknoloji, Bizim İçin Statejik Büyüme Ekseni Oldu</a></li><li class="on d2 fw-300"><a href="bulls-gsyo-bulls-yatirim-ve-bulls-portfoy-startup-girisimcileri-istanbulda-bulusturdu--1834"> <i class="bi bi-dot"></i> Bulls GSYO, Bulls Yatırım ve Bulls Portföy, Startup Girişimciler ile Bir Araya Geldi</a></li><li class="on d2 fw-300"><a href="bulls-gsyo-bulls-yatirim-ve-bulls-portfoy-startup-girisimcileri-istanbulda-bulusturdu--1835"> <i class="bi bi-dot"></i> Bulls GSYO, Bulls Yatırım ve Bulls Portföy, Startup Girişimcileri İstanbul´da Buluşturdu</a></li><li class="on d2 fw-300"><a href="yeni-nesil-yatirimci-daha-cesur--1860"> <i class="bi bi-dot"></i> Yeni Nesil Yatırımcı Daha Cesur</a></li><li class="on d2 fw-300"><a href="enflasyon-dusuyor-faiz-indirimi-icin-alan-aciliyor"> <i class="bi bi-dot"></i> Enflasyon Düşüyor, Faiz İndirimi İçin Alan Açılıyor</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-yk-baskan-vekili-murat-barisik-yil-sonunda-enflasyon-yuzde-29a-gerileyebilir"> <i class="bi bi-dot"></i> Bulls Yatırım YK Başkan Vekili Murat Barışık: Yıl sonunda enflasyon yüzde 29’a gerileyebilir</a></li><li class="on d2 fw-300"><a href="enflasyon-surprizine-piyasalar-guclu-tepki-verdi"> <i class="bi bi-dot"></i> &quot;Enflasyon Sürprizine Piyasalar Güçlü Tepki Verdi&quot;</a></li><li class="on d2 fw-300"><a href="bulls-gsyo-tgs-dis-ticarete-ortak-oldu--1897"> <i class="bi bi-dot"></i> Bulls GSYO, TGS Dış Ticaret’e Ortak Oldu</a></li><li class="on d2 fw-300"><a href="bulls-gsyo-tgs-dis-ticarete-ortak-oldu"> <i class="bi bi-dot"></i> Bulls GSYO, TGS Dış Ticaret’e Ortak Oldu</a></li><li class="on d2 fw-300"><a href="bulls-yatirim-izmirdeki-ikinci-subesini-acti"> <i class="bi bi-dot"></i> Bulls Yatırım, İzmir´deki ikinci şubesini açtı</a></li><li class="on d2 fw-300"><a href="1957"> <i class="bi bi-dot"></i> ‘İzmir, Türkiye’nin büyüme rotasında stratejik noktada’</a></li><li class="on d2 fw-300"><a href="3-11"> <i class="bi bi-dot"></i> ‘İzmir, Türkiye’nin büyüme rotasında stratejik noktada’</a></li><li class="on d2 fw-300"><a href="3-12"> <i class="bi bi-dot"></i> ‘İzmir, Türkiye’nin büyüme rotasında stratejik noktada’</a></li><li class="on d2 fw-300"><a href="bulls-yatirimdan-bono-ihraci"> <i class="bi bi-dot"></i> Bulls Yatırım´dan Bono İhracı</a></li><li class="on d2 fw-300"><a href="bulls-porfoy-altin-fonu-haftanin-kazandiran-10-fonundan-biri-oldu"> <i class="bi bi-dot"></i> Bulls Portföy Altın Fonu, haftanın kazandıran 10 fonundan biri oldu!</a></li><li class="on d2 fw-300"><a href="gayrimenkul-sertifikasina-yogun-talep"> <i class="bi bi-dot"></i> Gayrimenkul Sertifikasına Yoğun Talep</a></li><li class="on d2 fw-300"><a href="bulls-portfoy-altin-fonu-zirvede-yatirimcisina-yuzde-16-74-getiri-sagladi"> <i class="bi bi-dot"></i> Bulls Portföy Altın Fonu zirvede Yatırımcısına yüzde 16,74 getiri sağladı</a></li><li class="on d2 fw-300"><a href="enflasyonda-baski-suruyor"> <i class="bi bi-dot"></i> Enflasyonda Baskı Sürüyor</a></li><li class="on d2 fw-300"><a href="bulls-portfoy-altin-fonu-zirvede-3-ayda-yuzde-16-74-getiri"> <i class="bi bi-dot"></i> Bulls Portföy Altın Fonu zirvede: 3 ayda yüzde 16,74 getiri</a></li><li class="on d2 fw-300"><a href="cds-dusuyor-nor-artirim-beklentileri-hizlanabilir"> <i class="bi bi-dot"></i> &quot;CDS Düşüyor, Not Artırım Beklentileri Hızlanabilir&quot;</a></li><li class="on d2 fw-300"><a href="piyasalarin-gozu-fed-kararinda"> <i class="bi bi-dot"></i> Piyasaların Gözü FED Kararında</a></li><li class="on d2 fw-300"><a href="borsanin-11-bin-puan-savasi"> <i class="bi bi-dot"></i> Borsanın 11 Bin Puan Savaşı</a></li><li class="on d2 fw-300"><a href="volatilite-artti-yatirimci-portfoyunu-kontrol-etmeli"> <i class="bi bi-dot"></i> Volatilite Arttı, Yatırımcı Portföyünü Kontrol Etmeli</a></li><li class="on d2 fw-300"><a href="3-47"> <i class="bi bi-dot"></i> &quot;Bulls Yatırım Başkan Vekili Ba­rışık: Savaşın bitmesi piyasalardaki olumlu havayı artırdı&quot;</a></li><li class="on d2 fw-300"><a href="barisik-gazzedeki-ateskes-finansal-piyasalarda-iyimserlik-yaratti"> <i class="bi bi-dot"></i> Barışık: Gazze´deki ateşkes finansal piyasalarda iyimserlik yarattı</a></li><li class="on d2 fw-300"><a href="bu-ay-zor-gececek-23-ekim-karari-piyasalara-yon-verecek"> <i class="bi bi-dot"></i> &quot;Bu ay zor geçecek! 23 Ekim kararı piyasalara yön verecek&quot;</a></li></div> </ul> </div> </div> <!-- category-container --> <div class="category-container col-12 col-lg py-3 pb-5 pt-0 px-0 px-lg-0 fix"> <div class="category-header"> <h1 class="pb-0 mb-0 fw-700 ">Piyasalar</h1> <div class="kategori-aciklama pb-lg-4 df jcsb fw-300"> <span class="col">En çok artan hisse senedi verilerinin, en çok düşen hisse senedi verilerinin ve en çok işlem gören hisse senedi verilerinin detaylarını Bulls Yatırım Menkul Değerler A.Ş. ile keşfedin: Sembol, son fiyat, günlük getiri, en düşük, en yüksek, hacim TL, hacim LOT bilgileri tek bir tabloda!</span> </div> </div> <div class="cb"></div> <div class="row"> <!-- category-list --> <div class="category-list col df fw px-0 px-lg-2 pb-5 "> <!-- category-item --> <div class="category-list-item col-12 col-sm-6 col-lg-12 px-2 py-3 py-lg-3 px-lg-0 pb-lg-5 fix"> <div class="category-inner df fdc fdr-lg"> <div class="col-lg-4 img-c df aic jcc mb-0 mb-lg-0"> <img src="upload/main/default.png" class="w-100 ofc ra-1" alt="category-item"/> </div> <div class="col-lg pl-lg-4 df aifs fdc jcse p-3 pr-lg-0"> <h2 class="pb-0 mb-0 f-14 fw-700 pr-2 df aifs"> Tüm Hisse Senedi Verileri </h2> <div class="pb-0 cb fw-300"> Tüm hisse senedi verileri tek bir tabloda: Sembol, son fiyat, günlük getiri, en düşük, en yüksek, hacim TL, hacim LOT. Hisse Senedi Nedir ve Nasıl Alınır Satılır? Hisse... </div> <a href="hisse-senetleri" class="dib mt-1 fw-500 t-trkz ok" >Devamını Okuyun</a> </div> </div> </div> <!-- category-item --> <div class="category-list-item col-12 col-sm-6 col-lg-12 px-2 py-3 py-lg-3 px-lg-0 pb-lg-5 fix"> <div class="category-inner df fdc fdr-lg"> <div class="col-lg-4 img-c df aic jcc mb-0 mb-lg-0"> <img src="upload/main/default.png" class="w-100 ofc ra-1" alt="category-item"/> </div> <div class="col-lg pl-lg-4 df aifs fdc jcse p-3 pr-lg-0"> <h2 class="pb-0 mb-0 f-14 fw-700 pr-2 df aifs"> En Çok İşlem Görenler </h2> <div class="pb-0 cb fw-300"> En çok işlem gören hisse senetlerinin detaylı verilerini keşfedin: Sembol, son fiyat, günlük getiri, en düşük, en yüksek, hacim TL, hacim LOT bilgileri tek bir... </div> <a href="en-cok-islem-gorenler" class="dib mt-1 fw-500 t-trkz ok" >Devamını Okuyun</a> </div> </div> </div> <hr> <!-- category-item --> <div class="category-list-item col-12 col-sm-6 col-lg-12 px-2 py-3 py-lg-3 px-lg-0 pb-lg-5 fix"> <div class="category-inner df fdc fdr-lg"> <div class="col-lg-4 img-c df aic jcc mb-0 mb-lg-0"> <img src="upload/main/default.png" class="w-100 ofc ra-1" alt="category-item"/> </div> <div class="col-lg pl-lg-4 df aifs fdc jcse p-3 pr-lg-0"> <h2 class="pb-0 mb-0 f-14 fw-700 pr-2 df aifs"> Hisse Senedi Piyasası En Çok Artanlar </h2> <div class="pb-0 cb fw-300"> En çok artan hisse senetlerinin detaylı verilerini keşfedin: Sembol, son fiyat, günlük getiri, en düşük, en yüksek, hacim TL, hacim LOT bilgileri tek bir... </div> <a href="en-cok-artanlar" class="dib mt-1 fw-500 t-trkz ok" >Devamını Okuyun</a> </div> </div> </div> <!-- category-item --> <div class="category-list-item col-12 col-sm-6 col-lg-12 px-2 py-3 py-lg-3 px-lg-0 pb-lg-5 fix"> <div class="category-inner df fdc fdr-lg"> <div class="col-lg-4 img-c df aic jcc mb-0 mb-lg-0"> <img src="upload/main/default.png" class="w-100 ofc ra-1" alt="category-item"/> </div> <div class="col-lg pl-lg-4 df aifs fdc jcse p-3 pr-lg-0"> <h2 class="pb-0 mb-0 f-14 fw-700 pr-2 df aifs"> Hisse Senedi Piyasası En Çok Azalanlar </h2> <div class="pb-0 cb fw-300"> En çok azalan hisse senetlerinin detaylı verilerini keşfedin: Sembol, son fiyat, günlük getiri, en düşük, en yüksek, hacim TL, hacim LOT bilgileri tek bir... </div> <a href="en-cok-dusenler" class="dib mt-1 fw-500 t-trkz ok" >Devamını Okuyun</a> </div> </div> </div> <hr> </div> <!-- category-list --> </div> </div> <!-- category-container --> </div> </div> </div> <div class="print-info dn">piyasalar</div> 
+<%- include("layouts/footer") %>
+ <div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn"> <div class="overlay-blur pa"></div> <div class="popup_main_container container-lg" alt="0"> <b class="closex pa"></b> <a href="https://sanalsube.bullsyatirim.com:8000/login" target="_blank" class="df aic jcc popup-inside"><img src="upload/main/popup/desktop-esube.webp" class="popup-img dn db-lg"/><img src="upload/main/popup/mobil-esube.webp" class="popup-img db dn-lg"/> </a> </div> </div> </body> 	<div class="toast jstoast"></div>
+
+	<div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
+		<i class="fa fa-angle-up dn"></i>
+		<i class="bi bi-chevron-up"></i>
+	</div>
+
+
+	<div class="dn">
+		<div class="spinner-border loading t-s vam mr-2"></div>
+	</div>
+
+</html>

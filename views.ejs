@@ -1,0 +1,1508 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+
+<head>
+  <meta name="theme-color" content="#0086CD">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=3.0, user-scalable=yes">
+  <link rel="shortcut icon" type="image/webp" href="upload/main/icon.webp">
+
+  <link rel="stylesheet" type="text/css" href="lib/css/fa.min.css">
+  <link rel="stylesheet" type="text/css" href="lib/css/bootstrap-icons1.11.0.css">
+
+
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap5.css?v=1.02146">
+  <link rel="stylesheet" type="text/css" href="assets/style.css?v=1.02146">
+  <link rel="stylesheet" type="text/css" href="lib/css/aos.css?v=1.02146">
+
+  <script src="https://bundles.efilli.com/bullsyatirim.com.prod.js"></script>
+
+  <script src="lib/js/jquery.js"></script>
+  <script src="assets/ortak.js?v=1.02146"></script>
+  <script src="assets/global.js?v=1.02146"></script>
+  <script src="xml_matriksdata/data_graph.js?v=202511022231"></script>
+  <script src="lib/fancy/jquery.fancybox.min.js?v=1.02146"></script>
+  <script src="assets/sorttable.js?v=1.02146"></script>
+  <script src="assets/apexcharts.js?v=1.02146"></script>
+  <link rel="stylesheet" type="text/css" href="/lib/fancy/jquery.fancybox.min.css?v=1.02146">
+
+
+  <script>
+    window.addEventListener('online', () => { became_online(); console.log('Became  online') });
+    window.addEventListener('offline', () => { became_offline(); console.log('Became offline') });
+  </script>
+
+
+
+  <title>Bulls Yatırım</title>
+
+  <noscript>
+    <h3 style="color:red"> Web sitemizi kullanabilmek için javascript özelliğini etkinleştirmeniz gerekmektedir. </h3>
+  </noscript>
+
+  <script>
+    var jsrv = "";
+
+    $(function () {
+      function fiximg(t) {
+        var old = t.attr("src");
+        t.attr("data-old-href", old).attr("src", "upload/main/default.png").attr('alt', old);
+      }
+      $('img').on("error", function () {
+        fiximg($(this));
+      });
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TXJLKM87');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLR730Q8LS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLR730Q8LS');
+  </script>
+
+
+</head>
+
+<body> <!-- Google Tag Manager (noscript) --> <noscript><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-TXJLKM87" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+  <div class="header bs bg-bulls t-fff fw-400">
+    <div class="header-top px-0 px-2-lg">
+      <div class="container-lg px-0">
+        <div class="df fdc px-0">
+          <div class="logo-container df col-2 pa-lg l-0 t-0 jcsb aic dib-lg mr-0 mr-lg-2 pr-0 z9"> <a href=""
+              class="logo df aic p-2"> <img src="upload/images/logo/bullsyatirim-light.svg" class="logo-light"
+                alt="logo" draggable="false" /> <img src="upload/images/logo/bullsyatirim-dark.svg" class="logo-dark dn"
+                alt="logo" draggable="false" /> </a> <button type="button" tabindex=1
+              class="menu-triger btn db dn-lg r-0 ra-0 t-f w-auto px-3 my-0 f-1 cp usn ass"> <svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 26">
+                <g transform="translate(0 0)" style="fill:#fff;fill-opacity:1;stroke-width:8;">
+                  <rect width="32" height="2" x="0" y="2" rx="1.9" ry="1.9" class="first-rect" />
+                  <rect width="32" height="2" x="0" y="11" rx="1.9" ry="1.9" class="middle-rect" />
+                  <rect width="32" height="2" x="0" y="20" rx="1.9" ry="1.9" class="last-rect" />
+                </g>
+              </svg> </button> </div>
+          <div class="graphs-container col-12 df fnw fdr-lg jcl tdn py-0 ais jcsb vh or-first or-md-1 usn fix">
+            <div style="width:10rem;" class="kp1 mr-2 dn-mobile dn db-sm"></div> <b
+              class="closex pa r-0 t-0 t-f p-4 db dn-md piyasa-btn"></b>
+            <div class="df jcsb fdc col-auto f1 ais">
+              <ul class="head-graphs col df ais jcsb tc col-12 h-100 mb-0 lsn lh-06">
+                <li class="dfc pl-md-4 py-2 w-75 tl piyasa-btn"> Piyasa Verileri <i
+                    class="fa fa-play fa-rotate-90 pl-2 f-08 dib dn-md"></i> </li>
+                <li class="mrkt">
+                  <div class="mrkt-title">
+                    <h3><i class="bi bi-caret-up-fill t-s"></i> BİST 100</h3> <b>10971,52</b>
+                  </div>
+                  <div id="" class="graph p-2 wa" alt="XU100"></div>
+                </li>
+                <li class="mrkt">
+                  <div class="mrkt-title">
+                    <h3><i class="bi bi-caret-up-fill t-s"></i> USDTRY</h3> <b>42,0600</b>
+                  </div>
+                  <div id="" class="graph p-2 wa" alt="USDTRY"></div>
+                </li>
+                <li class="mrkt">
+                  <div class="mrkt-title">
+                    <h3><i class="bi bi-caret-down-fill t-d"></i> EURTRY</h3> <b>48,5136</b>
+                  </div>
+                  <div id="" class="graph p-2 wa" alt="EURTRY"></div>
+                </li>
+                <li class="mrkt">
+                  <div class="mrkt-title">
+                    <h3><i class="bi bi-caret-down-fill t-d"></i> EURUSD</h3> <b>1,1537</b>
+                  </div>
+                  <div id="" class="graph p-2 wa" alt="EURUSD"></div>
+                </li>
+                <li class="mrkt">
+                  <div class="mrkt-title">
+                    <h3><i class="bi bi-caret-down-fill t-d"></i> AU ONS</h3> <b>4002,71</b>
+                  </div>
+                  <div id="" class="graph p-2 wa" alt="XAUUSD"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-container bg-bulls3 col-12 pr-lg usn dn-mobile fw-600 py-3 py-md-0">
+      <div class="container-lg">
+        <div class="df pr-0">
+          <ul class="menu col df fnw jcsb lsn m-0 lh-n tnw">
+            <div class="mobile-search db dn-lg"> <!-- menu search -->
+              <div class="header-search shadow col-10 t-bulls3 pr pt-2 pr-0 col-12">
+                <form action="" method="GET" class="w-100 search-container df fdr fww"> <input type="text" name="search"
+                    class="search-text w-100 fl ttn" placeholder="Arama yapmak için metin giriniz" required=""> <button
+                    type="submit" class="btn_mobil_search dn"></button> </form> <a
+                  class="searchtoggle btn btn-l ra-1 ml-0 z2 f-1 pa"><i class="bi bi-search"></i></a>
+              </div>
+            </div>
+            <div style="width:8rem;" class="kp1 mr-2"></div>
+            <li class="menu-item"><a href="" class="">Ana Sayfa</a></li>
+            <li class="menu-item"><a href="" class="">Hakkımızda <i class="fa fa-play"></i></a>
+              <ul class="fw-400 px-0">
+                <div class="container-- tl">
+                  <div class="df aifs">
+                    <div class="menu_sag col-12 col-lg df fw p-0 ml-0 aic">
+                      <li class="col-12 col-md-4"> <a href="biz-kimiz">Biz Kimiz</a></li>
+                      <li class="col-12 col-md-4"> <a href="bulls-yatirim-yonetim-kurulu">Yönetim Kurulumuz</a></li>
+                      <li class="col-12 col-md-4"> <a href="ortaklik-yapisi">Ortaklık Yapımız</a></li>
+                      <li class="col-12 col-md-4"> <a href="genel/duyurular">Duyurular</a></li>
+                      <li class="col-12 col-md-4"> <a href="banka-hesap-bilgileri">Banka Hesap Bilgileri</a></li>
+                      <li class="col-12 col-md-4"> <a href="kurumsal-kisisel-verilerin-korunmasi">Kişisel Verilerin
+                          Korunması</a></li>
+                      <li class="col-12 col-md-4"> <a href="yasal-uyarilar">Yasal Uyarılar</a></li>
+                      <li class="col-12 col-md-4"> <a
+                          href="https://tspb.org.tr/kamuyu_aydinlatma/bulls-yatirim-menkul-degerler-a-s"
+                          target="_blank">Kamuyu Aydınlatma</a></li>
+                      <li class="col-12 col-md-4"> <a href="sikca-sorulan-sorular">Sıkça Sorulan Sorular</a></li>
+                      <li class="col-12 col-md-4"> <a href="upload/files/dosya/bulls-yatirim-belgeler.pdf"
+                          target="_blank">SPK İzin Verilen Yatırım Hizmetleri</a></li>
+                      <li class="col-12 col-md-4"> <a href="yatirim-merkezlerimiz">Yatırım Merkezlerimiz</a></li>
+                      <li class="col-12 col-md-4"> <a href="genel/haberler">Haberler</a></li>
+                      <li class="col-12 col-md-4"> <a href="basinda-biz">Basında Biz</a></li>
+                    </div>
+                    <div class="menu-sub-action col-12 col-lg-3 df fdc fdc-lg jcfs aifs p-3 f-1 "> <a
+                        href="yatirim-hesabi-ac"
+                        class="col col-md-5 col-lg-12 bg-bulls b px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-collection pr-2"></i>Yatırım Hesabı Açın </h3> <span
+                          class="w-100 db f-09">Hemen Hesap Açmak İçin <br>Tıklayınız</span>
+                      </a> <a href="arastirma/gunluk-bulten"
+                        class="col col-md-5 col-lg-12 bg-lb3 t-bulls px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-envelope-paper pr-2"></i> Günlük Bülten</h3> <span
+                          class="w-100 db f-09">Günlük Bülteni Okumak İçin Tıklayınız</span>
+                      </a> </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="" class="">Hizmetler <i class="fa fa-play"></i></a>
+              <ul class="fw-400 px-0">
+                <div class="container-- tl">
+                  <div class="df aifs">
+                    <div class="menu_sag col-12 col-lg df fw p-0 ml-0 aic">
+                      <li class="col-12 col-md-4"> <a href="yatirim-danismanligi">Yatırım Danışmanlığı</a></li>
+                      <li class="col-12 col-md-4"> <a href="kurumsal-finansman-hizmetleri">Kurumsal Finansman</a></li>
+                      <li class="col-12 col-md-4"> <a href="ucretler-ve-masraflar">Ücretler ve Masraflar</a></li>
+                      <li class="col-12 col-md-4"> <a href="bireysel-portfoy-yonetimi">Bireysel Portföy Yönetimi</a>
+                      </li>
+                      <li class="col-12 col-md-4"> <a href="hizmetler/pay-halka-arzlar">Pay Halka Arzları</a></li>
+                      <li class="col-12 col-md-4"> <a href="hizmetler/gayrimenkul-sertifikasi-halk-arzlari">Gayrimenkul
+                          Sertifikası Halka Arzları</a></li>
+                    </div>
+                    <div class="menu-sub-action col-12 col-lg-3 df fdc fdc-lg jcfs aifs p-3 f-1 "> <a
+                        href="yatirim-hesabi-ac"
+                        class="col col-md-5 col-lg-12 bg-bulls b px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-collection pr-2"></i>Yatırım Hesabı Açın </h3> <span
+                          class="w-100 db f-09">Hemen Hesap Açmak İçin <br>Tıklayınız</span>
+                      </a> <a href="arastirma/gunluk-bulten"
+                        class="col col-md-5 col-lg-12 bg-lb3 t-bulls px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-envelope-paper pr-2"></i> Günlük Bülten</h3> <span
+                          class="w-100 db f-09">Günlük Bülteni Okumak İçin Tıklayınız</span>
+                      </a> </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="" class="">Canlı Borsa <i class="fa fa-play"></i></a>
+              <ul class="fw-400 px-0">
+                <div class="container-- tl">
+                  <div class="df aifs">
+                    <div class="menu_sag col-12 col-lg df fw p-0 ml-0 aic">
+                      <li class="col-12 col-md-4"> <a href="hisse-analiz">Hisse Analiz Tablosu</a></li>
+                      <li class="col-12 col-md-4"> <a href="hisse-analiz/THYAO">Şirket Hisse Kartları</a></li>
+                      <li class="col-12 col-md-4"> <a href="hisse-senetleri">Tüm Hisse Senedi Verileri</a></li>
+                      <li class="col-12 col-md-4"> <a href="en-cok-artanlar">Hisse Senedi Piyasası En Çok Artanlar</a>
+                      </li>
+                      <li class="col-12 col-md-4"> <a href="en-cok-dusenler">Hisse Senedi Piyasası En Çok Azalanlar</a>
+                      </li>
+                      <li class="col-12 col-md-4"> <a href="en-cok-islem-gorenler">En Çok İşlem Görenler</a></li>
+                      <li class="col-12 col-md-4"> <a href="bulls-borsa-gundem">Bulls Borsa Gündem</a></li>
+                    </div>
+                    <div class="menu-sub-action col-12 col-lg-3 df fdc fdc-lg jcfs aifs p-3 f-1 "> <a
+                        href="yatirim-hesabi-ac"
+                        class="col col-md-5 col-lg-12 bg-bulls b px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-collection pr-2"></i>Yatırım Hesabı Açın </h3> <span
+                          class="w-100 db f-09">Hemen Hesap Açmak İçin <br>Tıklayınız</span>
+                      </a> <a href="arastirma/gunluk-bulten"
+                        class="col col-md-5 col-lg-12 bg-lb3 t-bulls px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-envelope-paper pr-2"></i> Günlük Bülten</h3> <span
+                          class="w-100 db f-09">Günlük Bülteni Okumak İçin Tıklayınız</span>
+                      </a> </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="arastirma" class="">Araştırma <i class="fa fa-play"></i></a>
+              <ul class="fw-400 px-0">
+                <div class="container-- tl">
+                  <div class="df aifs">
+                    <div class="menu_sag col-12 col-lg df fw p-0 ml-0 aic">
+                      <li class="col-12 col-md-4"> <a href="arastirma/tum-bultenler">Tüm Bültenler</a></li>
+                      <li class="col-12 col-md-4"> <a href="arastirma/gunluk-bulten">Günlük Bülten</a></li>
+                      <li class="col-12 col-md-4"> <a href="arastirma/viop-bulten">VİOP Bülteni</a></li>
+                      <li class="col-12 col-md-4"> <a href="teknik-bulten">Teknik Bülten</a></li>
+                      <li class="col-12 col-md-4"> <a href="arastirma/periyodik-raporlar">Periyodik Raporlar</a></li>
+                      <li class="col-12 col-md-4"> <a href="makroekonomik-raporlar">Makroekonomik Raporlar</a></li>
+                      <li class="col-12 col-md-4"> <a href="arastirma/kisa-vadeli-oneriler">Kısa Vadeli Öneriler</a>
+                      </li>
+                      <li class="col-12 col-md-4"> <a href="arastirma/sirket-raporlari">Şirket Raporları</a></li>
+                      <li class="col-12 col-md-4"> <a href="arastirma/pair-trade-ikili-islem">Pair Trade (İkili
+                          İşlem)</a></li>
+                    </div>
+                    <div class="menu-sub-action col-12 col-lg-3 df fdc fdc-lg jcfs aifs p-3 f-1 "> <a
+                        href="yatirim-hesabi-ac"
+                        class="col col-md-5 col-lg-12 bg-bulls b px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-collection pr-2"></i>Yatırım Hesabı Açın </h3> <span
+                          class="w-100 db f-09">Hemen Hesap Açmak İçin <br>Tıklayınız</span>
+                      </a> <a href="arastirma/gunluk-bulten"
+                        class="col col-md-5 col-lg-12 bg-lb3 t-bulls px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-envelope-paper pr-2"></i> Günlük Bülten</h3> <span
+                          class="w-100 db f-09">Günlük Bülteni Okumak İçin Tıklayınız</span>
+                      </a> </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="" class="">Üyelik İşlemleri <i class="fa fa-play"></i></a>
+              <ul class="fw-400 px-0">
+                <div class="container-- tl">
+                  <div class="df aifs">
+                    <div class="menu_sag col-12 col-lg df fw p-0 ml-0 aic">
+                      <li class="col-12 col-md-4"> <a href="yatirim-hesabi-ac">Yatırım Hesabı Açın</a></li>
+                      <li class="col-12 col-md-4"> <a href="bulten-aboneligi">Bülten Aboneliği</a></li>
+                      <li class="col-12 col-md-4"> <a href="bize-ulasin">Bize Ulaşın</a></li>
+                      <li class="col-12 col-md-4"> <a href="https://e-sube.bullskatilim.online" target="_blank">E-Şube</a>
+                      </li>
+                      <li class="col-12 col-md-4"> <a href="https://web.idealdata.com.tr" target="_blank">İdeal Data</a>
+                      </li>
+                      <li class="col-12 col-md-4"> <a href="sozlesmeler">Sözleşmeler</a></li>
+                    </div>
+                    <div class="menu-sub-action col-12 col-lg-3 df fdc fdc-lg jcfs aifs p-3 f-1 "> <a
+                        href="yatirim-hesabi-ac"
+                        class="col col-md-5 col-lg-12 bg-bulls b px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-collection pr-2"></i>Yatırım Hesabı Açın </h3> <span
+                          class="w-100 db f-09">Hemen Hesap Açmak İçin <br>Tıklayınız</span>
+                      </a> <a href="arastirma/gunluk-bulten"
+                        class="col col-md-5 col-lg-12 bg-lb3 t-bulls px-3 py-3 py-md-4 py-lg-3 ra-1 mb-3 df fdc jcc tl">
+                        <h3 class="w-100"><i class="bi bi-envelope-paper pr-2"></i> Günlük Bülten</h3> <span
+                          class="w-100 db f-09">Günlük Bülteni Okumak İçin Tıklayınız</span>
+                      </a> </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <div class="menu-action df df-xl-- fdc fdr-md aic jcc jcfe-md tc ml-md-3 pb-3 pt-5 py-md-3 py-lg-0 pst">
+              <li class="fu pr-lg-2 tc fg1 pb-3 pb-md-0 w-100"> <a
+                  class="on online-giris btn tc db ra-1 px-3 py-25 py-md-2 py-lg-1 f-09 bg-efl t-f"> E-Şube </a>
+                <div class="pa pt-1 w-100" style="display:none;">
+                  <div class="p-2 bs1 bg-bulls3-- bg-lb3-- bg-f w-100 t-f ra-1 f-09 z9999"> <a
+                      href="https://e-sube.bullskatilim.online/"
+                      class="db bg-efl ra-1 py-md-2 py-25 px-3 mb-1 esube-popup--" target="_blank">E-Şube</a> <a
+                      href="https://sanalsube.bullsyatirim.com:8000/login" class="db bg-efl ra-1 py-md-2 py-25 px-3"
+                      target="_blank">Yeni E-Şube</a> </div>
+                </div>
+              </li>
+              <li class="fu tc fg1 w-100"> <a href="yatirim-hesabi-ac"
+                  class="hesap-ac musteri-ol btn tc db ra-1 px-3-- py-25 py-md-2 py-lg-1 f-09 bg-lb t-efl"> Online Hesap
+                  Aç </a> </li>
+              <li class="flxn pl-2 pr-0 li-search dn-mobile"><a
+                  class="opensearch ra-1 px-2 py-1 f-09 bg-lb t-efl bi bi-search dib wa"></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="dsktp header-search bg-lb3 py-5 px-0 shadow bt t-bulls3 ma h-100 z99 dn">
+      <form action="" method="GET" class="container search-container df ais fnw"> <input type="text" name="search"
+          class="search-text fw-500 b w-90 fl ra-1 p-3 ttn mr-2" placeholder="Arama yapmak için metin giriniz"
+          required /> <button type="submit" class="searchtoggle2 px-5 b fg1 btn btn-l ra-1 ml-0 f-1"><i
+            class="bi bi-search"></i></button> </form>
+    </div>
+  </div>
+  <ul class="print_dn account-nav-btn w-100 bg-bulls35 m-0 df dn-md aic-- jcc jcfe-md tc py-2 px-2 lsn">
+    <li class="fu tc fg1 w-100 px-1"> <a class="on online-giris btn tc db ra-1 px-3 py-2 f-09 bg-efl t-f"> E-Şube </a>
+      <div class="pa l-0 z2 p-1 bs ra-1 mt-1 bg-f col-12 tdn"> <a href="https://e-sube.bullskatilim.online/"
+          class="esube-popup-- db bg-efl t-f ra-1 py-md-2 py-25 px-3 mb-1" target="_blank">E-Şube</a> <a
+          href="https://sanalsube.bullsyatirim.com:8000/login" class="db bg-efl t-f ra-1 py-md-2 py-25 px-3"
+          target="_blank">Yeni E-Şube</a> </div>
+    </li>
+    <li class="fu tc fg1 w-100 px-1"> <a href="yatirim-hesabi-ac"
+        class="hesap-ac musteri-ol btn tc db ra-1 px-3 py-2 f-09 bg-lb t-efl"> Hesap Aç </a> </li>
+  </ul>
+  <div class="main middle">
+    <div class="homepage">
+      <div class="home-component">
+        <div class="bg-slider py-3 py-md-5 oh">
+          <div class="py-lg-5 px-0">
+            <div class="bg-slider-bottom">
+              <div class="container">
+                <div class="row fdc fdr-lg">
+                  <div class="col main-slider">
+                    <div class="df ais fdc fdr-lg h-100 slider-scope ">
+                      <div class="col-12 col-lg-55 slider-left pl-0 pr-0 ">
+                        <div class="df fdr fnw h-75 minh12 pt-md-2">
+                          <div class="slider-text col-12 pa-md t-f " data-aos2="fade-down" data-aos="zoom-out-down">
+                            <h3 class="f-16 fw-700 pt-3 pt-md-0">Bulls Yatırım Emir Gerçekleştirmelerinde Anlık
+                              Bildirim Başladı!</h3> <span class="f-11 pt-3 dn db-md fw-300">Sayın Yatırımcılarımız,
+                              <br>Bulls Yatırım mobil uygulamamız üzerinden hisse senedi emir gerçekleşmeleri artık
+                              anlık push bildirim olarak tarafınıza iletilmektedir. Böylece işlemleriniz tamamlandığında
+                              uygulamanızda anında haberdar olabilirsiniz.</span> <a href="bulls-yatirim-mobil-uygulama"
+                              class="btn px-4 btn-l ok f-09 mt-3">Detaylı Bilgi İçin Tıklayınız!</a>
+                          </div>
+                          <div class="slider-text col-12 pa-md t-f " data-aos2="fade-down" data-aos="zoom-out-down">
+                            <h3 class="f-16 fw-700 pt-3 pt-md-0">Bulls Yatırım ile Canlı Borsa Verileri Ücretsiz!</h3>
+                            <span class="f-11 pt-3 dn db-md fw-300">Bulls Yatırım, hesap açan herkese, hiçbir bakiye
+                              veya işlem hacmi şartı olmaksızın canlı borsa verilerine ücretsiz olarak erişim sağlıyor!
+                              Hemen hesabınızı açın, piyasayı anlık olarak takip edin!</span> <a
+                              href="bulls-trader-mobil-uygulama" class="btn px-4 btn-l ok f-09 mt-3">Bulls Trader´ı
+                              İndir</a>
+                          </div>
+                          <div class="slider-text col-12 pa-md t-f " data-aos2="fade-down" data-aos="zoom-out-down">
+                            <h3 class="f-16 fw-700 pt-3 pt-md-0">Bulls Yatırım, İzmir´deki İkinci Şubesini Açtı!</h3>
+                            <span class="f-11 pt-3 dn db-md fw-300">Bulls Yatırım Menkul Değer­ler A.Ş.’nin İzmir’deki
+                              ikinci şubesi Konak’ta 16 Ağustos 2025 Cumartesi günü düzenlenen bir törenle hizmete
+                              girdi.</span> <a href="bulls-yatirim-izmirdeki-ikinci-subesini-acti"
+                              class="btn px-4 btn-l ok f-09 mt-3">Detaylı Bilgi İçin Tıklayınız!</a>
+                          </div>
+                          <div class="slider-text col-12 pa-md t-f " data-aos2="fade-down" data-aos="zoom-out-down">
+                            <h3 class="f-16 fw-700 pt-3 pt-md-0">BHA- TL Fon Yatırımcısıyla Buluştu!</h3> <span
+                              class="f-11 pt-3 dn db-md fw-300">Bulls Portföy, BHA–Bulls Portföy Hisse Senedi (TL)
+                              Fonu’nu yatırımcılara sundu. Şirketin portföy yönetimi vizyonuna paralel olarak
+                              oluşturulan yeni fon, yerli hisse senetlerine yoğunlaşan stratejisiyle öne
+                              çıkıyor...</span> <a href="1281--1281" class="btn px-4 btn-l ok f-09 mt-3">Detaylı Bilgi
+                              İçin Tıklayınız!</a>
+                          </div>
+                          <div class="slider-text col-12 pa-md t-f " data-aos2="fade-down" data-aos="zoom-out-down">
+                            <h3 class="f-16 fw-700 pt-3 pt-md-0">BULLS YATIRIM’DA 2025´TE DE HESAP İŞLETİM ÜCRETİ YOK!
+                            </h3> <span class="f-11 pt-3 dn db-md fw-300">Bulls Yatırım, bütün müşterilerine HESAP
+                              İŞLETİM ÜCRETİ ÖDEMEDEN yatırım yapma imkanı sunuyor. Bu fırsattan yararlanmak için
+                              dakikalar içinde ONLİNE HESAP açabilir, ÜCRETSİZ CANLI BORSA VERİSİ ve daha birçok
+                              avantajdan faydalanabilirsiniz...</span> <a href="yatirim-hesabi-ac"
+                              class="btn px-4 btn-l ok f-09 mt-3">Hemen Şimdi Başvurun!</a>
+                          </div>
+                          <div class="slider-text col-12 pa-md t-f " data-aos2="fade-down" data-aos="zoom-out-down">
+                            <h3 class="f-16 fw-700 pt-3 pt-md-0">Dolandırıcılık Olaylarına Yönelik Güvenlik Uyarısı ve
+                              İzinsiz Sermaye Piyasası Faaliyetlerine İlişkin Bilgilendirme</h3> <span
+                              class="f-11 pt-3 dn db-md fw-300">Son zamanlarda, Telegram ve WhatsApp gruplarında Bulls
+                              Yatırım adına yapılan sahte paylaşımlar hakkında dikkatli olunuz. Dolandırıcılık
+                              girişimlerine karşı sadece resmi iletişim kanallarımızı kullanmanızı
+                              önemle rica ederiz.</span> <a href="onemli-duyuru-dolandiricilara-itibar-etmeyiniz"
+                              class="btn px-4 btn-l ok f-09 mt-3">Önemli Duyuru</a>
+                          </div>
+                          <div class="slider-text col-12 pa-md t-f " data-aos2="fade-down" data-aos="zoom-out-down">
+                            <h3 class="f-16 fw-700 pt-3 pt-md-0">Online Yatırım Merkezimiz</h3> <span
+                              class="f-11 pt-3 dn db-md fw-300">Online Yatırım Merkezimizden dilediğiniz zaman
+                              işlemlerinizi yürütebilirsiniz.</span> <a href="https://e-sube.bullskatilim.online"
+                              class="btn px-4 btn-l ok f-09 mt-3">Detaylı Bilgi</a>
+                          </div>
+                        </div>
+                        <div class="slider-control-slot pt-2 pt-md-5 pt-md-0"></div>
+                      </div>
+                      <div class="col-12 col-md slider-right vh ">
+                        <div class="px-0 slider df">
+                          <div class="slider-item col-12 df px-4 px-md-0 pt-2 pb-0 pb-lg-5 aic aifs-md jcc"> <img
+                              src="upload/images/slider/bullsyatirim-slider.webp" class="ra-1" draggable="false"> </div>
+                          <div class="slider-item col-12 df px-4 px-md-0 pt-2 pb-0 pb-lg-5 aic aifs-md jcc"> <img
+                              src="upload/images/slider/kucultme/bulls-yatirim-bulls-trader-mobile-uygulama-app.webp"
+                              class="ra-1" draggable="false"> </div>
+                          <div class="slider-item col-12 df px-4 px-md-0 pt-2 pb-0 pb-lg-5 aic aifs-md jcc"> <img
+                              src="upload/images/slider/-izmir-konak-subemiz-acildi-bugun-yonetim-kurulu-baskanimiz-kemal-akkaya-ve-yonetim-kurulu-uy.webp"
+                              class="ra-1" draggable="false"> </div>
+                          <div class="slider-item col-12 df px-4 px-md-0 pt-2 pb-0 pb-lg-5 aic aifs-md jcc"> <img
+                              src="upload/images/slider/bha-bulls-portfo-y-hisse-senedi-tl-fonu-hisse-senedi-yog-un-fon-bulls-slider-copy.webp"
+                              class="ra-1" draggable="false"> </div>
+                          <div class="slider-item col-12 df px-4 px-md-0 pt-2 pb-0 pb-lg-5 aic aifs-md jcc"> <img
+                              src="upload/images/slider/bulls-slider.webp" class="ra-1" draggable="false"> </div>
+                          <div class="slider-item col-12 df px-4 px-md-0 pt-2 pb-0 pb-lg-5 aic aifs-md jcc"> <img
+                              src="upload/images/slider/kucultme/bulls-yatirim-onemli-duyuru.webp" class="ra-1"
+                              draggable="false"> </div>
+                          <div class="slider-item col-12 df px-4 px-md-0 pt-2 pb-0 pb-lg-5 aic aifs-md jcc"> <img
+                              src="upload/images/slider/kucultme/bulls-yatirim-slider-gorsel.webp" class="ra-1"
+                              draggable="false"> </div>
+                        </div>
+                        <div class="col-12 px-2 px-md-0 b-0"> <img src="upload/main/platform.png" class="w-100" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-3 jcc pl-lg-3 pr-lg-0 pt-lg-0 pt-5">
+                    <div class="row fdc-lg ais jcsb-- jcc jcfs-lg h-100 pb-3">
+                      <div class="col-10 col-sm-8 col-md-5 col-lg-12 pb-3"> <a href="yatirim-hesabi-ac"
+                          class="main-slider-action outline-- df jcc fdc bg-fff t-cmenu py-3 px-3 b ra-1 mb-3 mr-lg-0 h-100"
+                          draggable="false">
+                          <h3 class="fw-600 f-09"><i class="bi bi-shield-check pr-1 dn"></i> Görüntülü Görüşme İle Hesap
+                            Açın</h3> <span class="f-09">Bulls Yatırım’da Beklemek Yok, Evrak Yok, Şubeye Gitmek
+                            Yok!</span>
+                        </a> </div>
+                      <div class="col-10 col-sm-8 col-md-5 col-lg-12 pb-3"> <a href="https://web.idealdata.com.tr/"
+                          target="_blank"
+                          class="main-slider-action outline-- df jcc fdc c bg-bulls t-f py-3 px-3 b ra-1 mb-3 h-100"
+                          draggable="false">
+                          <h3 class="fw-600 f-09"><i class="bi bi-pin-angle pr-2 dn"></i>İdeal Data</h3> <span
+                            class="f-09">İdeal Data Platformuna<br>Giriş Yapınız.</span>
+                        </a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-component">
+        <div class="bg-2 grid-structure py-0">
+          <div class="container-lg tc t-lg-l py-3">
+            <div class="row py-2 my-0">
+              <div class="col-6 col-lg-3 lhn mb-3 mb-md-0"> <a href="basinda-biz" class="df t-bulls fdc fdr-lg">
+                  <div class="img-c pr-0 pt-1 coin h-100"> <img src="upload/images/mainpage/iconweb-newspaper-r.webp"
+                      class="img-fluid " /> </div>
+                  <div class="col-12 col-lg-8 p-1 pl-lg-3">
+                    <h3 class="fw-700 mb-1">Basında Biz</h3> <span class=" f-09 lh-13 dn db-md">Basında <br>Bulls
+                      Yatırım!</span>
+                  </div>
+                </a> </div>
+              <div class="col-6 col-lg-3 lhn mb-3 mb-md-0"> <a href="yatirim-merkezlerimiz"
+                  class="df t-bulls fdc fdr-lg">
+                  <div class="img-c pr-0 pt-1 coin h-100"> <img src="upload/images/mainpage/icon-web--3.webp"
+                      class="img-fluid " /> </div>
+                  <div class="col-12 col-lg-8 p-1 pl-lg-3">
+                    <h3 class="fw-700 mb-1">Yatırım <br>Merkezlerimiz</h3> <span
+                      class=" f-09 lh-13 dn db-md">Şubelerimiz ile Hizmetinizdeyiz!</span>
+                  </div>
+                </a> </div>
+              <div class="col-6 col-lg-3 lhn mb-3 mb-md-0"> <a href="bize-ulasin" class="df t-bulls fdc fdr-lg">
+                  <div class="img-c pr-0 pt-1 coin h-100"> <img src="upload/images/mainpage/icon-web--2.webp"
+                      class="img-fluid " /> </div>
+                  <div class="col-12 col-lg-8 p-1 pl-lg-3">
+                    <h3 class="fw-700 mb-1">Bize <br>Ulaşın</h3> <span class=" f-09 lh-13 dn db-md">Bulls Yatırım
+                      Hizmetleri için Bize Ulaşın!</span>
+                  </div>
+                </a> </div>
+              <div class="col-6 col-lg-3 lhn mb-3 mb-md-0"> <a href="yatirim-hesabi-ac" class="df t-bulls fdc fdr-lg">
+                  <div class="img-c pr-0 pt-1 coin h-100"> <img src="upload/images/mainpage/icon-web--1.webp"
+                      class="img-fluid " /> </div>
+                  <div class="col-12 col-lg-8 p-1 pl-lg-3">
+                    <h3 class="fw-700 mb-1">Bulls Yatırım <br>Hizmetleri</h3> <span
+                      class=" f-09 lh-13 dn db-md">Uzmanlar Tarafından Sunulan Profesyonel Hizmet!</span>
+                  </div>
+                </a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-component">
+        <div class="bg-lb2 py-0 py-md-5 home-jumbotron">
+          <div class="py-4"></div>
+          <div class="container-lg">
+            <div class="df fdc fdr-md bg-jumbotron ra-1 jumbotron">
+              <div class="col-12 col-md-6 t-lb px-4 pb-4 pt-0 pt-md-4 px-md-5 lh-1 effect">
+                <div class="py-2 py-md-4">
+                  <h2 class="mb-0 fw-400 f-2"><b>Bulls Yatırım ile <br>Yatırım Yapmaya <br></b>Bugün Başlayın!</h2> <a
+                    href="yatirim-hesabi-ac" class="btn btn-l mt-4 mt-md-3 ra-1 ok">Hesap Açın</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-5 pl-md-5 ml-md-5 pl-0 db-md or-first or-md-1"> <img
+                  src="upload/images/mainpage/jumbo-1.webp" class="pr pa-md b-0" /> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-component">
+        <div class="bg-lb2 duyurular ">
+          <div class="container-lg p-0 fix ">
+            <div class="slider df t-efl pt-5 pb-3">
+              <div class="slider-item col-12 px-2">
+                <div class="df fw aifs h-100 bg-f ra-1 p-0">
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="1/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">15</div>
+                        <div class="f-11 lh-1 fw-400">Eylül </div>
+                      </div> <a href="borsada-temel-analiz-semineri-bulls-yatirimda"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Borsa’da Temel Analiz Semineri Bulls Yatırım’da!</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="2/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">06</div>
+                        <div class="f-11 lh-1 fw-400">Haziran </div>
+                      </div> <a href="usd-grubu-kontratlarda-risk-parametre-degisiklikleri-hakkinda"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">USD Grubu Kontratlarda Risk Parametre Değişiklikleri Hakkında</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="3/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="yatirimci-rehberi-2007-pdf" class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3">
+                        <b class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Yatırımcı Rehberi 2007 ( pdf )</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="4/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="sermaye-piyasasi-kurulu-2007-6-haftalik-bulten-05-02-2007-09-02-2007-05-02-2007"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Sermaye Piyasası Kurulu 2007/6 Haftalık Bülten 05/02/2007 - 09/02/2007
+                          (05/02/2007)</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item col-12 px-2">
+                <div class="df fw ais h-100 bg-f ra-1 p-0">
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="5/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a
+                        href="sermaye-piyasasi-kurulu-nun-06-12-2006-tarih-ve-51-1462-sayili-karari-uyarinca-yapilmasi-zorunlu-duyuru-06-12-2006"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Sermaye Piyasası Kurulu´nun 06.12.2006 tarih ve 51/1462 sayılı kararı
+                          uyarınca yapılması zorunlu duyuru (06/12/2006)</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="6/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a
+                        href="22-07-2013-musterilerimizin-dikkatine-yatirimci-bazinda-tedbir-duzenlemesi-hakkinda-duyuru"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">22/07/2013 - Müşterilerimizin Dikkatine! Yatırımcı Bazında Tedbir
+                          Düzenlemesi Hakkında Duyuru</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="7/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="mkk-e-cas-uygulamasi-yatirimci-bilgilendirme-duyurusu-pdf"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">MKK e-CAS Uygulaması Yatırımcı Bilgilendirme Duyurusu ( pdf )</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="8/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="yatirim-kuruluslarinin-kurulus-ve-faaliyet-esaslari-hakkinda-teblig"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Yatırım Kuruluşlarının Kuruluş ve Faaliyet Esasları Hakkında Tebliğ
+                        </h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item col-12 px-2">
+                <div class="df fw ais h-100 bg-f ra-1 p-0">
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="9/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="tspb-genel-mektup-753-brexit-referandumu-hk"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">TSPB Genel Mektup - 753 - Brexit Referandumu Hk.</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="10/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="4-5-kasim-2016-sermaye-piyasalari-kongresi-hk"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">4-5 Kasım 2016 Sermaye Piyasaları Kongresi hk.</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="11/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="yatirimci-tazmin-merkezi-pay-satis-duyurusu-hakkinda"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Yatırımcı Tazmin Merkezi Pay Satış Duyurusu Hakkında</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="12/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a
+                        href="sermaye-piyasasi-kuruluna-05-03-2018-tarih-ve-141-sayili-yazimiz-ile-kaldiracli-alim-satim-islemleri-faaliyet-izninden-kismen-feragat-etme-talebinde-bulunulmustur-sermaye-piyasasi-kurulu-nun-02-04-2018-tarih-ve-e-3740-sayili-yazil"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Sermaye Piyasası Kuruluna 05.03.2018 tarih ve 141 sayılı yazımız ile
+                          kaldıraçlı alım satım işlemleri faaliyet izninden kısmen feragat etme talebinde bulunulmuştur.
+                          Sermaye Piyasası Kurulu´nun 02.04.2018 tarih ve E.3740 sayılı yazıları </h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item col-12 px-2">
+                <div class="df fw ais h-100 bg-f ra-1 p-0">
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="13/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="2019-2022-yilinda-devredilecek-hesaplar"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">2019 - 2022 Yılında Devredilecek Hesaplar</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="14/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="2023-yilinda-devredilecek-hesaplar"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">2023 Yılında Devredilecek Hesaplar</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="15/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="acil-ve-beklenmedik-durum-ve-is-surekliligi-plani"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Acil ve Beklenmedik Durum ve İş Sürekliliği Planı</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="16/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="pay-piyasasinda-pazar-yapilanmasi-hakkinda-duyuru"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Pay Piyasası’nda Pazar Yapılanması Hakkında Duyuru</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item col-12 px-2">
+                <div class="df fw ais h-100 bg-f ra-1 p-0">
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="17/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="16-ekim-2019-spk-duyurusu-banka-depo-sarti"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">16 Ekim 2019 SPK Duyurusu Banka Depo Şartı</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="18/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="guvenliginiz-icin-pdf" class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Güvenliğiniz İçin</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="19/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="spk-koronovirus-onlemleri" class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3">
+                        <b class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">SPK Koronovirüs Önlemleri</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="20/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="web-sitesi-asgari-unsurlari"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Web Sitesi Asgari Unsurları</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item col-12 px-2">
+                <div class="df fw ais h-100 bg-f ra-1 p-0">
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="21/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="kisisel-verilerin-islenmesi-aydinlatma-bildirimi"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Kişisel Verilerin İşlenmesi Aydınlatma Bildirimi</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="22/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="profesyonel-musterilerin-yararlanamayacaklari-mevzuat-hukumleri"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Profesyonel Müşterilerin Yararlanamayacakları Mevzuat Hükümleri</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="23/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a
+                        href="sermaye-piyasasi-kurulu-ndan-araci-kurumlarin-kamuyu-aydinlatma-esaslarina-iliskin-duyuru-23-02-2004"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Sermaye Piyasası Kurulu´ndan Aracı Kurumların Kamuyu Aydınlatma
+                          Esaslarına İlişkin Duyuru (23/02/2004)</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="24/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a
+                        href="musterilerin-18-10-2006-tarihinde-resmi-gazete-de-yayimlanan-5549-sayili-suc-gelirlerinin-aklanmasinin-onlenmesi-hakkinda-kanunda-yer-alan-bildirim-zorunlulugu-31-10-2008"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Müşterilerin 18.10.2006 tarihinde Resmi Gazete´de yayımlanan 5549
+                          sayılı Suç Gelirlerinin Aklanmasının Önlenmesi Hakkında Kanunda Yer Alan Bildirim Zorunluluğu
+                          (31/10/2008)</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-item col-12 px-2">
+                <div class="df fw ais h-100 bg-f ra-1 p-0">
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="25/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="cerez-politikasi" class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Çerez Politikası</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="26/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">08</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="ucretlendirme-ve-masraf-tablosu"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Ücretlendirme ve Masraf Tablosu</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50-- p-1 duyuru-frame" alt="27/27">
+                    <div class="df aifs b-- hvr ra-1 py-1 h-100 oh">
+                      <div class="col-3 col-md-2 pr-2 pr-md-0 duyuru-gun tc p-1 dn">
+                        <div class="f-15 fw-400 lh-1">02</div>
+                        <div class="f-11 lh-1 fw-400">Nisan </div>
+                      </div> <a href="onemli-duyuru-dolandiricilara-itibar-etmeyiniz"
+                        class="col h-100 pl-md-3 t-efl p-1 pl-3 aifs pb-md-3"> <b
+                          class="dib badge py-1 px-3 ra-1 bg-efl t-f mr-1 mb-1">Duyuru</b>
+                        <h3 class="di h-100 pb-1">Önemli Duyuru</h3>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 h-50 p-1 duyuru-frame empty"></div>
+                </div>
+              </div> <!-- Last --> <!-- duyurular slider start -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-component">
+        <div id="market-data" class="py-1 bg-lb2">
+          <div class="container-lg py-4 fix">
+            <div class="df fw ais ">
+              <div class="col-12 col-lg-4 pr-2">
+                <div class="tab-container piyasaveri">
+                  <ul class="tab nav b0 p-0 ra-0 tab-theme-1">
+                    <li class="ra-0 m-0 col">Endeks</li>
+                    <li class="ra-0 m-0 col">Döviz</li>
+                    <li class="ra-0 m-0 col">Altın</li>
+                    <li class="ra-0 m-0 col">Diğer</li>
+                  </ul>
+                  <div class="p-0 pb-2 pt-4 usn">
+                    <div class="">
+                      <table class="w-100 piyasaveri-change-table f-09">
+                        <thead>
+                          <tr class="t-se">
+                            <th></th>
+                            <th>Son Değer</th>
+                            <th>Değişim</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="active" alt="XU100">
+                            <td> <i class="bi bi-caret-up-fill"></i> BİST100 </td>
+                            <td>10.971,52</td>
+                            <td>%1,24</td>
+                          </tr>
+                          <tr class="" alt="XU030">
+                            <td> <i class="bi bi-caret-up-fill"></i> BİST30 </td>
+                            <td>11.940,86</td>
+                            <td>%1,19</td>
+                          </tr>
+                          <tr class="" alt="XLBNK">
+                            <td> <i class="bi bi-caret-up-fill"></i> BİST BANKA </td>
+                            <td>13.259,37</td>
+                            <td>%2,87</td>
+                          </tr>
+                          <tr class="" alt="X10XB">
+                            <td> <i class="bi bi-caret-up-fill"></i> BANKA DISI LIKIT 10 </td>
+                            <td>13.955,45</td>
+                            <td>%0,62</td>
+                          </tr>
+                          <tr class="" alt="X30YVADE">
+                            <td> <i class="bi bi-caret-up-fill"></i> VİOP 30 YAKIN </td>
+                            <td>12.620,00</td>
+                            <td>%1,62</td>
+                          </tr>
+                          <tr class="" alt="XLBNKYVADE">
+                            <td> <i class="bi bi-caret-up-fill"></i> XLBNK YAKIN </td>
+                            <td>14.060,00</td>
+                            <td>%3,16</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="">
+                      <table class="w-100 piyasaveri-change-table f-09">
+                        <thead>
+                          <tr class="t-se">
+                            <th></th>
+                            <th>Son Değer</th>
+                            <th>Değişim</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr alt="USDTRY">
+                            <td><i class="bi bi-caret-up-fill"></i> USDTRY</td>
+                            <td>42,060</td>
+                            <td>%0,23</td>
+                          </tr>
+                          <tr alt="EURTRY">
+                            <td><i class="bi bi-caret-down-fill"></i> EURTRY</td>
+                            <td>48,514</td>
+                            <td>%-0,04</td>
+                          </tr>
+                          <tr alt="GBPTRY">
+                            <td><i class="bi bi-caret-down-fill"></i> GBPTRY</td>
+                            <td>55,296</td>
+                            <td>%-0,01</td>
+                          </tr>
+                          <tr alt="EURUSD">
+                            <td><i class="bi bi-caret-down-fill"></i> EURO/USD</td>
+                            <td>1,154</td>
+                            <td>%-0,24</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="">
+                      <table class="w-100 piyasaveri-change-table f-09">
+                        <thead>
+                          <tr class="t-se">
+                            <th></th>
+                            <th>Son Değer</th>
+                            <th>Değişim</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr alt="XAUUSD">
+                            <td><i class="bi bi-caret-down-fill"></i> ONS ALTIN $</td>
+                            <td>4.002,710</td>
+                            <td>%-0,54</td>
+                          </tr>
+                          <tr alt="GLDGR">
+                            <td><i class="bi bi-caret-down-fill"></i> GRAM ALTIN TL</td>
+                            <td>5.412,700</td>
+                            <td>%-0,31</td>
+                          </tr>
+                          <tr alt="SGLDC">
+                            <td><i class="bi bi-caret-down-fill"></i> ÇEYREK ALTIN</td>
+                            <td>8.761,280</td>
+                            <td>%-0,23</td>
+                          </tr>
+                          <tr alt="SGLDY">
+                            <td><i class="bi bi-caret-down-fill"></i> YARIM ALTIN</td>
+                            <td>17.522,560</td>
+                            <td>%-0,23</td>
+                          </tr>
+                          <tr alt="SGLDT">
+                            <td><i class="bi bi-caret-down-fill"></i> TAM ALTIN</td>
+                            <td>34.991,040</td>
+                            <td>%-0,23</td>
+                          </tr>
+                          <tr alt="SCUM">
+                            <td><i class="bi bi-caret-down-fill"></i> CUMHURİYET ALTINI</td>
+                            <td>37.538,560</td>
+                            <td>%-0,20</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="">
+                      <table class="w-100 piyasaveri-change-table f-09">
+                        <thead>
+                          <tr class="t-se">
+                            <th></th>
+                            <th>Son Değer</th>
+                            <th>Değişim</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr alt="BRENT">
+                            <td><i class="bi bi-caret-up-fill"></i> BRENT PETROL</td>
+                            <td>64,573</td>
+                            <td>%0,88</td>
+                          </tr>
+                          <tr alt="BTC_USDT">
+                            <td><i class="bi bi-caret-up-fill"></i> BITCOIN $</td>
+                            <td>109.956,000</td>
+                            <td>%0,00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="market-data-notify pt-3 f-08 t-se pb-4 mt-2 bs1"> *Veriler, en az 15 dakika gecikmeli olarak
+                  gelmektedir. Borsa İstanbul seans saatleri içerisinde veriler temin edilmekte olup Borsa İstanbul'un
+                  kapalı olduğu gün ve saatlerde son işlem gününün kapanış verisi yansıtılmaktadır. </div>
+              </div>
+              <div class="col-12 col-lg-8 tc pl-0 pl-lg-3 main-market-chart-container usn oh pt-1 pr-1">
+                <div class="bg-f bs6-- bs1 b-- ra-1 px-2 px-lg-2 pr-lg-0 pb-3">
+                  <div class="df aic jcsb px-2 pt-3 pb-3">
+                    <div class="chart-nest-title df aic pt-3 py-md-0">BİST100</div>
+                    <div class="chart-filter dif fdr fnw jcsb jcr-md nav tab tab-theme-1"> <button
+                        class="px-2 px-md-3 py-2 f-08 six_months" title="6 Months">6A</button> <button
+                        class="px-2 px-md-3 py-2 f-08 one_year" title="1 Year">1Y</button> <button
+                        class="px-2 px-md-3 py-2 f-08 active all" title="3 Years">3Y</button> </div>
+                  </div>
+                  <div id="home_chart" class="chart col-12 px-0"></div>
+                </div>
+              </div>
+            </div>
+            <div class="df jcc py-5"> <a href="hisse-senetleri" class="dif aic btn btn-p px-5 mt-4"> <i
+                  class="bi bi-search pr-1"></i> Tüm Hisse Senetleri İçin Tıklayınız</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-component">
+        <div class="bg-lb2 pt-4 pt-lg-0 gunluk-bulten">
+          <div class="container-lg">
+            <div class="row jcc jcl-lg px-lg-1 aic pt-lg-5 pb-0">
+              <div class="col-12 py-0 pb-md-5 pl-0 pl-lg-2 pr-0 pr-lg-2 tc t-lg-l" style="width:18rem;">
+                <h2 class="f-16 fw-700 mb-1">Günlük Bülten</h2> <span class="db f-14 fw-400 mt-0 mb-4 dn-mobile">Analiz
+                  & Yorumlar</span> <span class="db f-12 fw-400 pb-3">Bulls Yatırım İle En Son Haberleri Takip
+                  Edin</span>
+                <div class="slider-control-slot"></div>
+              </div>
+              <div class="col-lg col-12 px-0 py-2 mt-lg-0 slider-scope">
+                <div class="sc">
+                  <ul class="carousel w-100 py-3 pb-4 vh df ais lsn" alt="2.6">
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img src="upload/main/default.png" class="img-fluid w-100">
+                        </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 31, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">Ereğli Demir Çelik - Mevsimsel Dinamikler Raporu</h3> <span
+                            class="f-09 db mb-3">Hisse senetlerinde mevsimsellik belirli dönemlerde (Ay,Çeyrek,Yıl)
+                            fiyatların veya getirilerin düzenli olarak ...</span> <a
+                            href="mevsimsel-dinamikler-raporu--2392" class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını
+                            Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img src="upload/images/arastirma/1.png"
+                            class="img-fluid w-100"> </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 31, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">Günlük Bülten</h3> <span class="f-09 db mb-3">Güne başlarken…
+                            BIST 100 endeksi dün günü %0,31 azalışla 10.837 puandan tamamladı. İşlem hacmi 121,2 milyar
+                            TL...</span> <a href="gunluk-bulten--2390"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img
+                            src="upload/images/arastirma/teknik-analiz-bulteni-bulls-yatirim.png"
+                            class="img-fluid w-100"> </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 31, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">Teknik Bülten</h3> <span class="f-09 db mb-3">BIST 100 endeksi,
+                            dünkü işlemleri %0,31 oranında düşüşle 10.837 puandan tamamladı. Güne hafif alımlarla
+                            10.907...</span> <a href="teknik-bulten--2391"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img
+                            src="upload/images/arastirma/viop-bulteni-bulls-yatirim.png" class="img-fluid w-100"> </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 31, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">VİOP BÜLTENİ</h3> <span class="f-09 db mb-3">Ekim Vade Endeks
+                            Sözleşmesi 11,787.00 –11,990.00 aralığında hareket ettiği günü %1.06 değer kaybıyla
+                            11,803.0...</span> <a href="viop-bulteni--2389"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img src="upload/images/arastirma/1.png"
+                            class="img-fluid w-100"> </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 30, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">Günlük Bülten</h3> <span class="f-09 db mb-3">Güne başlarken…
+                            BIST 100 endeksi salı günü %0,16 artışla 10.871 puandan tamamladı. İşlem hacmi 49,2 milyar
+                            TL ...</span> <a href="gunluk-bulten--2378"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img src="upload/main/default.png" class="img-fluid w-100">
+                        </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 30, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">Etilen-Nafta Makası</h3> <span class="f-09 db mb-3">Etilen Nafta
+                            Makası 24 Ekim itibariyle haftalık %20,3 azalışla 161 dolar seviyesine düştü. Haftalık
+                            olarak E...</span> <a href="etilen-nafta-makasi--2388"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img
+                            src="upload/images/arastirma/teknik-analiz-bulteni-bulls-yatirim.png"
+                            class="img-fluid w-100"> </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 30, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">Teknik Bülten</h3> <span class="f-09 db mb-3">BIST 100 endeksi,
+                            Salı günkü yarım seans işlemlerini %0,16 oranında sınırlı bir yükselişle 10.871 puandan
+                            tama...</span> <a href="teknik-bulten--2379"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img
+                            src="upload/images/arastirma/viop-bulteni-bulls-yatirim.png" class="img-fluid w-100"> </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 30, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">VİOP BÜLTENİ</h3> <span class="f-09 db mb-3">Ekim Vade Endeks
+                            Sözleşmesi 11,840.00 – 12,009.00 aralığında hareket ettiği günü %1.13 değer kaybıyla
+                            11,897....</span> <a href="viop-bulteni--2377"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img src="upload/images/arastirma/1.png"
+                            class="img-fluid w-100"> </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 28, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">Günlük Bülten</h3> <span class="f-09 db mb-3">Güne başlarken…
+                            BIST 100 endeksi dün günü %0,81 azalışla 10.853 puandan tamamladı. İşlem hacmi 124,0 milyar
+                            TL...</span> <a href="gunluk-bulten--2374"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="slider-item col-12 col-sm-6 col-md-5 px-4 px-sm-2 m-0 py-0 row jcc aifs">
+                      <div class="bs1 bg-fff ra-1 oh p-0 h-100">
+                        <div class="img-c p-0 tc bb mb-3"> <img
+                            src="upload/images/arastirma/teknik-analiz-bulteni-bulls-yatirim.png"
+                            class="img-fluid w-100"> </div>
+                        <div class="pb-3" style="padding:0 1.36rem;">
+                          <p class="f-08 t-lg db tarih mb-1">Ekim 28, 2025</p>
+                          <h3 class="fw-700 f-12 mb-3">Teknik Bülten</h3> <span class="f-09 db mb-3">BIST 100 endeksi,
+                            dünkü işlemleri %0,81 oranında düşüşle 10.853 seviyesinden tamamladı. Güne 10.928
+                            seviyeleri...</span> <a href="teknik-bulten--2376"
+                            class="link t-trkz f-09 db fw-600 pb-1 ok">Devamını Okuyun</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="gunluk-bulten-nv-slot py-2 db dn-lg oh"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-component">
+        <div class="bg-lb2 py-0 py-lg-4 ">
+          <div class="container-lg px-0-- px-md-2-- py-3 hizmetlerimiz op0">
+            <h2 class="f-16 fw-700 mb-0 tc pl-3 py-3 py-md-5">Hizmetlerimiz</h2>
+            <div class="sc px-1">
+              <div class="carousel row fnw ais jcl mt-0 tc pt-3 pb-0 pb-md-4" alt="4">
+                <div class="item px-4-- px-md-2 mb-4 col-12 col-sm-6 col-md-4 mx-0 mr-0">
+                  <div class="b bg-fff h-100 oh ra-1 px-2 py-3 b">
+                    <div class="img-container bg-fff pt-4 pt-sm-4 pb-0 b-0 tc"> <img
+                        src="upload/images/pages/kurumsal-finansman.webp" class="ra-2 b" /> </div>
+                    <div class="px-2 pb-4 tc">
+                      <h3 class="mt-3 mb-2 fw-700">Kurumsal Finansman</h3> <span class="f-09 db mb-3 px-1">Bulls
+                        Yatırım, deneyimli ve alanında uzman kadrosu ile Kurumsal Finansman danışmanlığı kapsamında
+                        sermaye piyasası araçlarının satışına aracılık etmekte ve finansal danışmanlık hizmetleri
+                        vermektedir. </span> <a href="kurumsal-finansman-hizmetleri/"
+                        class="link t-trkz f-09 db fw-600 ok">Devamını Okuyun</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item px-4-- px-md-2 mb-4 col-12 col-sm-6 col-md-4 mx-0 mr-0">
+                  <div class="b bg-fff h-100 oh ra-1 px-2 py-3 b">
+                    <div class="img-container bg-fff pt-4 pt-sm-4 pb-0 b-0 tc"> <img
+                        src="upload/images/pages/bireysel-porfolyo-yo-netimi.webp" class="ra-2 b" /> </div>
+                    <div class="px-2 pb-4 tc">
+                      <h3 class="mt-3 mb-2 fw-700">Bireysel Portföy Yönetimi</h3> <span
+                        class="f-09 db mb-3 px-1">Bireysel Portföy Yönetimi, sermaye piyasası mevzuatı kapsamında,
+                        finansal varlıklardan oluşan portföylerin her bir müşteri adına , doğrudan veya dolaylı bir
+                        menfaat sağlamak üzere vekil sıfatıyla yönetilmesidir. </span> <a
+                        href="bireysel-portfoy-yonetimi/" class="link t-trkz f-09 db fw-600 ok">Devamını Okuyun</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item px-4-- px-md-2 mb-4 col-12 col-sm-6 col-md-4 mx-0 mr-0">
+                  <div class="b bg-fff h-100 oh ra-1 px-2 py-3 b">
+                    <div class="img-container bg-fff pt-4 pt-sm-4 pb-0 b-0 tc"> <img
+                        src="upload/images/pages/yatirim-danis-manlig-i.webp" class="ra-2 b" /> </div>
+                    <div class="px-2 pb-4 tc">
+                      <h3 class="mt-3 mb-2 fw-700">Yatırım Danışmanlığı</h3> <span class="f-09 db mb-3 px-1">Yatırım
+                        Danışmanlığı bölümümüz, yatırım hedeflerinize ve risk beklentilerinize uygun kriterleri seçerek,
+                        size para ve sermaye piyasası araçları hakkında uygun kararlar almanıza yardımcı olur. </span>
+                      <a href="yatirim-danismanligi/" class="link t-trkz f-09 db fw-600 ok">Devamını Okuyun</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item px-4-- px-md-2 mb-4 col-12 col-sm-6 col-md-4 mx-0 mr-0">
+                  <div class="b bg-fff h-100 oh ra-1 px-2 py-3 b">
+                    <div class="img-container bg-fff pt-4 pt-sm-4 pb-0 b-0 tc"> <img
+                        src="upload/images/pages/u-cretler-ve-masraflar.webp" class="ra-2 b" /> </div>
+                    <div class="px-2 pb-4 tc">
+                      <h3 class="mt-3 mb-2 fw-700">Ücretler ve Masraflar</h3> <span class="f-09 db mb-3 px-1">Ücretler
+                        ve Masraflara ilişkin tablolara, Kredili Menkul Kıymet tablolarına, Para Transfer bilgilerine,
+                        Bireysel Portföy Yönetim Ücretlerine ve Nakit Bakiye Nemalandırmaya ilişkin tüm bilgilere bu
+                        sayfadan erişim sağlayabilirsiniz. </span> <a href="ucretler-ve-masraflar/"
+                        class="link t-trkz f-09 db fw-600 ok">Devamını Okuyun</a>
+                    </div>
+                  </div>
+                </div>
+              </div> <a href="hizmetler/" class="t-trkz f-09 fw-700 dib ra-1 px-3 py-1 ok tum-hizmetlerimiz ">Tüm
+                Hizmetler</a>
+            </div>
+            <div class="col-12 col-lg-12 tc mt-4 mt-lg-0 mb-4 dn"> <a href="pay-piyasasi-temel-bilgiler/"
+                class="t-trkz f-09 fw-700 dib ra-1 px-3 py-1 ">Tüm Hizmetler</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="print-info dn"></div>
+  <footer class="footer mt-0 col-12">
+    <div class="ftr-1 bg-footer df aic t-f py-4">
+      <div class="container">
+        <div class="df fw">
+          <div class="col-12 col-md-6 col-xl-4 py-3 pb-4 df aic jcsb">
+            <div class="wa pr-3 col-lg-4 tc pr-md-3"> <img src="upload/images/logo/bullsyatirim-light.svg"
+                class="w-6rem pl-0" /> </div>
+            <div class="col pl-lg-3--">
+              <h3 class="fw-700">Bize Ulaşın</h3> <a href="mailto:iletisim@bullsyatirim.com"
+                class="db tdn">iletisim@bullsyatirim.com</a>
+              <h3 class="fw-700 mt-3">Yatırımcı İletişim Merkezi</h3> <a href="tel:+90(212) 410 05 00"
+                class="db tdn">+90(212) 410 05 00</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-6 df aic">
+            <div class="wa pr-3 col-lg-4 tc pr-md-3"> <img src="upload/main/konum.webp" class="w-6rem ra-1 px-0" />
+            </div>
+            <div class="col">
+              <h3 class="fw-700">Genel Müdürlük</h3> <a
+                href="https://maps.google.com/maps?ll=41.076532,29.012611&z=18&t=m&hl=tr&gl=TR&mapclient=embed&q=B%C3%BCy%C3%BCkdere%20Cad%20No%20173%201%20Levent%20Plaza%20B%20Blok%20Kat%205%20Levent%20%2F%20%C4%B0stanbul"
+                class="tl db tdn" target="_blank">Büyükdere Cad. No 173, 1. Levent Plaza, B Blok, Kat 5, Levent /
+                İstanbul</a>
+            </div>
+          </div>
+          <div class="col-6 ma col-md-3 col-lg-4 col-xl-2 pl-3 df aic jcc jcsb-md t-p pt-5 pb-4 py-xl-0"> <a
+              href="https://www.youtube.com/@bullsyatirimmenkuldegerler"
+              class="social-item fa fa-youtube p-2 bg-bulls2"> </a><a
+              href="https://facebook.com/profile.php?id=61557273536350"
+              class="social-item fa fa-facebook p-2 bg-bulls2"> </a><a href="https://www.instagram.com/bullsyatirim/"
+              class="social-item fa fa-instagram p-2 bg-bulls2"> </a><a
+              href="https://www.linkedin.com/company/bulls-yatirim-menkul-degerler/"
+              class="social-item fa fa-linkedin p-2 bg-bulls2"> </a><a href="https://twitter.com/bullsyatirim"
+              class="social-item bi bi-twitter-x p-2 bg-bulls2"> </a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="to-top tc db py-3 db dn-sm bg-bulls3 fw-700"> <i class="bi bi-chevron-up "></i> <i
+        class="bi bi-arrow-up dn"></i> Yukarı </div>
+    <div class="bg-footer2 t-lb">
+      <div class="container py-5 pb-5">
+        <div class="row py-1 tc jcc t-lg-l">
+          <div class="col-6 col-md-4 col-lg mb-4 mb-0-lg">
+            <div class="pr-1">
+              <h3 class="fw-500 f-11">Hakkımızda</h3>
+              <div class=""><a href="biz-kimiz" class="link fw-200 db py-1 f-1">Biz Kimiz</a><a href="genel/duyurular/"
+                  class="link fw-200 db py-1 f-1">Duyurular</a><a href="banka-hesap-bilgileri"
+                  class="link fw-200 db py-1 f-1">Banka Hesap Bilgileri</a><a
+                  href="kurumsal-kisisel-verilerin-korunmasi" class="link fw-200 db py-1 f-1">Kişisel Verilerin
+                  Korunması</a><a href="upload/files/dosya/bulls-yatirim-belgeler.pdf" class="link fw-200 db py-1 f-1"
+                  target="_blank">Yasal Uyarılar</a><a
+                  href="https://tspb.org.tr/kamuyu_aydinlatma/bulls-yatirim-menkul-degerler-a-s/"
+                  class="link fw-200 db py-1 f-1" target="_blank">Kamuyu Aydınlatma</a><a href="sikca-sorulan-sorular"
+                  class="link fw-200 db py-1 f-1">Sıkça Sorulan Sorular</a></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg mb-4 mb-0-lg">
+            <div class="pr-1">
+              <h3 class="fw-500 f-11">Hizmetler</h3>
+              <div class=""><a href="yatirim-danismanligi" class="link fw-200 db py-1 f-1">Yatırım Danışmanlığı</a><a
+                  href="kurumsal-finansman-hizmetleri" class="link fw-200 db py-1 f-1">Kurumsal Finansman</a><a
+                  href="ucretler-ve-masraflar" class="link fw-200 db py-1 f-1">Ücretler ve Masraflar</a><a
+                  href="bireysel-portfoy-yonetimi" class="link fw-200 db py-1 f-1">Bireysel Portföy Yönetimi</a></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg mb-4 mb-0-lg">
+            <div class="pr-1">
+              <h3 class="fw-500 f-11">Piyasalar</h3>
+              <div class=""><a href="en-cok-dusenler" class="link fw-200 db py-1 f-1">Hisse Senedi Piyasası En Çok
+                  Düşenler</a><a href="en-cok-artanlar" class="link fw-200 db py-1 f-1">Hisse Senedi Piyasası En Çok
+                  Artanlar</a><a href="#market-data" class="link fw-200 db py-1 f-1">USDTRY Ve EURTRY Son Fiyatlar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg mb-4 mb-0-lg">
+            <div class="pr-1">
+              <h3 class="fw-500 f-11">Araştırma</h3>
+              <div class=""><a href="arastirma/tum-bultenler" class="link fw-200 db py-1 f-1">Tüm Bültenler</a><a
+                  href="arastirma/gunluk-bulten" class="link fw-200 db py-1 f-1">Günlük Bülten</a><a
+                  href="arastirma/sirket-raporlari" class="link fw-200 db py-1 f-1">Şirket Raporları</a></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg mb-4 mb-0-lg">
+            <div class="pr-1">
+              <h3 class="fw-500 f-11">Üyelik İşlemleri</h3>
+              <div class=""><a href="yatirim-hesabi-ac" class="link fw-200 db py-1 f-1">Yatırım Hesabı Açın</a><a
+                  href="bulten-aboneligi" class="link fw-200 db py-1 f-1">Bülten Aboneliği</a><a href="bize-ulasin"
+                  class="link fw-200 db py-1 f-1">Bize Ulaşın</a><a href="https://e-sube.bullskatilim.online/"
+                  class="link fw-200 db py-1 f-1" target="_blank">E-Şube</a><a href="https://web.idealdata.com.tr/"
+                  class="link fw-200 db py-1 f-1" target="_blank">İdeal Data</a><a href="sozlesmeler"
+                  class="link fw-200 db py-1 f-1">Sözleşmeler</a></div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg mb-4 mb-0-lg">
+            <div class="pr-1">
+              <h3 class="fw-500 f-11">Bilgilendirme</h3>
+              <div class=""><a href="sikca-sorulan-sorular" class="link fw-200 db py-1 f-1">Yatırımcı Rehberi</a><a
+                  href="zaman-asimi-olan-musteriler-listesi" class="link fw-200 db py-1 f-1">Zaman Aşımı Olan Müşteriler
+                  Listesi</a><a href="mali-tablolar" class="link fw-200 db py-1 f-1">Mali Tablolar</a><a
+                  href="https://e-sirket.mkk.com.tr/?page=company&amp;company=10850" class="link fw-200 db py-1 f-1"
+                  target="_blank">Bilgi Toplumu Hizmetleri</a><a href="https://borsaistanbul.com/tr/sayfa/10/mevzuat"
+                  class="link fw-200 db py-1 f-1" target="_blank">Borsa İstanbul Mevzuatı</a><a
+                  href="https://mevzuat.spk.gov.tr/" class="link fw-200 db py-1 f-1" target="_blank">SPK Mevzuatı</a><a
+                  href="upload/files/mainpage/bulls-yatirim-risk-bildirim-formu-2025.pdf"
+                  class="link fw-200 db py-1 f-1" target="_blank">Risk Bildirim Formu</a><a href="gizlilik-politikasi"
+                  class="link fw-200 db py-1 f-1">Gizlilik Politikası</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-footer2 footer-line pb-4 pt-5">
+      <div class="container mb-5">
+        <div class="df jcc jcfe-md">
+          <div class="dropdown language-selection t-f ta f-08 usn " style="width:200px;">
+            <div class="dropdown-toggle p-3 ra-1 b"><img src="/upload/main/langs/tr.svg" alt="lang" />TR </div>
+            <div class="dropdown-menu b bg-f t-p pa l-0 w-100 f-09 ra-1 oh"> <a rel="nofollow" href="tr/"
+                title="language" class="opt-lang db py-3 px-3 bb"> <img src="/upload/main/langs/tr.svg"
+                  alt="lang" />Türkçe</a><a rel="nofollow" href="en/" title="language" class="opt-lang db py-3 px-3 bb">
+                <img src="/upload/main/langs/en.svg" alt="lang" />English</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-2 px-md-0">
+        <div class="container mb-4 ra-1 p-3 b"> <b class="db pb-2">Sermaye Piyasası Kurulunun, Yatırım Hizmetleri ve
+            Faaliyetleri ile Yan Hizmetlere İlişkin Esaslar Hakkında Tebliği Uyarınca Yayımlanan Uyarı Notu :</b> <i
+            class="px-0 db">"Burada yer alan yatırım bilgi, yorum ve tavsiyeleri yatırım danışmanlığı kapsamında
+            değildir. Yatırım danışmanlığı hizmeti, yetkili kuruluşlar tarafından kişilerin risk ve getiri tercihleri
+            dikkate alınarak kişiye özel sunulmaktadır. Burada yer alan yorum ve tavsiyeler ise genel niteliktedir. Bu
+            tavsiyeler mali durumunuz ile risk ve getiri tercihlerinize uygun olmayabilir. Bu nedenle, sadece burada yer
+            alan bilgilere dayanılarak yatırım kararı verilmesi beklentilerinize uygun sonuçlar doğurmayabilir."</i>
+          <div class="pt-2">Copyright © 2024 Bulls Yatırım Menkul Değerler All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-4 bg-footer2 t-lb copyright py-4">
+      <div class="container px-0 pb-5 pb-md-0">
+        <div class="df aic jcsb-md fdc fdr-md f-09 pb-5 pb-md-0 mb-4 mb-md-0">
+          <div class="tc"> ©2025 <b class="fw-700 t-bulls3">Bulls Yatırım Menkul Değerler A.Ş.</b> Tüm Hakları Saklıdır
+          </div>
+          <div class="fw-300 py-2">Site Creation & Technology by <a href="https://mindlook.agency" target="_blank"
+              class=" fw-500 t-trkz"> Mindlook</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn">
+    <div class="overlay-blur pa"></div>
+    <div class="popup_main_container container-lg" alt="0"> <b class="closex pa"></b> <a
+        href="https://sanalsube.bullsyatirim.com:8000/login" target="_blank" class="df aic jcc popup-inside"><img
+          src="upload/main/popup/desktop-esube.webp" class="popup-img dn db-lg" /><img
+          src="upload/main/popup/mobil-esube.webp" class="popup-img db dn-lg" /> </a> </div>
+  </div>
+</body>
+<div class="toast jstoast"></div>
+
+<div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
+  <i class="fa fa-angle-up dn"></i>
+  <i class="bi bi-chevron-up"></i>
+</div>
+
+
+<div class="dn">
+  <div class="spinner-border loading t-s vam mr-2"></div>
+</div>
+
+<!-- Bulls Assistant -->
+<div class="pf b-0 r-0 mb-3 mx-3 bulls-assist-btn usn ta">
+  <i class="bi bi-question-lg"></i>
+</div>
+<div class="bulls-assist-menu pf r-0 mb-5 pt-5 px-3 z999 ">
+  <div class="df fdc bg-f oh ra-2 bs3 h-100">
+    <div class="assist-header px-3 py-3 bg-jumbotron t-f f-1 df aic jcsb">
+      <div class="">
+        <h3 class="">Bulls Yatırım Asistan</h3>
+        <span>Size Nasıl Yardımcı Olabilirim?</span>
+      </div>
+      <div class="t-f"></div>
+    </div>
+    <div class="assist-body p-2 df fw b tc fh1 tdn t-d f-09">
+      <div class="col-6 df aic jcc px-2 py-2 tc">
+        <a href="https://e-sube.bullskatilim.online" href2="https://sanalsube.bullsyatirim.com:8000/login" target="_blank"
+          class="hvr bg-lb p-3 w-100 df aic jcc fdc ra-1 b">
+
+          <i class="bi bi-mouse"></i>
+
+          E-Şube </a>
+      </div>
+      <div class="col-6 df aic jcc px-2 py-2 tc"><a href="bize-ulasin"
+          class="hvr bg-lb p-3 w-100 df aic jcc fdc ra-1 b"><i class="bi bi-flag "></i>Bize Ulaşın</a></div>
+      <div class="col-6 df aic jcc px-2 py-2 tc"><a href="bulten-aboneligi"
+          class="hvr bg-lb p-3 w-100 df aic jcc fdc ra-1 b"><i class="bi bi-envelope-paper "></i>Bültene Abone Olmak
+          İstiyorum</a></div>
+      <div class="col-6 df aic jcc px-2 py-2 tc"><a href="sikca-sorulan-sorular"
+          class="hvr bg-lb p-3 w-100 df aic jcc fdc ra-1 b"><i class="bi bi-question-square "></i>Sıkça Sorulan
+          Sorular</a></div>
+      <div class="col-6 df aic jcc px-2 py-2 tc"><a href="https://web.idealdata.com.tr/" target="_blank"
+          class="hvr bg-lb p-3 w-100 df aic jcc fdc ra-1 b">
+          <i class="bi bi-pin-angle"></i>
+          İdeal Data</a></div>
+      <div class="col-6 df aic jcc px-2 py-2 tc"><a href="yatirim-hesabi-ac"
+          class="hvr bg-lb p-2 w-100 df aic jcc fdc ra-1 b"><i class="bi bi-inbox"></i>Hesap Açmak İstiyorum</a></div>
+
+    </div>
+  </div>
+</div>
+<div class="bulls-assist-menu-back"></div>
+
+
+</html>

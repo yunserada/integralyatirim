@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="tr">
+<%- include("layouts/head") %>
+
+	<body>
+		<%- include("layouts/header") %>
+			<div class="main middle">
+				<div class="home-jumbotron form-jumbotron py-0 pt-lg-3 px-lg-0 px-2 ">
+					<div class="container-lg pt-4 pb-4 pb-lg-1 px-0--">
+						<div class="df fdc jcsb fdr-lg bg-jumbotron ra-1 pt-2 pb-2-- ">
+							<div class="col-12 col-lg-7 df aic t-lb px-4 py-1 px-lg-5 lh-1">
+								<div class="py-3 py-lg-2 lh-1">
+									<h2 class="mb-0 fw-400 f-16">
+										<b>Bize Ulaşın</b>
+									</h2> <span class="df f-14 fw-400">Uzmanlarımız Sizi <br>Hemen Arasın!</span>
+									<div class="db-lg dn mt-5 mt-lg-3 mx-a mx-lg-0 underline-in-jumbotron tc">
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-5 pl-lg-5 pl-lg-5 pl-0 db-lg"> <img
+									src="upload/main/bize-ulasin.webp" class="pr pa-lg b-0 dn db-lg pt-1"
+									style="height:118%" /> </div>
+						</div>
+					</div>
+				</div>
+				<div class="container-lg pb-4 pt-4 py-lg-5 t-bulls">
+					<div class="row aic bize-ulasin-header">
+						<div class="col-12 col-lg-3 pl-lg-0 pb-2 pr-2 pr-lg-5">
+							<h1 class="fw-700 mb-0">İletişim Formu</h1>
+						</div>
+						<div class="col-12 col-lg-4 p-2 fw-300 ">
+							<div class="tab-container-lg ">
+								<ul class="nav-tabs tab-theme-3 jcc tab">
+									<li class="nav-item px-4 active" data-tabtarget="form">İletişim Formu</li>
+									<li class="nav-item px-4" data-tabtarget="adres">Adres Bilgileri</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="oh bize-ulasin">
+					<div class="container-lg">
+						<div class="t-333">
+							<div class="tab-content mb-0">
+								<div class="tab-pane active" data-tabtarget="form">
+									<form action="account" method="POST">
+										<div class="form_tema1 usn">
+											<div class="container-lg">
+												<div class="row aifs">
+													<div class="col-12 px-4 py-lg-4 ra-1 bg-lb">
+														<div class="row py-4">
+															<div class="col-12 col-lg-6 form-item">
+																<label>Adınız</label> <input type="text" name="ad"
+																	value="" required />
+																<b>
+																</b>
+															</div>
+															<div class="col-12 col-lg-6 form-item">
+																<label>Soyadınız</label> <input type="text" name="soyad"
+																	value="" required />
+																<b>
+																</b>
+															</div>
+															<div class="col-12 col-lg-6 form-item"> <label>Telefon
+																	Numaranız</label> <input type="tel" class="tel"
+																	name="telefon"
+																	pattern="0\(\d\d\d\) \d\d\d \d\d \d\d" required />
+																<b>
+																</b>
+															</div>
+															<div class="col-12 col-lg-6 form-item"> <label>E-posta
+																	Adresiniz</label> <input type="text" name="email"
+																	pattern=".+@.+\...+" value="" required />
+																<b>
+																</b>
+															</div>
+															<div class="col-12 col-lg-6 form-item"> <label>Konu</label>
+																<select name="konu" required>
+																	<option data-value="-1" value="">Konu Seçiniz
+																	</option>
+																	<option value="b">Beğeni</option>
+																	<option value="t">Talep</option>
+																	<option value="o">Öneri</option>
+																	<option value="s">Şikayet</option>
+																	<option value="d">Diğer</option>
+																</select> <b>
+																</b> </div>
+															<div class="col-12"> <label>Mesajınız</label> <textarea
+																	name="mesajiniz" class="mesajınız col-12 ra-1 p-3"
+																	required>
+</textarea>
+																<b>
+																</b>
+															</div>
+														</div>
+													</div>
+													<div class="df fw jcsb mt-4 aic">
+														<div class="col-12 col-lg-6">
+															<div class="col-12 py-5 lh-13 f-1 fw-400">
+																<div class="lh-13 f-1 fw-300 mb-2"> Sizlere daha iyi
+																	hizmet verebilmek amacıyla kişisel verileriniz Bulls
+																	Yatırım tarafından Kişisel Verilerin Korunması ve
+																	Gizlilik Politikamız kapsamında işlenebilmektedir;
+																</div>
+																<div class="db my-2"> <input type="checkbox"
+																		name="kvkkonayi" value="1" required /> <a
+																		href="upload/files/formlar/musteri-aydinlatma-metni.pdf?ver=1762111855"
+																		class="fw-600 t-bulls" target="_blank">Kişisel
+																		verilerimin işlenmesini</a> ve <a
+																		href="kurumsal-kisisel-verilerin-korunmasi"
+																		class="fw-600 t-bulls" target="_blank">Kişisel
+																		Veri Politika'nızı</a> okuduğumu kabul ediyorum.
+																</div>
+																<div class="db mt-2 mb-4"> <input type="checkbox"
+																		name="bultenonay" value="1" /> Bulls Yatırım
+																	tarafından hesap açılış işlemlerinin
+																	gerçekleştirilmesi amacıyla <a
+																		href="upload/files/formlar/potansiyel-musteri-aydinlatma-metni.pdf?ver=1762111855"
+																		class="fw-600 t-bulls"
+																		target="_blank">Potansiyel Müşteri Aydınlatma
+																		Metni</a> kapsamında elektronik ileti almayı
+																	onaylıyorum. <br>
+																	<ul class="pl-2 pt-2 lh-15 ">
+																		<li>• Telefon Çağrısı</li>
+																		<li>• SMS</li>
+																		<li>• E-posta</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="col-12 col-lg-5 ">
+															<div class="col-12">
+																<div class="col-12 p-4 bg-lb ra-1 t-se">
+																	<div
+																		class="col-12 df fw jcs fdc fdr-lg captcha_grid ">
+																		<div class="col df 1 py-2 px-0"> <img
+																				src="captcha.png?v=1762111855"
+																				class="captcha ra-1 b asfe"
+																				style="margin:0 auto;" /> </div>
+																		<div class="col f1 py-2 ml-0 ml-lg-3 px-0 tc">
+																			<label
+																				class="p-0 m-0 tc guvenlik_kodu py-0 pb-1">Güvenlik
+																				Kodunu Giriniz</label> <input
+																				type="text" name="captcha"
+																				class="onay f1 p-2 px-3 f-09 tc ma"
+																				required /> </div>
+																	</div>
+																	<div
+																		class="db ma dib-md w-auto capatcha_yenile cp tc t-lg-l f-1 usn py-2 pl-2">
+																		<i class="bi bi-arrow-clockwise">
+																		</i> Güvenlik Kodunu Değiştir
+																	</div>
+																</div> <button type="submit"
+																	class="w-100 btn bg-trkz t-f f-15 py-2 px-5 ra-1 mb-5 mt-4 fw-500"
+																	name="islemtipi"
+																	value="bize_ulasin_do">Kaydet</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane adres_bilgileri" data-tabtarget="adres">
+									<div class="row bg-lb ra-1 mb-4 py-4--">
+										<div class="col-10 ma col-lg-4 pt-4 pb-0 pb-lg-4 pl-lg-4 pr-lg-4">
+											<div class="bg-f b ra-1 oh h-100">
+												<div class="p-1 bb mb-0 bg-img-page bg-trkz">
+												</div>
+												<div class="px-3 py-4 h-100">
+													<h2 class="f-14"> Piyasa Bültenlerine<br>Abone Olun </h2> <span
+														class="db f-12"> Sizde şimdi Bull Yatırım bültenlerine abone
+														olun en güncel gelişmeleri yakından takip edin! </span> <a
+														href="bulten-aboneligi"
+														class="t-trkz fw-500 f-09 ok dib mt-4">Abone Ol</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-8 py-5 pr-lg-4">
+											<div class="ra-1 oh b h-100">
+												<div class="p-1 bb mb-0 bg-img-page bg-sdbr">
+												</div>
+												<div class="b h-100"> <iframe
+														src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1571029.8495311842!2d28.650640490746955!3d39.73026776442696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7e2006bee5f%3A0x6da9475fe8b26a42!2zQnVsbHMgWWF0xLFyxLFtIE1lbmt1bCBEZcSfZXJsZXIgQS7Fni4!5e0!3m2!1str!2str!4v1722434293908!5m2!1str!2str"
+														class="w-100 h-100 oh" style="min-height:25rem;">
+													</iframe> </div>
+											</div>
+										</div>
+									</div>
+									<div class="row aic bg-lb ra-1 t-cntct mb-4 pb-3 py-lg-3">
+										<div class="col-12 col-lg-4 df aic py-3">
+											<div class="col-4 col-lg-5 pr-3 tc"> <img
+													src="upload/images/logo/bullsyatirim-dark.svg" class="w-60" />
+											</div>
+											<div class="col pl-lg-0 ">
+												<h3 class="fw-700">Bize Ulaşın</h3> <a
+													href="mailto:iletisim@bullsyatirim.com"
+													class="db tdn">iletisim@bullsyatirim.com</a>
+												<h3 class="fw-700 mt-3">Yatırımcı İletişim Merkezi</h3> <a
+													href="tel:+90(212) 410 05 00" class="db tdn">+90(212) 410 05 00</a>
+											</div>
+										</div>
+										<div class="col-12 col-lg-6 df aic">
+											<div class="col-4 col-lg-3 pr-3 tc"> <img src="upload/main/konum.webp"
+													class="w-60 ra-1 px-0" /> </div>
+											<div class="col pl-lg-0 ">
+												<h3 class="fw-700">Genel Müdürlük</h3> <a
+													href="https://maps.google.com/maps?ll=41.076532,29.012611&z=18&t=m&hl=tr&gl=TR&mapclient=embed&q=B%C3%BCy%C3%BCkdere%20Cad%20No%20173%201%20Levent%20Plaza%20B%20Blok%20Kat%205%20Levent%20%2F%20%C4%B0stanbul"
+													class="tl db tdn" target="_blank">Büyükdere Cad. No 173, 1. Levent
+													Plaza, B Blok, Kat 5, Levent / İstanbul</a>
+											</div>
+										</div>
+									</div>
+									<div class="bg-lb row aic ra-1 mb-4 p-3 py-4 t-cntct">
+										<div class="col-12 col-lg-4 p-3">
+											<div class="ra-1 bg-f oh">
+												<div class="p-1 bb mb-0 bg-img-page bg-trkz">
+												</div>
+												<div class="p-4">
+													<h3 class="f-14 fw-700">Yatırım Hesabı Açın</h3> <span
+														class="db f-11">Hemen yatırım hesabı açmak için
+														tıklayınız</span> <a href=""
+														class="f-09 fw-500 t-trkz ok dib mt-4">Yatırım Hesabı Açın</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-4 p-3">
+											<div class="ra-1 bg-f oh">
+												<div class="p-1 bb mb-0 bg-img-page bg-trkz">
+												</div>
+												<div class="p-4">
+													<h3 class="f-14 fw-700">Uzmana Danışın</h3> <span
+														class="db f-11">Bulls Yatırım uzmanlarına danışmak için
+														tıklayınız</span> <a href=""
+														class="f-09 fw-500 t-trkz ok dib mt-4">Uzmana Danışın</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-4 p-3">
+											<div class="ra-1 bg-f oh">
+												<div class="p-1 bb mb-0 bg-img-page bg-trkz">
+												</div>
+												<div class="p-4">
+													<h3 class="f-14 fw-700">Sıkça Sorulan Sorular</h3> <span
+														class="db f-11">Yatırımcıların merak ettiği sorular için
+														tıklayınız</span> <a href=""
+														class="f-09 fw-500 t-trkz ok dib mt-4">Sıkça Sorulan Sorular</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script> $(function () { lh = location.href; if (lh.match(/#adres/)) { setTimeout(function () { $('[data-tabtarget=adres]').click(); }, 80); } }); </script>
+			</div>
+			<div class="print-info dn">bize-ulasin</div>
+			<%- include("layouts/footer") %>
+				<div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn">
+					<div class="overlay-blur pa">
+					</div>
+					<div class="popup_main_container container-lg" alt="0"> <b class="closex pa">
+						</b> <a href="https://sanalsube.bullsyatirim.com:8000/login" target="_blank"
+							class="df aic jcc popup-inside">
+							<img src="upload/main/popup/desktop-esube.webp" class="popup-img dn db-lg" />
+							<img src="upload/main/popup/mobil-esube.webp" class="popup-img db dn-lg" /> </a> </div>
+				</div>
+	</body>
+	<div class="toast jstoast">
+	</div>
+	<div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
+		<i class="fa fa-angle-up dn">
+		</i>
+		<i class="bi bi-chevron-up">
+		</i>
+	</div>
+	<div class="dn">
+		<div class="spinner-border loading t-s vam mr-2">
+		</div>
+	</div>
+
+</html>
