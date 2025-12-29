@@ -1,153 +1,205 @@
 <!DOCTYPE HTML>
 <html lang="tr">
 <%- include("layouts/head") %>
-<body> 
-<%- include("layouts/header") %>
-<div class="main middle"> <div class="bg-bulls2 "> <div class="hisse-header bg-bulls t-f py-1 py-md-4"> <div class="container py-3"> <h1 class="f-16 py-1">En Çok Artanlar</h1> </div> </div> <div class="container-lg pt-5 pb-4"> <div class="df mx-a ra-1 oh b col-12 col-md-6 tc tdn fw-600 mb-2 tabn"> <a href="en-cok-artanlar" class="col-4 p-2 bg-bulls t-f">En Çok Artanlar</a> <a href="en-cok-dusenler" class="col-4 p-2 bg-f br bl ">En Çok Düşenler</a> <a href="en-cok-islem-gorenler" class="col-4 p-2 bg-f ">En Çok İşlem Görenler</a> </div> <div class="df py-4"> <div class="hisse-container col-12 ra-2 bs2 oa-x asfs"> <table class="hisse-table sortable bs1 w-100"> <thead class="usn"> <tr class="bg-lb"> <th class="sorttable_alpha tl pl-4">HİSSE SENETLERİ</th> <th>SON FİYAT TL</th> <th>GÜNLÜK GETİRİ</th> <th>EN DÜŞÜK</th> <th>EN YÜKSEK</th> <th>HACİM TL</th> <th>HACİM LOT</th> </tr> </thead> <tbody> <tr h="C">
-<td title="CEM ZEYTIN" sortKey="CEMZY">
-<i class="bi bi-arrow-up-right t-s">
-</i> CEMZY - <b class="dn--"> CEM ZEYTIN</b> </td>
-<td>54,45</td>
-<td sortKey="10,00">10,00 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>50,20</td>
-<td>54,45</td>
-<td sortKey="359392366">359.392.366</td>
-<td sortKey="6779467">6.779.467</td>
-</tr>
-<tr h="E">
-<td title="ECZACIBASI YATIRIM" sortKey="ECZYT">
-<i class="bi bi-arrow-up-right t-s">
-</i> ECZYT - <b class="dn--"> ECZACIBASI YATIRIM</b> </td>
-<td>291,50</td>
-<td sortKey="10,00">10,00 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>263,00</td>
-<td>291,50</td>
-<td sortKey="498164757">498.164.757</td>
-<td sortKey="1778190">1.778.190</td>
-</tr>
-<tr h="V">
-<td title="VERUSA HOLDING AS" sortKey="VERUS">
-<i class="bi bi-arrow-up-right t-s">
-</i> VERUS - <b class="dn--"> VERUSA HOLDING AS</b> </td>
-<td>277,75</td>
-<td sortKey="10,00">10,00 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>255,25</td>
-<td>277,75</td>
-<td sortKey="78410146">78.410.146</td>
-<td sortKey="291105">291.105</td>
-</tr>
-<tr h="P">
-<td title="POLITEKNIK METAL SAN VE TIC AS" sortKey="POLTK">
-<i class="bi bi-arrow-up-right t-s">
-</i> POLTK - <b class="dn--"> POLITEKNIK METAL SAN VE TIC AS</b> </td>
-<td>8585,00</td>
-<td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>8100,00</td>
-<td>8585,00</td>
-<td sortKey="150789140">150.789.140</td>
-<td sortKey="17912">17.912</td>
-</tr>
-<tr h="S">
-<td title="SUWEN TEKSTIL" sortKey="SUWEN">
-<i class="bi bi-arrow-up-right t-s">
-</i> SUWEN - <b class="dn--"> SUWEN TEKSTIL</b> </td>
-<td>11,78</td>
-<td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>10,75</td>
-<td>11,78</td>
-<td sortKey="384836387">384.836.387</td>
-<td sortKey="34039256">34.039.256</td>
-</tr>
-<tr h="P">
-<td title="TURK PRYSMIAN KABLO SIST AS" sortKey="PRKAB">
-<i class="bi bi-arrow-up-right t-s">
-</i> PRKAB - <b class="dn--"> TURK PRYSMIAN KABLO SIST AS</b> </td>
-<td>39,64</td>
-<td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>39,64</td>
-<td>39,64</td>
-<td sortKey="26390806">26.390.806</td>
-<td sortKey="665762">665.762</td>
-</tr>
-<tr h="B">
-<td title="BORUSAN BORU SANAYI" sortKey="BRSAN">
-<i class="bi bi-arrow-up-right t-s">
-</i> BRSAN - <b class="dn--"> BORUSAN BORU SANAYI</b> </td>
-<td>481,75</td>
-<td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>451,00</td>
-<td>481,75</td>
-<td sortKey="2362854686">2.362.854.686</td>
-<td sortKey="5061684">5.061.684</td>
-</tr>
-<tr h="K">
-<td title="KONTROLMATIK TEKNOLOJI" sortKey="KONTR">
-<i class="bi bi-arrow-up-right t-s">
-</i> KONTR - <b class="dn--"> KONTROLMATIK TEKNOLOJI</b> </td>
-<td>31,50</td>
-<td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>28,46</td>
-<td>31,50</td>
-<td sortKey="2361738289">2.361.738.289</td>
-<td sortKey="78368579">78.368.579</td>
-</tr>
-<tr h="V">
-<td title="VERUSATURK GSYO A.S." sortKey="VERTU">
-<i class="bi bi-arrow-up-right t-s">
-</i> VERTU - <b class="dn--"> VERUSATURK GSYO A.S.</b> </td>
-<td>42,98</td>
-<td sortKey="9,98">9,98 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>40,88</td>
-<td>42,98</td>
-<td sortKey="35915563">35.915.563</td>
-<td sortKey="844208">844.208</td>
-</tr>
-<tr h="K">
-<td title="KARSU TEKSTIL A.S." sortKey="KRTEK">
-<i class="bi bi-arrow-up-right t-s">
-</i> KRTEK - <b class="dn--"> KARSU TEKSTIL A.S.</b> </td>
-<td>37,04</td>
-<td sortKey="9,98">9,98 % <i class="bi bi-arrow-up t-s">
-</i>
-</td>
-<td>34,26</td>
-<td>37,04</td>
-<td sortKey="93894194">93.894.194</td>
-<td sortKey="2582692">2.582.692</td>
-</tr> </tbody> </table> </div> </div> </div> </div> </div> <div class="print-info dn">en-cok-artanlar</div> 
-<%- include("layouts/footer") %>
- <div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn"> <div class="overlay-blur pa">
-</div> <div class="popup_main_container container-lg" alt="0"> <b class="closex pa">
-</b> <a href="https://sanalsube.bullsyatirim.com:8000/login" target="_blank" class="df aic jcc popup-inside">
-<img src="upload/main/popup/desktop-esube.webp" class="popup-img dn db-lg"/>
-<img src="upload/main/popup/mobil-esube.webp" class="popup-img db dn-lg"/> </a> </div> </div> </body> 	<div class="toast jstoast">
-</div>
-	<div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
-		<i class="fa fa-angle-up dn">
-</i>
-		<i class="bi bi-chevron-up">
-</i>
-	</div>
-	<div class="dn">
-		<div class="spinner-border loading t-s vam mr-2">
-</div>
-	</div>
+
+  <body>
+    <%- include("layouts/header") %>
+      <div class="main middle">
+        <div class="bg-bulls2 ">
+          <div class="hisse-header bg-bulls t-f py-1 py-md-4">
+            <div class="container py-3">
+              <h1 class="f-16 py-1">En Çok Artanlar</h1>
+            </div>
+          </div>
+          <div class="container-lg pt-5 pb-4">
+            <div class="df mx-a ra-1 oh b col-12 col-md-6 tc tdn fw-600 mb-2 tabn"> <a href="en-cok-artanlar"
+                class="col-4 p-2 bg-bulls t-f">En Çok Artanlar</a> <a href="en-cok-dusenler"
+                class="col-4 p-2 bg-f br bl ">En Çok Düşenler</a> <a href="en-cok-islem-gorenler"
+                class="col-4 p-2 bg-f ">En Çok İşlem Görenler</a> </div>
+            <div class="df py-4">
+              <div class="hisse-container col-12 ra-2 bs2 oa-x asfs">
+                <table class="hisse-table sortable bs1 w-100">
+                  <thead class="usn">
+                    <tr class="bg-lb">
+                      <th class="sorttable_alpha tl pl-4">HİSSE SENETLERİ</th>
+                      <th>SON FİYAT TL</th>
+                      <th>GÜNLÜK GETİRİ</th>
+                      <th>EN DÜŞÜK</th>
+                      <th>EN YÜKSEK</th>
+                      <th>HACİM TL</th>
+                      <th>HACİM LOT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr h="C">
+                      <td title="CEM ZEYTIN" sortKey="CEMZY">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> CEMZY - <b class="dn--"> CEM ZEYTIN</b>
+                      </td>
+                      <td>54,45</td>
+                      <td sortKey="10,00">10,00 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>50,20</td>
+                      <td>54,45</td>
+                      <td sortKey="359392366">359.392.366</td>
+                      <td sortKey="6779467">6.779.467</td>
+                    </tr>
+                    <tr h="E">
+                      <td title="ECZACIBASI YATIRIM" sortKey="ECZYT">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> ECZYT - <b class="dn--"> ECZACIBASI YATIRIM</b>
+                      </td>
+                      <td>291,50</td>
+                      <td sortKey="10,00">10,00 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>263,00</td>
+                      <td>291,50</td>
+                      <td sortKey="498164757">498.164.757</td>
+                      <td sortKey="1778190">1.778.190</td>
+                    </tr>
+                    <tr h="V">
+                      <td title="VERUSA HOLDING AS" sortKey="VERUS">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> VERUS - <b class="dn--"> VERUSA HOLDING AS</b>
+                      </td>
+                      <td>277,75</td>
+                      <td sortKey="10,00">10,00 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>255,25</td>
+                      <td>277,75</td>
+                      <td sortKey="78410146">78.410.146</td>
+                      <td sortKey="291105">291.105</td>
+                    </tr>
+                    <tr h="P">
+                      <td title="POLITEKNIK METAL SAN VE TIC AS" sortKey="POLTK">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> POLTK - <b class="dn--"> POLITEKNIK METAL SAN VE TIC AS</b>
+                      </td>
+                      <td>8585,00</td>
+                      <td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>8100,00</td>
+                      <td>8585,00</td>
+                      <td sortKey="150789140">150.789.140</td>
+                      <td sortKey="17912">17.912</td>
+                    </tr>
+                    <tr h="S">
+                      <td title="SUWEN TEKSTIL" sortKey="SUWEN">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> SUWEN - <b class="dn--"> SUWEN TEKSTIL</b>
+                      </td>
+                      <td>11,78</td>
+                      <td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>10,75</td>
+                      <td>11,78</td>
+                      <td sortKey="384836387">384.836.387</td>
+                      <td sortKey="34039256">34.039.256</td>
+                    </tr>
+                    <tr h="P">
+                      <td title="TURK PRYSMIAN KABLO SIST AS" sortKey="PRKAB">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> PRKAB - <b class="dn--"> TURK PRYSMIAN KABLO SIST AS</b>
+                      </td>
+                      <td>39,64</td>
+                      <td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>39,64</td>
+                      <td>39,64</td>
+                      <td sortKey="26390806">26.390.806</td>
+                      <td sortKey="665762">665.762</td>
+                    </tr>
+                    <tr h="B">
+                      <td title="BORUSAN BORU SANAYI" sortKey="BRSAN">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> BRSAN - <b class="dn--"> BORUSAN BORU SANAYI</b>
+                      </td>
+                      <td>481,75</td>
+                      <td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>451,00</td>
+                      <td>481,75</td>
+                      <td sortKey="2362854686">2.362.854.686</td>
+                      <td sortKey="5061684">5.061.684</td>
+                    </tr>
+                    <tr h="K">
+                      <td title="KONTROLMATIK TEKNOLOJI" sortKey="KONTR">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> KONTR - <b class="dn--"> KONTROLMATIK TEKNOLOJI</b>
+                      </td>
+                      <td>31,50</td>
+                      <td sortKey="9,99">9,99 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>28,46</td>
+                      <td>31,50</td>
+                      <td sortKey="2361738289">2.361.738.289</td>
+                      <td sortKey="78368579">78.368.579</td>
+                    </tr>
+                    <tr h="V">
+                      <td title="VERUSATURK GSYO A.S." sortKey="VERTU">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> VERTU - <b class="dn--"> VERUSATURK GSYO A.S.</b>
+                      </td>
+                      <td>42,98</td>
+                      <td sortKey="9,98">9,98 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>40,88</td>
+                      <td>42,98</td>
+                      <td sortKey="35915563">35.915.563</td>
+                      <td sortKey="844208">844.208</td>
+                    </tr>
+                    <tr h="K">
+                      <td title="KARSU TEKSTIL A.S." sortKey="KRTEK">
+                        <i class="bi bi-arrow-up-right t-s">
+                        </i> KRTEK - <b class="dn--"> KARSU TEKSTIL A.S.</b>
+                      </td>
+                      <td>37,04</td>
+                      <td sortKey="9,98">9,98 % <i class="bi bi-arrow-up t-s">
+                        </i>
+                      </td>
+                      <td>34,26</td>
+                      <td>37,04</td>
+                      <td sortKey="93894194">93.894.194</td>
+                      <td sortKey="2582692">2.582.692</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="print-info dn">en-cok-artanlar</div>
+      <%- include("layouts/footer") %>
+        <div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn">
+          <div class="overlay-blur pa">
+          </div>
+          <div class="popup_main_container container-lg" alt="0"> <b class="closex pa">
+            </b> <a href="<%= site %>/login" target="_blank" class="df aic jcc popup-inside">
+              <img src="upload/main/popup/desktop-esube.webp" class="popup-img dn db-lg" />
+              <img src="upload/main/popup/mobil-esube.webp" class="popup-img db dn-lg" /> </a> </div>
+        </div>
+  </body>
+  <div class="toast jstoast">
+  </div>
+  <div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
+    <i class="fa fa-angle-up dn">
+    </i>
+    <i class="bi bi-chevron-up">
+    </i>
+  </div>
+  <div class="dn">
+    <div class="spinner-border loading t-s vam mr-2">
+    </div>
+  </div>
+
 </html>

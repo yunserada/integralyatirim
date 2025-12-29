@@ -2,148 +2,95 @@
 <html lang="tr">
 <%- include("layouts/head") %>
 
-	<body>
-		<%- include("layouts/header") %>
-			<div class="main middle"> <input type="hidden" class="kategorisi dn" value="1" />
-				<div class="container-lg pt-3 pt-lg-4 pb-4">
-					<div class="col-12 f-08">
-						<div class="breadcrumb pb-2--"> <a href="" class="breadcrumb-item"> <i class="bi bi-house">
-								</i>
-							</a> <a href="genel" class="breadcrumb-item">Bulls Yatırım</a>
-							<a class="breadcrumb-item tdn ">Yatırım Merkezlerimiz</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="sidebar usn h-100 lsn dn db-lg pr-4">
-							<div class="sidebar-bottom f-12 fw-700 pt-1 pb-3"> <a href="<%= site %>/register"
-									class="right-v-line bg-sdbr tdn df aic jcsb p-3 py-3 ra-1 mt-0 bs2">
-									<span>Yatırım Hesabı <br>Açın</span>
-									<img src="upload/main/sidebar_woman.png" class="ml-2" />
-								</a> <a href="bize-ulasin"
-									class="right-v-line bg-sdbr tdn df aic jcsb p-3 py-3 ra-1 mt-2 bs2">
-									<span>Uzmanlarımıza <br>Danışın</span> <img src="upload/main/sidebar_man.png"
-										class="ml-2" />
-								</a> </div>
-						</div>
-						<div class="col-12 col-lg pt-0">
-							<article class="fix" alt="yatirim-merkezlerimiz">
-								<h1 class="fw-700 z1 mb-2 pb-1 mb-lg-3 pb-lg-3">Yatırım Merkezlerimiz</h1>
-								<section class="yazi ">
-									<div class="body">
-										<p>Yatırımcılarımızın Bulls Yatırım Menkul Değerler A.Ş.'nin yatırım merkezleri
-											hakkındaki adres bilgilerine telefon numarası bilgilerine ya da email adresi
-											bilgilerine bu sayfa üzerinden ulaşması mümkündür.</p>
-									</div>
-								</section>
-								<div class="container-lg py-5 t-bulls cb">
-									<div class="select mb-2 cp">
-										<h2 class="sube-list"> Şubelerimizi Görüntüleyin</h2>
-										<div class="body p-0 ra-1 bs2 w-100 w-md-50 b bg-fff db"
-											style="display:none--;">
-											<div class="px-2 pt-2"> <input type="text"
-													class="yatirim_merkezi_ara ra-1 w-100 pl-2 py-2 f-1"
-													placeholder="Yatırım Merkezi Ara" /> </div>
-											<div class="p-0 px-0 yatirim_merkezleri pt-1 pb-0"> <textarea
-													class="js_nest_data dn w-100"
-													readonly>{"baslik":{"1":"Levent Genel Müdürlük","2":"Kadıköy İrtibat Bürosu","3":"Bağdat Caddesi Private İrtibat Bürosu","4":"İrtibat Bürosu","5":"İrtibat Bürosu","6":"İrtibat Bürosu","7":"İrtibat Bürosu","8":"İrtibat Bürosu","9":"İrtibat Bürosu","10":"İrtibat Bürosu","11":"Konak İrtibat Bürosu"},"il":{"1":"İstanbul","2":"İstanbul","3":"İstanbul","4":"Adana","5":"Ankara","6":"Antalya","7":"Bodrum / Muğla","8":"Bursa","9":"Fethiye","10":"İzmir","11":"İzmir"},"telefon":{"1":"+90(212) 410 05 00","2":"0 216 430 77 10","3":"0 216 430 77 00","4":"0322 355 22 80","5":"0 312 207 68 60","6":"0 242 201 13 00","7":"0252 311 18 50","8":"0224 275 41 20","9":"0252 661 05 10","10":"0 232 445 14 12","11":"0 232 270 83 80"},"email":{"1":"iletisim@bullsyatirim.com","2":"iletisim@bullsyatirim.com","3":"iletisim@bullsyatirim.com","4":"iletisim@bullsyatirim.com","5":"iletisim@bullsyatirim.com","6":"iletisim@bullsyatirim.com","7":"iletisim@bullsyatirim.com","8":"iletisim@bullsyatirim.com","9":"iletisim@bullsyatirim.com","10":"iletisim@bullsyatirim.com","11":"iletisim@bullsyatirim.com"},"harita-linki":{"1":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10019.767813977922!2d29.004295171545213!3d41.075323080680256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7e2006bee5f%3A0x6da9475fe8b26a42!2zQnVsbHMgWWF0xLFyxLFtIE1lbmt1bCBEZcSfZXJsZXIgQS7Fni4!5e0!3m2!1str!2str!4v1722440722780!5m2!1str!2str","2":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.4366278360367!2d29.051197999999996!3d40.971919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac77ed632fb0b%3A0x45ed66e80bf57281!2zRmVuZXJiYWjDp2UsIE9wZXJhdMO2ciBDZW1pbCBUb3B1emx1IENkLiBObzozMiwgMzQ3MjYgS2FkxLFrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1712531321377!5m2!1str!2str","3":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188.31789418064378!2d29.08544794778878!3d40.95768809391106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7048bebb909%3A0x4c0e11a87d823bbb!2zQm9zdGFuY8SxLCBCYcSfZGF0IENhZC4gNDUyLTEgRDo1LCAzNDc0NCBLYWTEsWvDtnkvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1721985606057!5m2!1str!2str","4":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.3824941229996!2d35.31611138344521!3d37.00067040048625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15288f411f037203%3A0x791d0ac5701f4034!2sKurtulu%C5%9F%2C%20%C5%9Einasi%20Efendi%20Cd.%2C%2001130%20Seyhan%2FAdana!5e0!3m2!1str!2str!4v1739189594728!5m2!1str!2str","5":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.355966664218!2d32.80610757580103!3d39.91104947152546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d348b2a8a8bb1b%3A0x6fc94f4a1deecb8a!2sYDA%20Center!5e0!3m2!1str!2str!4v1751614599659!5m2!1str!2str","6":"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d199.49002844610916!2d30.718459873333465!3d36.870237536835766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1715176639905!5m2!1str!2str","7":"\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184.119793516269!2d27.353572475657483!3d37.05462837217565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be73d9010e4f79%3A0x6abb9089aa4d53ef!2sMidpoint%20Avm!5e0!3m2!1str!2str!4v1739177797894!5m2!1str!2str","8":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.0744433150953!2d28.99671107581644!3d40.207406971474114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca159c5371ba9f%3A0x1e63a4b2a5523991!2sGreen%20White%20Plaza!5e0!3m2!1str!2str!4v1727451742344!5m2!1str!2str","9":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200.13352601322617!2d29.113484988552102!3d36.623102862779895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c0416028200ed1%3A0x7d3ee5c8be914729!2sFethiye%20Plaza!5e0!3m2!1str!2str!4v1732867672379!5m2!1str!2str\"","10":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.469301095148!2d27.171696783643664!3d38.453725499167696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b962a90d76ecff%3A0xb16364e47894b32f!2sFolkart%20Towers!5e0!3m2!1str!2str!4v1731151426298!5m2!1str!2str","11":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.25813510967095!2d27.179676413918596!3d38.44422837841316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b962a3f9549d17%3A0x12ace4851c815ebc!2zw4fEsW5hcmzEsSwgMTU4Ny4gU2sgTm86MiBEOjExIDExMDEsIDM1MTcwIEtvbmFrL8Swem1pcg!5e0!3m2!1str!2str!4v1753189812492!5m2!1str!2str"},"adres":{"1":"Büyükdere Cad. No 173, 1. Levent Plaza, B Blok, Kat: 5, Levent / İstanbul","2":"Cemil Topuzlu Cad. No:32/10 Yuvam Apt. Çiftehavuzlar Kadıköy - İstanbul","3":"Bağdat Cad. Havacı Binbaşı Mehmet Sokak no:1 D:5 Çatalçeşme Kadıköy 34728","4":"Kurtuluş Mahallesi Şinasi Efendi Caddesi Eyüp Ünal Apt.No: 30 Kat: 1 D.No: 1  Seyhan/ Adana","5":"Kızılırmak Mah. Dumlupınar Bulvarı No.9 YDA Center A Blok 12.Kat Ofis No.524-525 Çankaya/ Ankara","6":"Yeşilbahçe Mahallesi, Lara Caddesi, Falezpark Evleri N19 A/2 Muratpaşa /ANTALYA","7":"Midpoint AVM. Müskebi Mah, Cumhuriyet(Müsgebi) Cad No: 29 İç Kapı No: 43 -44 48400 Bodrum/Muğla","8":"Odunluk Mahallesi Akpınar Caddesi N5 Ofis: 23 Green White Plaza, Nilüfer/BURSA","9":"Cumhuriyet Mah 502 sk. No :1 Kat:2 D:4 Fethiye /Muğla","10":"Manas Bulvarı, Adalet Mahallesi Folkart Towers B Kule No:39 Kat:22 İç Kapı No : 2209 Bayraklı / İzmir","11":"Çınarlı Mahallesi 1587 Sk. No:2 K:11 D:1101 Konak / İZMİR"},"resim":{"1":"upload/images/stock/7.jpg"},"dilkod":"tr"}</textarea><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="1"> <span
-														class="fw-500 col">İstanbul &nbsp; </span> <span
-														class="col-8 tr">Levent Genel Müdürlük</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="2"> <span
-														class="fw-500 col">İstanbul &nbsp; </span> <span
-														class="col-8 tr">Kadıköy İrtibat Bürosu</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="3"> <span
-														class="fw-500 col">İstanbul &nbsp; </span> <span
-														class="col-8 tr">Bağdat Caddesi Private İrtibat Bürosu</span>
-												</a><a class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="4"> <span
-														class="fw-500 col">Adana &nbsp; </span> <span
-														class="col-8 tr">İrtibat Bürosu</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="5"> <span
-														class="fw-500 col">Ankara &nbsp; </span> <span
-														class="col-8 tr">İrtibat Bürosu</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="6"> <span
-														class="fw-500 col">Antalya &nbsp; </span> <span
-														class="col-8 tr">İrtibat Bürosu</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="7"> <span
-														class="fw-500 col">Bodrum / Muğla &nbsp; </span> <span
-														class="col-8 tr">İrtibat Bürosu</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="8"> <span
-														class="fw-500 col">Bursa &nbsp; </span> <span
-														class="col-8 tr">İrtibat Bürosu</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="9"> <span
-														class="fw-500 col">Fethiye &nbsp; </span> <span
-														class="col-8 tr">İrtibat Bürosu</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="10"> <span
-														class="fw-500 col">İzmir &nbsp; </span> <span
-														class="col-8 tr">İrtibat Bürosu</span> </a><a
-													class="py-2 px-3 bb t-bulls tdn df-- jcsb hvrf" alt="11"> <span
-														class="fw-500 col">İzmir &nbsp; </span> <span
-														class="col-8 tr">Konak
-														İrtibat Bürosu</span> </a> </div>
-										</div>
-									</div>
-									<div class="cb my-0"></div>
-									<div class="row feed_yatirim_merkezi">
-										<div class="col-12 mb-5 pb-3"> <iframe
-												src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10019.767813977922!2d29.004295171545213!3d41.075323080680256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7e2006bee5f%3A0x6da9475fe8b26a42!2zQnVsbHMgWWF0xLFyxLFtIE1lbmt1bCBEZcSfZXJsZXIgQS7Fni4!5e0!3m2!1str!2str!4v1722440722780!5m2!1str!2str"
-												class="ra-1 bs3 mt-3 w-100 fr harita js_nest"
-												style="border:0;min-height:17.3rem;-webkit-filter: grayscale(100%);filter: grayscale(50%);"
-												allowfullscreen="" loading="lazy"
-												referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
-										<div class="px-3 pt-1 mb-3 tc " style="width:15rem;"> <img
-												src="upload/main/default.png"
-												class="resim ra-1 w-100 dn db-md js_nest" />
-										</div>
-										<div class="col-12 col-md mb-3 js_nest_container">
-											<h2 class="baslik f-16 fw-700 js_nest">İstanbul Levent Genel Müdürlük</h2>
-											<ul class="lsn f-12 fw-300">
-												<li class="df mb-2"> <i
-														class="bi bi-pin-map t-p tc fa-2x vam pr-3 pl-1"></i>
-													<div class="col df aic adres js_nest ">Büyükdere Cad. No 173, 1.
-														Levent
-														Plaza, B Blok, Kat: 5, Levent / İstanbul</div>
-												</li>
-												<li class="df"> <i
-														class="bi bi-info-circle t-p tc fa-2x vam pr-3 pl-1"></i>
-													<div class="col df fdc jcc"><span
-															class="db js_nest telefon">+90(212)
-															410 05 00</span><span
-															class="db js_nest email">iletisim@bullsyatirim.com</span>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="cb"></div>
-									</div>
-								</div>
-								<a href="<%= site %>/register"
-									class="btn btn-p col-lg-a col-12 hesap-ac musteri-ol btn tc dib mx-a mt-4 ra-1 px-5 py-2">
-									Şimdi Hesap Açın <i class="bi bi-hand-index-thumb pl-1 "></i> </a>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="print-info dn">yatirim-merkezlerimiz</div>
+  <body>
+    <%- include("layouts/header") %>
+      <div class="main middle"> <input type="hidden" class="kategorisi dn" value="1" />
+        <div class="container-lg pt-3 pt-lg-4 pb-4">
+          <div class="col-12 f-08">
+            <div class="breadcrumb pb-2--"> <a href="" class="breadcrumb-item"> <i class="bi bi-house">
+                </i>
+              </a> <a href="genel" class="breadcrumb-item">Integral Yatırım</a>
+              <a class="breadcrumb-item tdn ">Yatırım Merkezlerimiz</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="sidebar usn h-100 lsn dn db-lg pr-4">
+              <div class="sidebar-bottom f-12 fw-700 pt-1 pb-3"> <a href="<%= site %>/register"
+                  class="right-v-line bg-sdbr tdn df aic jcsb p-3 py-3 ra-1 mt-0 bs2">
+                  <span>Yatırım Hesabı <br>Açın</span>
+                  <img src="upload/main/sidebar_woman.png" class="ml-2" />
+                </a> <a href="bize-ulasin" class="right-v-line bg-sdbr tdn df aic jcsb p-3 py-3 ra-1 mt-2 bs2">
+                  <span>Uzmanlarımıza <br>Danışın</span> <img src="upload/main/sidebar_man.png" class="ml-2" />
+                </a> </div>
+            </div>
+            <div class="col-12 col-lg pt-0">
+              <article class="fix" alt="yatirim-merkezlerimiz">
+                <h1 class="fw-700 z1 mb-2 pb-1 mb-lg-3 pb-lg-3">Yatırım Merkezlerimiz</h1>
+                <section class="yazi ">
+                  <div class="body">
+                    <p>Yatırımcılarımızın Integral Yatırım Menkul Değerler A.Ş.'nin yatırım merkezleri
+                      hakkındaki adres bilgilerine telefon numarası bilgilerine ya da email adresi
+                      bilgilerine bu sayfa üzerinden ulaşması mümkündür.</p>
+                  </div>
+                </section>
+                <div class="container-lg py-5 t-bulls cb">
+                  <div class="select mb-2 cp">
+                    <h2 class="sube-list"> Şubelerimizi Görüntüleyin</h2>
+                    <div class="body p-0 ra-1 bs2 w-100 w-md-50 b bg-fff db" style="display:none--;">
+                      <div class="px-2 pt-2"> <input type="text" class="yatirim_merkezi_ara ra-1 w-100 pl-2 py-2 f-1"
+                          placeholder="Yatırım Merkezi Ara" /> </div>
+                    </div>
+                  </div>
+                  <div class="cb my-0"></div>
+                  <div class="row feed_yatirim_merkezi">
+                    <div class="col-12 mb-5 pb-3"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10019.767813977922!2d29.004295171545213!3d41.075323080680256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7e2006bee5f%3A0x6da9475fe8b26a42!2zQnVsbHMgWWF0xLFyxLFtIE1lbmt1bCBEZcSfZXJsZXIgQS7Fni4!5e0!3m2!1str!2str!4v1722440722780!5m2!1str!2str"
+                        class="ra-1 bs3 mt-3 w-100 fr harita js_nest"
+                        style="border:0;min-height:17.3rem;-webkit-filter: grayscale(100%);filter: grayscale(50%);"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+                    <div class="px-3 pt-1 mb-3 tc " style="width:15rem;"> <img src="upload/main/default.png"
+                        class="resim ra-1 w-100 dn db-md js_nest" />
+                    </div>
+                    <div class="col-12 col-md mb-3 js_nest_container">
+                      <h2 class="baslik f-16 fw-700 js_nest">İstanbul Levent Genel Müdürlük</h2>
+                      <ul class="lsn f-12 fw-300">
+                        <li class="df mb-2"> <i class="bi bi-pin-map t-p tc fa-2x vam pr-3 pl-1"></i>
+                          <div class="col df aic adres js_nest ">Büyükdere Cad. No 173, 1.
+                            Levent
+                            Plaza, B Blok, Kat: 5, Levent / İstanbul</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="cb"></div>
+                  </div>
+                </div>
+                <a href="<%= site %>/register"
+                  class="btn btn-p col-lg-a col-12 hesap-ac musteri-ol btn tc dib mx-a mt-4 ra-1 px-5 py-2">
+                  Şimdi Hesap Açın <i class="bi bi-hand-index-thumb pl-1 "></i> </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="print-info dn">yatirim-merkezlerimiz</div>
 
-			<%- include("layouts/footer") %>
+      <%- include("layouts/footer") %>
 
-				<div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn">
-					<div class="overlay-blur pa"></div>
-					<div class="popup_main_container container-lg" alt="0"> <b class="closex pa"></b> <a
-							href="https://sanalsube.bullsyatirim.com:8000/login" target="_blank"
-							class="df aic jcc popup-inside"><img src="upload/main/popup/desktop-esube.webp"
-								class="popup-img dn db-lg" /><img src="upload/main/popup/mobil-esube.webp"
-								class="popup-img db dn-lg" /> </a> </div>
-				</div>
-	</body>
-	<div class="toast jstoast"></div>
-	<div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
-		<i class="fa fa-angle-up dn"></i>
-		<i class="bi bi-chevron-up"></i>
-	</div>
-	<div class="dn">
-		<div class="spinner-border loading t-s vam mr-2"></div>
-	</div>
+        <div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn">
+          <div class="overlay-blur pa"></div>
+          <div class="popup_main_container container-lg" alt="0"> <b class="closex pa"></b> <a href="<%= site %>/login"
+              target="_blank" class="df aic jcc popup-inside"><img src="upload/main/popup/desktop-esube.webp"
+                class="popup-img dn db-lg" /><img src="upload/main/popup/mobil-esube.webp" class="popup-img db dn-lg" />
+            </a> </div>
+        </div>
+  </body>
+  <div class="toast jstoast"></div>
+  <div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
+    <i class="fa fa-angle-up dn"></i>
+    <i class="bi bi-chevron-up"></i>
+  </div>
+  <div class="dn">
+    <div class="spinner-border loading t-s vam mr-2"></div>
+  </div>
 
 </html>

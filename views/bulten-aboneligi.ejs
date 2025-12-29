@@ -1,30 +1,121 @@
 <!DOCTYPE HTML>
 <html lang="tr">
 <%- include("layouts/head") %>
-<body> 
-<%- include("layouts/header") %>
-<div class="main middle"> <div class="home-jumbotron form-jumbotron py-0 pt-lg-3 px-lg-0 px-2 "> <div class="container-lg pt-4 pb-4 pb-lg-1 px-0--"> <div class="df fdc jcsb fdr-lg bg-jumbotron ra-1 pt-2 pb-2-- "> <div class="col-12 col-lg-7 df aic t-lb px-4 py-1 px-lg-5 lh-1"> <div class="py-3 py-lg-2 lh-1"> <h2 class="mb-0 fw-400 f-16">
-<b>Bulls Yatırım Bültenleri </b>
-</h2> <span class="df f-14 fw-400">İle En Güncel Bilgiler<br>İlk Önce Siz Ulaşın</span> <div class="db-lg dn mt-5 mt-lg-3 mx-a mx-lg-0 underline-in-jumbotron tc">
-</div> </div> </div> <div class="col-12 col-lg-5 pl-lg-5 pl-lg-5 pl-0 db-lg"> <img src="upload/main/bulten-aboneligi.webp" class="pr pa-lg b-0 dn db-lg pt-1" style="height:118%"/> </div> </div> </div> </div> <div class="container-lg py-5 t-bulls"> <div class="df fnw aic bize-ulasin-header"> <h1 class="fw-700 fg0 mb-0 pr-5">Bülten Aboneliği</h1> <div class="side-line">
-</div> </div> </div> <div class=" pt-3 pb-5 py-lg-4"> <form id="form-bulten" action="account" method="POST" > <div class="container-lg"> <div class="row pt-4 pt-lg-5 aic form_tema1 bg-lb ra-1 py-4 px-lg-4"> <div class="col-12 col-lg-6 form-item"> <label>Adınız</label> <input type="text" name="ad" class="mb-3" required /> </div> <div class="col-12 col-lg-6 form-item"> <label>Soyadınız</label> <input type="text" name="soyad" class="mb-3" required /> </div> <div class="col-12 col-lg-6 form-item"> <label>Yatırım Yapıyor musunuz?</label> <select name="yatirimdurumu" class="yatirimdurumu mb-3" required2 > <option value="1">Evet</option> <option value="0">Hayır</option> </select> </div> <div class="col-12 col-lg-6 form-item"> <label>Telefon Numaranız</label> <input type="tel" name="telefon" class="mb-3" required2 /> </div> <div class="col-12 col-lg-6 form-item"> <label>E-posta Adresiniz</label> <input type="email" name="email" class="mb-3" required2 /> </div> </div> <div class="df fw jcsb mt-4 aic"> <div class="col-12 col-lg-6"> <div class="col-12 py-5 lh-13 f-1 fw-400"> <div class="lh-13 f-1 fw-300 mb-2"> Sizlere daha iyi hizmet verebilmek amacıyla kişisel verileriniz Bulls Yatırım tarafından Kişisel Verilerin Korunması ve Gizlilik Politikamız kapsamında işlenebilmektedir; </div> <div class="db my-2"> <input type="checkbox" name="kvkkonayi" value="1" required /> <a href="upload/files/formlar/musteri-aydinlatma-metni.pdf?ver=1762111875" class="fw-600 t-bulls" target="_blank">Kişisel verilerimin işlenmesini</a> ve <a href="kurumsal-kisisel-verilerin-korunmasi" class="fw-600 t-bulls" target="_blank">Kişisel Veri Politika'nızı</a> okuduğumu kabul ediyorum. </div> <div class="db mt-2 mb-4"> <input type="checkbox" name="bultenonay" value="1"/> Bulls Yatırım tarafından hesap açılış işlemlerinin gerçekleştirilmesi amacıyla <a href="upload/files/formlar/potansiyel-musteri-aydinlatma-metni.pdf?ver=1762111875" class="fw-600 t-bulls" target="_blank">Potansiyel Müşteri Aydınlatma Metni</a> kapsamında elektronik ileti almayı onaylıyorum. <br> <ul class="pl-2 pt-2 lh-15 "> <li>• Telefon Çağrısı</li> <li>• SMS</li> <li>• E-posta</li> </ul> </div> </div> </div> <!-- captcha --> <div class="col-12 col-lg-5 "> <div class="col-12"> <div class="col-12 p-4 bg-lb ra-1 t-se"> <div class="col-12 df fw jcs fdc fdr-lg captcha_grid "> <div class="col df 1 py-2 px-0"> <img src="captcha.png?v=1762111875" class="captcha ra-1 b asfe" style="margin:0 auto;"/> </div> <div class="col f1 py-2 ml-0 ml-lg-3 px-0 tc"> <label class="p-0 m-0 tc guvenlik_kodu py-0 pb-1">Güvenlik Kodunu Giriniz</label> <input type="text" name="captcha" class="onay f1 p-2 px-3 f-09 tc ma" required /> </div> </div> <div class="db ma dib-md w-auto capatcha_yenile cp tc t-lg-l f-1 usn py-2 pl-2">
-<i class="bi bi-arrow-clockwise">
-</i> Güvenlik Kodunu Değiştir </div> </div> <button type="submit" class="w-100 btn bg-trkz t-f f-15 py-2 px-5 ra-1 mb-5 mt-4 fw-500" name="islemtipi" value="bulten_kayit_do" >Abone Ol</button> </div> </div> <!-- captcha --> </div> </div> </form> </div> </div> <div class="print-info dn">bulten-aboneligi/</div> 
-<%- include("layouts/footer") %>
- <div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn"> <div class="overlay-blur pa">
-</div> <div class="popup_main_container container-lg" alt="0"> <b class="closex pa">
-</b> <a href="https://sanalsube.bullsyatirim.com:8000/login" target="_blank" class="df aic jcc popup-inside">
-<img src="upload/main/popup/desktop-esube.webp" class="popup-img dn db-lg"/>
-<img src="upload/main/popup/mobil-esube.webp" class="popup-img db dn-lg"/> </a> </div> </div> </body> 	<div class="toast jstoast">
-</div>
-	<div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
-		<i class="fa fa-angle-up dn">
-</i>
-		<i class="bi bi-chevron-up">
-</i>
-	</div>
-	<div class="dn">
-		<div class="spinner-border loading t-s vam mr-2">
-</div>
-	</div>
+
+  <body>
+    <%- include("layouts/header") %>
+      <div class="main middle">
+        <div class="home-jumbotron form-jumbotron py-0 pt-lg-3 px-lg-0 px-2 ">
+          <div class="container-lg pt-4 pb-4 pb-lg-1 px-0--">
+            <div class="df fdc jcsb fdr-lg bg-jumbotron ra-1 pt-2 pb-2-- ">
+              <div class="col-12 col-lg-7 df aic t-lb px-4 py-1 px-lg-5 lh-1">
+                <div class="py-3 py-lg-2 lh-1">
+                  <h2 class="mb-0 fw-400 f-16">
+                    <b>Integral Yatırım Bültenleri </b>
+                  </h2> <span class="df f-14 fw-400">İle En Güncel Bilgiler<br>İlk Önce Siz Ulaşın</span>
+                  <div class="db-lg dn mt-5 mt-lg-3 mx-a mx-lg-0 underline-in-jumbotron tc">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5 pl-lg-5 pl-lg-5 pl-0 db-lg"> <img src="upload/main/bulten-aboneligi.webp"
+                  class="pr pa-lg b-0 dn db-lg pt-1" style="height:118%" /> </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-lg py-5 t-bulls">
+          <div class="df fnw aic bize-ulasin-header">
+            <h1 class="fw-700 fg0 mb-0 pr-5">Bülten Aboneliği</h1>
+            <div class="side-line">
+            </div>
+          </div>
+        </div>
+        <div class=" pt-3 pb-5 py-lg-4">
+          <form id="form-bulten" action="account" method="POST">
+            <div class="container-lg">
+              <div class="row pt-4 pt-lg-5 aic form_tema1 bg-lb ra-1 py-4 px-lg-4">
+                <div class="col-12 col-lg-6 form-item"> <label>Adınız</label> <input type="text" name="ad" class="mb-3"
+                    required /> </div>
+                <div class="col-12 col-lg-6 form-item"> <label>Soyadınız</label> <input type="text" name="soyad"
+                    class="mb-3" required /> </div>
+                <div class="col-12 col-lg-6 form-item"> <label>Yatırım Yapıyor musunuz?</label> <select
+                    name="yatirimdurumu" class="yatirimdurumu mb-3" required2>
+                    <option value="1">Evet</option>
+                    <option value="0">Hayır</option>
+                  </select> </div>
+                <div class="col-12 col-lg-6 form-item"> <label>Telefon Numaranız</label> <input type="tel"
+                    name="telefon" class="mb-3" required2 /> </div>
+                <div class="col-12 col-lg-6 form-item"> <label>E-posta Adresiniz</label> <input type="email"
+                    name="email" class="mb-3" required2 /> </div>
+              </div>
+              <div class="df fw jcsb mt-4 aic">
+                <div class="col-12 col-lg-6">
+                  <div class="col-12 py-5 lh-13 f-1 fw-400">
+                    <div class="lh-13 f-1 fw-300 mb-2"> Sizlere daha iyi hizmet verebilmek amacıyla kişisel verileriniz
+                      Integral Yatırım tarafından Kişisel Verilerin Korunması ve Gizlilik Politikamız kapsamında
+                      işlenebilmektedir; </div>
+                    <div class="db my-2"> <input type="checkbox" name="kvkkonayi" value="1" required /> <a
+                        href="upload/files/formlar/musteri-aydinlatma-metni.pdf?ver=1762111875" class="fw-600 t-bulls"
+                        target="_blank">Kişisel verilerimin işlenmesini</a> ve <a
+                        href="kurumsal-kisisel-verilerin-korunmasi" class="fw-600 t-bulls" target="_blank">Kişisel Veri
+                        Politika'nızı</a> okuduğumu kabul ediyorum. </div>
+                    <div class="db mt-2 mb-4"> <input type="checkbox" name="bultenonay" value="1" /> Integral Yatırım
+                      tarafından hesap açılış işlemlerinin gerçekleştirilmesi amacıyla <a
+                        href="upload/files/formlar/potansiyel-musteri-aydinlatma-metni.pdf?ver=1762111875"
+                        class="fw-600 t-bulls" target="_blank">Potansiyel Müşteri Aydınlatma Metni</a> kapsamında
+                      elektronik ileti almayı onaylıyorum. <br>
+                      <ul class="pl-2 pt-2 lh-15 ">
+                        <li>• Telefon Çağrısı</li>
+                        <li>• SMS</li>
+                        <li>• E-posta</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> <!-- captcha -->
+                <div class="col-12 col-lg-5 ">
+                  <div class="col-12">
+                    <div class="col-12 p-4 bg-lb ra-1 t-se">
+                      <div class="col-12 df fw jcs fdc fdr-lg captcha_grid ">
+                        <div class="col df 1 py-2 px-0"> <img src="captcha.png?v=1762111875" class="captcha ra-1 b asfe"
+                            style="margin:0 auto;" /> </div>
+                        <div class="col f1 py-2 ml-0 ml-lg-3 px-0 tc"> <label
+                            class="p-0 m-0 tc guvenlik_kodu py-0 pb-1">Güvenlik Kodunu Giriniz</label> <input
+                            type="text" name="captcha" class="onay f1 p-2 px-3 f-09 tc ma" required /> </div>
+                      </div>
+                      <div class="db ma dib-md w-auto capatcha_yenile cp tc t-lg-l f-1 usn py-2 pl-2">
+                        <i class="bi bi-arrow-clockwise">
+                        </i> Güvenlik Kodunu Değiştir
+                      </div>
+                    </div> <button type="submit" class="w-100 btn bg-trkz t-f f-15 py-2 px-5 ra-1 mb-5 mt-4 fw-500"
+                      name="islemtipi" value="bulten_kayit_do">Abone Ol</button>
+                  </div>
+                </div> <!-- captcha -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="print-info dn">bulten-aboneligi/</div>
+      <%- include("layouts/footer") %>
+        <div class="popup_main esube-popup-container overlay oh pf p-4 px-md-5 py-lg-5 closen dn">
+          <div class="overlay-blur pa">
+          </div>
+          <div class="popup_main_container container-lg" alt="0"> <b class="closex pa">
+            </b> <a href="<%= site %>/login" target="_blank" class="df aic jcc popup-inside">
+              <img src="upload/main/popup/desktop-esube.webp" class="popup-img dn db-lg" />
+              <img src="upload/main/popup/mobil-esube.webp" class="popup-img db dn-lg" /> </a> </div>
+        </div>
+  </body>
+  <div class="toast jstoast">
+  </div>
+  <div class="scrollup pf r-0 mb-5 mx-3 aic jcc ra-circle">
+    <i class="fa fa-angle-up dn">
+    </i>
+    <i class="bi bi-chevron-up">
+    </i>
+  </div>
+  <div class="dn">
+    <div class="spinner-border loading t-s vam mr-2">
+    </div>
+  </div>
+
 </html>

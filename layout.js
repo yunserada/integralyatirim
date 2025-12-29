@@ -14,19 +14,7 @@ function replaceBeat(html) {
   return html;
 }
 function replaceRoute(html) {
-  html = html.replaceAll('https://esube.bullsyatirim.com', '<%= site %>')
-  html = html.replaceAll('href="genel/duyurular', 'href="/duyurular')
-  html = html.replaceAll('href="genel/haberler', 'href="/haberler')
-  html = html.replaceAll('href="hizmetler/gayrimenkul-sertifikasi-halk-arzlari', 'href="/gayrimenkul-sertifikasi-halk-arzlari')
-  html = html.replaceAll('href="hizmetler/pay-halka-arzlar', 'href="/pay-halka-arzlar')
-  html = html.replaceAll('href="arastirma/gunluk-bulten', 'href="/gunluk-bulten')
-  html = html.replaceAll('href="arastirma/tum-bultenler', 'href="/tum-bultenler')
-  html = html.replaceAll('href="arastirma/viop-bulten', 'href="/viop-bulten')
-  html = html.replaceAll('href="arastirma/periyodik-raporlar', 'href="/periyodik-raporlar')
-  html = html.replaceAll('href="arastirma/kisa-vadeli-oneriler', 'href="/kisa-vadeli-oneriler')
-  html = html.replaceAll('href="arastirma/sirket-raporlari', 'href="/sirket-raporlari')
-  html = html.replaceAll('href="arastirma/pair-trade-ikili-islem', 'href="/pair-trade-ikili-islem')
-  html = html.replaceAll('href="yatirim-hesabi-ac"', 'href="<%= site %>/register"')
+  html = html.replaceAll('https://sanalsube.bullsyatirim.com:8000', '<%= site %>')
   
 
   return html;
@@ -84,10 +72,10 @@ async function generateLayout() {
     //content = replaceBeat(content);
     //content = replaceHead(content);
     content = replaceRoute(content);
-    content = replaceHeader(content);
-    content = replaceFooter(content);
-    content = replaceGtm(content);
-    content = replaceBullsAsistan(content);
+    //content = replaceHeader(content);
+    //content = replaceFooter(content);
+    //content = replaceGtm(content);
+    //content = replaceBullsAsistan(content);
     await fs.writeFile(path.join(viewsDir, file), content);
   }
 
