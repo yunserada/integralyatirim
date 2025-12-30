@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-const site = 'https://e-sube.bullskatilim.online';
+const site = 'https://sube.integralgroupyatirim.com';
 const telf = '';
 
 const viewsPath = path.join(__dirname, 'views');
