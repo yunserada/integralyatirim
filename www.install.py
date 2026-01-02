@@ -20,8 +20,8 @@ subprocess.run(f"sudo chown -R www-data {project_full}", shell=True, capture_out
 subprocess.run(f"sudo chown -R www-data:www-data {project_full}", shell=True, capture_output=True)
 
 content = f"""<VirtualHost *:80>
-    ServerName integralgroupyatirim.com
-    ServerAlias www.integralgroupyatirim.com
+    ServerName integralgrupmenkul.com
+    ServerAlias www.integralgrupmenkul.com
 
     ProxyPreserveHost On
 
